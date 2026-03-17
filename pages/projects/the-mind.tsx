@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import BentoBoxGrid from "../../components/BentoBoxGrid"
 
-export default function ProjectPage() {
+export default function MindPage() {
   const router = useRouter();
 
     const projectsForBentoGrid = [ 
@@ -14,8 +14,8 @@ export default function ProjectPage() {
     },
     { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1",
         children: ( 
-            <> <h2 className="text-xl font-semibold mb-2">NAME OF PROJECT + YEAR</h2>
-            <p className="text-gray-600 flex-1">DESCRIPTION?</p> 
+            <> <h2 className="text-xl font-semibold mb-2">NAME OF PROJECT</h2>
+            <p className="text-gray-600 flex-1">DESCRIPTION? PUT THE YEAR SOMEWHERE</p> 
             </> 
         ),
     }, 
@@ -26,13 +26,19 @@ export default function ProjectPage() {
             </> 
         ), 
     }, 
-    { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", 
+    { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
         children: ( 
             <> <h2 className="text-xl font-semibold mb-2">LINK</h2> 
             <p className="text-gray-600 flex-1">Square card</p>
             </> 
         ), 
-    }, 
+    },    { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
+        children: ( 
+            <> <h2 className="text-xl font-semibold mb-2">HOME</h2> 
+            <p className="text-gray-600 flex-1">OR ALL PROJECTS?</p>
+            </> 
+        ), 
+    },  
     { colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-2", 
         children: ( 
             <> <h2 className="text-xl font-semibold mb-2">CHALLENGE</h2> 
