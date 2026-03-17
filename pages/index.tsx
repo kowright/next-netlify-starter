@@ -1,19 +1,19 @@
 import React from "react";
-import BentoBoxGrid from "../components/BentoBoxGrid"
+import BentoBoxGrid, { BentoBoxGridItem } from "../components/BentoBoxGrid";
 
 export default function Home() {
-    const projectsForBentoGrid = [ 
-        { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", 
+    const projectsForBentoGrid : BentoBoxGridItem[] = [
+        { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1",
             children: ( 
-                <> <h2 className="text-xl font-semibold mb-2">NAME</h2> 
-                <p className="text-gray-600 flex-1">BIG OBVIOUS NAME</p> 
+                <> <h2 className="text-xl font-semibold mb-2">MY TITLE</h2> 
+                <p className="text-gray-600 flex-1">LIKE CIVIL/SOFT ENG</p> 
                 </> 
             ), 
         },
-        { colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1",
+        { colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1", backgroundColor: 'bg-purple',
             children: ( 
-                <> <h2 className="text-xl font-semibold mb-2">IMPORTANT TITLES I HAVE?</h2>
-                <p className="text-gray-600 flex-1">LIKE SOFTWARE/CIVIL ENG</p> 
+                <> <h2 className="text-xl font-semibold mb-2">NAME</h2>
+                <p className="text-gray-600 flex-1">BIG OBVIOUS NAME</p> 
                 </> 
             ),
         }, 
