@@ -17,8 +17,8 @@ export default function BentoBoxGrid({ items }: BentoBoxGridProps) {
       {items.map((item, idx) => (
         <div
           key={idx}
-          className={`flex flex-col justify-between bg-white shadow-md rounded-lg
-                      p-3 md:p-4 lg:p-6 transition-all duration-300
+          className={`flex flex-col justify-between bg-white shadow-[8px_8px_0px_rgba(0,0,0,1)] border-8 border-black rounded-lg
+                      p-3 md:p-4 lg:p-6 transition-all duration-300 
                       hover:scale-105 hover:shadow-xl
                       ${item.colSpanClass ?? ""} ${item.rowSpanClass ?? ""}`}
         >
