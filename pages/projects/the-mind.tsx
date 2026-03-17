@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import BentoBoxGrid, { BentoBoxGridItem } from "../components/BentoBoxGrid";
+import BentoBoxGrid, { BentoBoxGridItem } from "../../components/BentoBoxGrid";
 
 export default function MindPage() {
   const router = useRouter();
