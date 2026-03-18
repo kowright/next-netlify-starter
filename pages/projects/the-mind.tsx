@@ -20,20 +20,20 @@ export default function MindPage() {
             </> 
         ),
     }, 
-        { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
+        { colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1", 
         children: ( 
             <> <h2 className="text-xl font-semibold mb-2">LINK</h2> 
             <p className="text-gray-600 flex-1">Square card</p>
             </> 
         ), 
-    },    { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
+    },    { colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1", 
         children: ( 
             <> <h2 className="text-xl font-semibold mb-2">HOME</h2> 
             <p className="text-gray-600 flex-1">OR ALL PROJECTS?</p>
             </> 
         ), 
     }, 
-            { colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-1", 
+            { colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-2 lg:row-span-1", 
         children: ( 
             <> <h2 className="text-xl font-semibold mb-2">STACK</h2> 
             <p className="text-gray-600 flex-1">NAME EVERY N ANYTHING</p>
