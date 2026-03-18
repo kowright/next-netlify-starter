@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import BentoItemBox from "./BentoItemBox";
 
-type BentoBoxGridItem = {
+export type BentoBoxGridItem = {
   colSpanClass?: string;
   rowSpanClass?: string;
   backgroundColor?: string;
