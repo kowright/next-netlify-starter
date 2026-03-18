@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import BentoBoxGrid, { BentoBoxGridItem } from "../../components/BentoBoxGrid"
+import Layout from "../../components/Layout";
 
 export default function ProjectsPage() {
   const router = useRouter();
@@ -79,8 +80,6 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-gray-50 p-6 md:p-12 overflow-auto lg:overflow-hidden flex flex-col items-center">
-      <BentoBoxGrid items={projectsForBentoGrid} />
-    </main>
+    <Layout items={projectsForBentoGrid} />
   );
 }
