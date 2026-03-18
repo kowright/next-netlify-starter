@@ -18,14 +18,14 @@ export default function Home() {
                 </> 
             ),
         }, 
-        { colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1", 
+        { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
             children: ( 
                 <> <h2 className="text-xl font-semibold mb-2">ABOUT ME</h2> 
                 <p className="text-gray-600 flex-1">LINKS OUT</p> 
                 </> 
             ), 
         }, 
-        { colSpanClass: "col-span-1 lg:col-span-3", rowSpanClass: "row-span-3", 
+        { colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3", 
             children: ( 
                 <> <h2 className="text-xl font-semibold mb-2">CAROUSEL HERE THAT YOU CAN CONTROL AND IT LINKS OUT</h2> 
                 <p className="text-gray-600 flex-1">MAYBE A BUTTON SOMEWHERE TO JUST GO TO GENERAL PROJECTS</p>
