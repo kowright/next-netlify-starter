@@ -32,8 +32,8 @@ export default function ProjectsPage() {
         { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
        children: ( 
             <> 
-                <h2 className="text-xl font-semibold mb-2">SOMETHING ELSE</h2> 
-                <p className="text-gray-600 flex-1">TO CENTER PAGE TITLE</p> 
+                <h2 className="text-xl font-semibold mb-2">LINKEDIN?</h2> 
+                <p className="text-gray-600 flex-1">THESE OTHER PAGES GO TO GITHUB</p> 
             </> 
         ), 
     }, 
