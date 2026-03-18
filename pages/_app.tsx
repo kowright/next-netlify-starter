@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter", // optional (for Tailwind)
-  weight: ["400", "600", "700"],
+  weight: ["400", "600", "700", "800", "900"],
 });
 
 function Application({ Component, pageProps }) {

@@ -7,7 +7,7 @@ export default function AboutPage() {
 
     const projectsForBentoGrid : BentoBoxGridItem[] = [ 
     { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-3", 
-        children: ( 
+        content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">STORY</h2> 
                 <p className="text-gray-600 flex-1">WORDS</p> 
@@ -18,7 +18,7 @@ export default function AboutPage() {
 
 
     { colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1 lg:row-span-1", 
-       children: ( 
+       content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">GITHUB</h2> 
                 <p className="text-gray-600 flex-1">ICON</p> 
@@ -26,14 +26,14 @@ export default function AboutPage() {
         ), 
     },
             { colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1 lg:row-span-1", 
-        children: ( 
+        content: ( 
             <> <h2 className="text-xl font-semibold mb-2">LINKEDIN</h2> 
             <p className="text-gray-600 flex-1">ICON</p> 
             </> 
         ), 
     },
             { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", 
-        children: ( 
+        content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">FRONTEND</h2> 
                 <p className="text-gray-600 flex-1">SKILLS</p> 
@@ -41,7 +41,7 @@ export default function AboutPage() {
         ), 
     }, 
          { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
-       children: ( 
+       content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">EMAIL</h2> 
                 <p className="text-gray-600 flex-1">IT B HERE</p> 
@@ -49,7 +49,7 @@ export default function AboutPage() {
         ), 
     }, 
     { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-1",
-       children: ( 
+       content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">BACKEND</h2> 
                 <p className="text-gray-600 flex-1">TITLE AND COMPANY</p> 
@@ -57,7 +57,7 @@ export default function AboutPage() {
         ), 
     }, 
         { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
-       children: ( 
+       content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">ABOUT PAGE</h2> 
                 <p className="text-gray-600 flex-1">NAV</p> 
@@ -66,7 +66,7 @@ export default function AboutPage() {
     }, 
 
     { colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-1", 
-       children: ( 
+       content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">TOOLS</h2> 
                 <p className="text-gray-600 flex-1">PICTURE</p> 
@@ -74,7 +74,7 @@ export default function AboutPage() {
         ), 
     }, 
              { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
-       children: ( 
+       content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">HOME</h2> 
                 <p className="text-gray-600 flex-1">BUTTON</p> 

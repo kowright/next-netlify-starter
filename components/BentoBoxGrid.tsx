@@ -1,10 +1,13 @@
 import React, { ReactNode } from "react";
+import BentoItemBox from "./BentoItemBox";
 
-export type BentoBoxGridItem = {
+type BentoBoxGridItem = {
   colSpanClass?: string;
   rowSpanClass?: string;
-  backgroundColor?: string
-  children: ReactNode;
+  backgroundColor?: string;
+  title?: string;
+  content: React.ReactNode;
+  iconName?: string;
 };
 
 type BentoBoxGridProps = {
@@ -17,17 +20,7 @@ export default function BentoBoxGrid({ items }: BentoBoxGridProps) {
                        auto-rows-[150px] lg:auto-rows-fr h-full">
       {items.map((item, idx) => {
         return (
-          <div
-            key={idx}
-            className={`flex flex-col justify-between shadow-[8px_8px_0px_rgba(0,0,0,1)] border-8 border-black rounded-lg
-                        p-3 md:p-4 lg:p-6 transition-all duration-300 
-                        hover:scale-105 hover:shadow-xl hover:z-10
-                        ${item.colSpanClass ?? ""} ${item.rowSpanClass ?? ""}
-                        ${item.backgroundColor ?? 'bg-white'}
-                        `}
-          >
-            {item.children}
-          </div>
+            <BentoItemBox key={idx} item={item} />
         );
       })}
     </div>
