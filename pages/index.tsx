@@ -1,6 +1,8 @@
 import React from "react";
 import BentoBoxGrid, { BentoBoxGridItem } from "../components/BentoBoxGrid";
 import Layout from "../components/Layout";
+import { SiGithub, SiLinkedin } from "react-icons/si";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
     const projectsForBentoGrid : BentoBoxGridItem[] = [
@@ -36,28 +38,27 @@ export default function Home() {
                 </> 
             ), 
         }, 
-        { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
+        { colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1", 
             content: ( 
-                <> 
-                     <h2 className="text-4xl font-black mb-2">GITHUB</h2> 
-                    <p className="text-gray-600 flex-1">ICON</p> 
-                </> 
+                <div className="h-full flex-1">
+                  <SiGithub size="100%" />
+                </div>
             ),
         }, 
         { colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1", 
             content: ( 
-                <> 
-                     <h2 className="text-4xl font-black mb-2">LINKEDIN</h2> 
-                    <p className="text-gray-600 flex-1">ICON</p>
-                </>
+                <div className="h-full flex-1">
+                  <FaLinkedin size='100%' className="text-blue-600"/>
+                </div>
             ), 
         }, 
-        { colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1", 
+        { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
             content: ( 
-                <> 
-                    <h2 className="text-4xl font-black mb-2">EMAIL</h2> 
-                    <p className="text-gray-600 flex-1">IT BETTA FIT</p> 
-                </> 
+                <div className="flex items-center justify-center h-full"> 
+                    <p class="break-words">
+                      kortneywright<wbr/>@email.com
+                    </p>
+                </div> 
             ), 
         }, 
     ];
