@@ -55,7 +55,7 @@ export default function Home() {
         { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
             content: ( 
                 <div className="flex items-center justify-center h-full"> 
-                    <p class="break-words">
+                    <p className="break-words">
                       kortneywright<wbr/>@email.com
                     </p>
                 </div> 
