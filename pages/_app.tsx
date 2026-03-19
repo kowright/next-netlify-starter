@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import { Inter } from "next/font/google";
+import type { AppProps } from "next/app";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -7,7 +8,7 @@ const inter = Inter({
   weight: ["400", "600", "700", "800", "900"],
 });
 
-function Application({ Component, pageProps }) {
+function Application({ Component, pageProps }: AppProps) {
 
   return(
       <main className={inter.className}>
