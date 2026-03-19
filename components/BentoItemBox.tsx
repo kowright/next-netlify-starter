@@ -1,5 +1,4 @@
-import React, { ReactNode } from "react";
-import BentoBoxGrid, { BentoBoxGridItem } from "./BentoBoxGrid";
+import { BentoBoxGridItem } from "./BentoBoxGrid";
 
 type BentoItemBoxProps = {
   item: BentoBoxGridItem;
