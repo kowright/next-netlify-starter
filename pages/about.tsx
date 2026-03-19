@@ -4,25 +4,6 @@ import { SiGithub, SiReact, SiTailwindcss, SiJira, SiLinear, SiDjango, SiEmberdo
 import { FaLinkedin } from "react-icons/fa";
 import SkillBadge from "../components/SkillBadge";
 
-type BadgeGridProps = {
-    children: React.ReactNode;
-};
-
- function BadgeGrid({ children }: BadgeGridProps) {
-    return (
-        <div
-            className="
-        grid gap-2
-        grid-cols-[repeat(auto-fit,minmax(min-content,200px))]
-
-      "
-        >
-            {children}
-        </div>
-    );
-}
-
-
 export default function AboutPage() {
 
     const projectsForBentoGrid : BentoBoxGridItem[] = [ 
