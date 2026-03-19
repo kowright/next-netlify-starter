@@ -6,11 +6,14 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
     const projectsForBentoGrid : BentoBoxGridItem[] = [
-        { colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3",
+        {
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3", backgroundColor: 'bg-orange-400',
             content: ( 
                 <> 
                     <h2 className="text-4xl font-black mb-2">SKILLS</h2> 
-                    <p className="text-gray-600 flex-1">I GOT EM</p> 
+                    <p className="text-white flex-1">white or black font? - feeling white</p> 
+                    <p className="text-black flex-1">white or black font?</p> 
+                    <h2 className="text-4xl font-black mb-2">IS ALL OF THIS TOO MUCH COLOR??</h2> 
                 </> 
             ), 
         },
@@ -18,23 +21,30 @@ export default function Home() {
             content: ( 
                 <> 
                      <h2 className="text-4xl font-black mb-2">NAME</h2>
-                    <p className="text-gray-600 flex-1">BIG OBVIOUS NAME</p> 
+                    <p className="text-white flex-1">BIG OBVIOUS NAME</p> 
+                    <p className="text-black flex-1">white or black font? - feeling white</p> 
+
                 </> 
             ),
         }, 
-        { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
+        { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-yellow-400',
             content: ( 
                 <> 
                     <h2 className="text-4xl font-black mb-2">ABOUT ME</h2> 
-                    <p className="text-gray-600 flex-1">LINKS OUT</p> 
+                    <p className="text-black flex-1">LINKS OUT</p> 
+                    <p className="text-white flex-1">white or black font? - feeling black</p> 
+
                 </> 
             ), 
         }, 
-        { colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3", 
+        {
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3", backgroundColor: 'bg-green-400', 
             content: ( 
                 <>
                      <h2 className="text-4xl font-black mb-2">CAROUSEL HERE THAT YOU CAN CONTROL AND IT LINKS OUT</h2> 
-                    <p className="text-gray-600 flex-1">MAYBE A BUTTON SOMEWHERE TO JUST GO TO GENERAL PROJECTS</p>
+                    <p className="text-white flex-1">MAYBE A BUTTON SOMEWHERE TO JUST GO TO GENERAL PROJECTS</p>
+                    <p className="text-black flex-1">white or black font? - feeling black</p> 
+
                 </> 
             ), 
         }, 
@@ -52,10 +62,10 @@ export default function Home() {
                 </div>
             ), 
         }, 
-        { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
+        { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-blue-500',
             content: ( 
                 <div className="flex items-center justify-center h-full"> 
-                    <p className="break-words">
+                    <p className="break-words text-white">
                       kortneywright<wbr/>@email.com
                     </p>
                 </div> 

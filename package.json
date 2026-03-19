@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "predeploy": "npm run lint && npm run typecheck && npm run build",
+    "check": "npm run lint && npx tsc --noEmit && npm run build"
   },
   "dependencies": {
     "next": "^16.0.7",
@@ -17,6 +19,8 @@
   "devDependencies": {
     "@types/node": "^25.5.0",
     "@types/react": "^19.2.14",
+    "@typescript-eslint/eslint-plugin": "^8.57.1",
+    "@typescript-eslint/parser": "^8.57.1",
     "autoprefixer": "^10.4.27",
     "eslint": "^10.0.3",
     "postcss": "^8.5.8",
