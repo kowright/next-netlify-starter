@@ -16,8 +16,8 @@ type BentoBoxGridProps = {
 
 export default function BentoBoxGrid({ items }: BentoBoxGridProps) {
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 w-full
-                       auto-rows-[150px] lg:auto-rows-fr h-full">
+    <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 w-full 
+                     auto-rows-[150px]">
       {items.map((item, idx) => {
         return (
             <BentoItemBox key={idx} item={item} />

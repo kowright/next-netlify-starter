@@ -1,10 +1,32 @@
 import { BentoBoxGridItem } from "../components/BentoBoxGrid"
 import Layout from "../components/Layout";
+import { SiGithub, SiReact, SiTailwindcss, SiJira, SiLinear, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiDocker, SiPython, SiFigma, SiStorybook, SiCplusplus, } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
+import SkillBadge from "../components/SkillBadge";
+
+type BadgeGridProps = {
+    children: React.ReactNode;
+};
+
+ function BadgeGrid({ children }: BadgeGridProps) {
+    return (
+        <div
+            className="
+        grid gap-2
+        grid-cols-[repeat(auto-fit,minmax(min-content,200px))]
+
+      "
+        >
+            {children}
+        </div>
+    );
+}
+
 
 export default function AboutPage() {
 
     const projectsForBentoGrid : BentoBoxGridItem[] = [ 
-    { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-3", 
+    { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-2", 
         content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">STORY</h2> 
@@ -15,71 +37,129 @@ export default function AboutPage() {
 
 
 
-    { colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1 lg:row-span-1", 
-       content: ( 
-            <> 
-                <h2 className="text-xl font-semibold mb-2">GITHUB</h2> 
-                <p className="text-gray-600 flex-1">ICON</p> 
-            </> 
-        ), 
-    },
-            { colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1 lg:row-span-1", 
+
+            { colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-1", 
         content: ( 
-            <> <h2 className="text-xl font-semibold mb-2">LINKEDIN</h2> 
-            <p className="text-gray-600 flex-1">ICON</p> 
-            </> 
-        ), 
-    },
-            { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", 
-        content: ( 
-            <> 
-                <h2 className="text-xl font-semibold mb-2">FRONTEND</h2> 
-                <p className="text-gray-600 flex-1">SKILLS</p> 
-            </> 
-        ), 
-    }, 
-         { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
-       content: ( 
-            <> 
-                <h2 className="text-xl font-semibold mb-2">EMAIL</h2> 
-                <p className="text-gray-600 flex-1">IT B HERE</p> 
-            </> 
+            <div> 
+
+                <h2 className="text-2xl font-black mb-2">FRONTEND</h2>
+
+                <div className='flex flex-row  gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
+                    <SkillBadge icon={<SiReact size={18} color="#61DAFB" />} label="REACT" />
+                    <SkillBadge icon={<SiTailwindcss size={18} color="#06B6D4" />} label="TAILWIND" />
+                    <SkillBadge icon={<SiEmberdotjs size={18} color="#E04E39" />} label="EMBER.JS" />
+                    <SkillBadge icon={<SiBlazor size={18} color="#512BD4" />} label="BLAZOR" />
+
+                </div>
+            </div> 
         ), 
     }, 
-    { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-1",
+        
+
+
+   
+        {
+            colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-1",
+            content: (
+                <div>
+                    <h2 className="text-xl font-bold mb-2">LANGUAGES</h2>
+                    <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
+                        <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
+                        <SkillBadge icon={<img src="/cSharp.svg" className="w-4 h-4" />} label="C#" />
+                        <SkillBadge icon={<SiJavascript size={18} color="#F7DF1E" />} label="JAVASCRIPT" />
+                        <SkillBadge icon={<SiPython size={18} color="#3776AB" />} label="PYTHON" />
+                        <SkillBadge icon={<SiCplusplus size={18} color="#A8B9CC" />} label="C++" />
+
+
+                    </div>
+                </div>
+            ),
+        },
+
+
+     
+
+
+
+        {
+            colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1",
+            content: (
+                <div className="h-full flex-1">
+                    <SiGithub size="100%" />
+                </div>
+            ),
+        }, 
+
+        {
+            colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1",
+            content: (
+                <div className="h-full flex-1">
+                    <FaLinkedin size='100%' className="text-blue-600" />
+                </div>
+            ),
+        }, 
+
+
+
+        {
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1 lg:row-span-1",
+            content: (
+                <div className=''>
+
+                    <h2 className="text-2xl font-black mb-2">BACKEND</h2>
+                    <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
+                        <SkillBadge icon={<SiDjango size={18} color="#092E20" />} label="DJANGO" />
+                        <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
+                        <SkillBadge icon={<SiPostgresql size={18} color="#4169E1" />} label="POSTGRES" />
+                    </div>
+                </div>
+            ),
+        },
+
+
+        {
+            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1",
+            content: (
+                <>
+                    <h2 className="text-xl font-semibold mb-2">ABOUT PAGE</h2>
+                    <p className="text-gray-600 flex-1">NAV</p>
+                </>
+            ),
+        },
+
+
+       
+
+    { colSpanClass: "col-span-2 lg:col-span-5", rowSpanClass: "row-span-2 lg:row-span-1", 
        content: ( 
-            <> 
-                <h2 className="text-xl font-semibold mb-2">BACKEND</h2> 
-                <p className="text-gray-600 flex-1">TITLE AND COMPANY</p> 
-            </> 
-        ), 
-    }, 
-        { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
-       content: ( 
-            <> 
-                <h2 className="text-xl font-semibold mb-2">ABOUT PAGE</h2> 
-                <p className="text-gray-600 flex-1">NAV</p> 
-            </> 
+            <div> 
+               <h2 className="text-2xl font-black">TOOLS</h2>
+               <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
+                   <SkillBadge icon={<SiJira size={18} color="#0052CC" />} label="JIRA" />
+                   <SkillBadge icon={<SiLinear size={18} color="#5E6AD2" />} label="LINEAR" />
+                   <SkillBadge icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
+                   <SkillBadge icon={<SiDocker size={18} color="#2496ED" />} label="DOCKER" />
+                   <SkillBadge icon={<SiFigma size={18} color="#F24E1E" />} label="FIGMA" />
+                   <SkillBadge icon={<SiStorybook size={18} color="#FF4785" />} label="STORYBOOK" />
+                   <SkillBadge icon={<SiPostman size={18} color="#FF4785" />} label="POSTMAN" />
+               </div>
+            </div> 
         ), 
     }, 
 
-    { colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-1", 
-       content: ( 
-            <> 
-                <h2 className="text-xl font-semibold mb-2">TOOLS</h2> 
-                <p className="text-gray-600 flex-1">PICTURE</p> 
-            </> 
-        ), 
-    }, 
-             { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", 
-       content: ( 
-            <> 
-                <h2 className="text-xl font-semibold mb-2">HOME</h2> 
-                <p className="text-gray-600 flex-1">BUTTON</p> 
-            </> 
-        ), 
-    }, 
-   
+        {
+            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-yellow-400',
+            content: (
+                <div className="flex items-center justify-center h-full">
+                    <p className="break-words text-black">
+                        kortneywright<wbr />@email.com
+                    </p>
+                </div>
+            ),
+        }, 
+
+
+
   ];
 
   return (
