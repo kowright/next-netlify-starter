@@ -1,9 +1,7 @@
-import { useRouter } from "next/router";
 import { BentoBoxGridItem } from "../../components/BentoBoxGrid"
 import Layout from "../../components/Layout";
 
 export default function ProjectsPage() {
-  const router = useRouter();
 
     const projectsForBentoGrid : BentoBoxGridItem[] = [ 
     { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-2", 
