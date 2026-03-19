@@ -1,8 +1,7 @@
-import React from "react";
-import BentoBoxGrid, { BentoBoxGridItem } from "../components/BentoBoxGrid";
+import { BentoBoxGridItem } from "../components/BentoBoxGrid";
 import Layout from "../components/Layout";
 import { SiGithub } from "react-icons/si";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
     const projectsForBentoGrid : BentoBoxGridItem[] = [

@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import BentoBoxGrid, { BentoBoxGridItem } from "../../components/BentoBoxGrid"
+import { BentoBoxGridItem } from "../../components/BentoBoxGrid"
 import Layout from "../../components/Layout";
 
 export default function ProjectsPage() {
