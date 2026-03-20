@@ -57,7 +57,8 @@ export default function Home() {
                         </div> 
 
                         <div>
-                            <h2 className="text-xl font-bold mb-2">LANGUAGES</h2>
+                            <h2 className="text-2xl font-black">LANGUAGES</h2>
+
                             <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
                                 <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
                                 <SkillBadge icon={<img src="/cSharp.svg" className="w-4 h-4" />} label="C#" />
