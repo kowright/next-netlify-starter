@@ -7,7 +7,7 @@ import SkillBadge from "../components/SkillBadge";
 export default function AboutPage() {
 
     const projectsForBentoGrid : BentoBoxGridItem[] = [ 
-    { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-2", 
+    { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-3", 
         content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">STORY</h2> 
@@ -40,10 +40,10 @@ export default function AboutPage() {
 
    
         {
-            colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-1",
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1 md:row-span-2",
             content: (
                 <div>
-                    <h2 className="text-xl font-bold mb-2">LANGUAGES</h2>
+                    <h2 className="text-2xl font-black mb-2">LANGUAGES</h2>
                     <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
                         <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
                         <SkillBadge icon={<img src="/cSharp.svg" className="w-4 h-4" />} label="C#" />
@@ -60,6 +60,22 @@ export default function AboutPage() {
 
      
 
+        {
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-2",
+            content: (
+                <div>
+                    <h2 className="text-2xl font-black mb-2">GOOD NAME HERE</h2>
+
+                    <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
+
+                    <SkillBadge label="MANAGEMENT" />
+                    <SkillBadge label="UI/UX" />
+                    <SkillBadge label="VIRTUAL REALITY" />
+                    <SkillBadge label="REST API" />
+                    </div>
+                </div>
+            ),
+        },
 
 
         {
@@ -69,7 +85,7 @@ export default function AboutPage() {
                     <SiGithub size="100%" />
                 </div>
             ),
-        }, 
+        },
 
         {
             colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1",
@@ -79,7 +95,6 @@ export default function AboutPage() {
                 </div>
             ),
         }, 
-
 
 
         {
@@ -111,7 +126,7 @@ export default function AboutPage() {
 
        
 
-    { colSpanClass: "col-span-2 lg:col-span-5", rowSpanClass: "row-span-2 lg:row-span-1", 
+    { colSpanClass: "col-span-2 lg:col-span-6", rowSpanClass: "row-span-2 lg:row-span-1", 
        content: ( 
             <div> 
                <h2 className="text-2xl font-black">TOOLS</h2>
@@ -128,16 +143,6 @@ export default function AboutPage() {
         ), 
     }, 
 
-        {
-            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-yellow-400',
-            content: (
-                <div className="flex items-center justify-center h-full">
-                    <p className="break-words text-black">
-                        kortneywright<wbr />@email.com
-                    </p>
-                </div>
-            ),
-        }, 
 
 
 

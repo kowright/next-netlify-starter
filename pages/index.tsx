@@ -17,7 +17,7 @@ function PageLinkIcon() {
 export default function Home() {
     const projectsForBentoGrid : BentoBoxGridItem[] = [
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4 md:row-span-4 lg:row-span-4 xl:row-span-4 2xl:row-span-3" , backgroundColor: 'bg-orange-400',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4 md:row-span-4 lg:row-span-4 xl:row-span-4 2xl:row-span-4" , backgroundColor: 'bg-orange-400',
             content: ( 
                 <div className="flex flex-col h-full">
                     <h2 className="text-4xl font-black mb-2">TOP SKILLS</h2>
@@ -86,7 +86,7 @@ export default function Home() {
             ), 
         }, 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-4 xl:row-span-4 2xl:row-span-3", 
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-4 xl:row-span-4 2xl:row-span-4", 
             content: ( 
                 <>
                      <h2 className="text-4xl font-black mb-2">PROJECTS</h2> 
