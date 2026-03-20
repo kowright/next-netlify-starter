@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import { SiReact, SiTailwindcss, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiFigma, SiStorybook } from "react-icons/si";
 import SkillBadge from "../components/SkillBadge";
 import ImageCarousel from "../components/ImageCarousel";
-import { GithubBox, LinkedInBox } from "../components/BoxUtil";
+import { GithubBox, LinkedInBox, NavBox } from "../components/BoxUtil";
 import { FaLink } from "react-icons/fa";
 
 export default function Home() {
@@ -14,10 +14,10 @@ export default function Home() {
         "/cSharp.svg"
     ]
 
-    const projectsForBentoGrid : BentoBoxGridItem[] = [
+    const projectsForBentoGrid: BentoBoxGridItem[] = [
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4 md:row-span-4 lg:row-span-4 xl:row-span-4 2xl:row-span-4" , backgroundColor: 'bg-orange-400',
-            content: ( 
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4 md:row-span-4 lg:row-span-4 xl:row-span-4 2xl:row-span-4", backgroundColor: 'bg-orange-400',
+            content: (
                 <div className="flex flex-col h-full">
                     <h2 className="text-4xl font-black mb-2">TOP SKILLS</h2>
                     <div className="flex flex-col flex-1 justify-around">
@@ -33,7 +33,7 @@ export default function Home() {
                                 <SkillBadge icon={<SiBlazor size={18} color="#512BD4" />} label="BLAZOR" />
 
                             </div>
-                        </div> 
+                        </div>
 
                         <div className=''>
 
@@ -54,7 +54,7 @@ export default function Home() {
                                 <SkillBadge icon={<SiStorybook size={18} color="#FF4785" />} label="STORYBOOK" />
                                 <SkillBadge icon={<SiPostman size={18} color="#FF4785" />} label="POSTMAN" />
                             </div>
-                        </div> 
+                        </div>
 
                         <div>
                             <h2 className="text-2xl font-black">LANGUAGES</h2>
@@ -66,26 +66,18 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </div> 
-            ), 
-        },
-        { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-purple',
-            content: ( 
-                <div className="flex justify-center items-center h-full"> 
-                     <h2 className="text-5xl font-black text-white mb-2 text-center">KORTNEY WRIGHT</h2>
-                </div> 
-            ),
-        }, 
-        {
-            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-blue-500',
-            content: (
-                <div className="flex relative items-center justify-center h-full w-full" >
-                    <FaLink />
-                    <p className="text-2xl lg:text-2xl xl:text-3xl font-black mb-2 ml-2 text-center" >ABOUT ME</p>
                 </div>
             ),
-            href: "/about",
         },
+        {
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-purple',
+            content: (
+                <div className="flex justify-center items-center h-full">
+                    <h2 className="text-5xl font-black text-white mb-2 text-center">KORTNEY WRIGHT</h2>
+                </div>
+            ),
+        },
+        NavBox('ABOUT ME'),
 
 
         {
