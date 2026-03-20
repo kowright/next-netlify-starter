@@ -3,14 +3,22 @@ import Layout from "../../components/Layout";
 import { FaLinkedin } from "react-icons/fa";
 import PageLinkIcon from "../../components/PageLinkIcon";
 import { FaHome } from "react-icons/fa";
+import ImageCarousel from "../../components/ImageCarousel";
 export default function ProjectsPage() {
+    const imageSources: string[] = [
+        "/cSharp.svg",
+        "/cSharp.svg",
+        "/cSharp.svg"
+    ]
 
     const projectsForBentoGrid : BentoBoxGridItem[] = [ 
     { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-2", 
         content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">NAME OF PROJECT</h2> 
-                <p className="text-gray-600 flex-1">PICTURE</p> 
+                <div className="flex-1 rounded-lg overflow-hidden">
+                    <ImageCarousel imageSources={imageSources} />
+                </div>
             </> 
         ), 
     },
@@ -18,7 +26,9 @@ export default function ProjectsPage() {
         content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">NAME OF PROJECT</h2> 
-                <p className="text-gray-600 flex-1">PICTURE</p> 
+                <div className="flex-1 rounded-lg overflow-hidden">
+                    <ImageCarousel imageSources={imageSources} />
+                </div>
             </> 
         ),
     }, 
@@ -26,7 +36,9 @@ export default function ProjectsPage() {
         content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">NAME OF PROJECT</h2> 
-                <p className="text-gray-600 flex-1">PICTURE</p> 
+                <div className="flex-1 rounded-lg overflow-hidden">
+                    <ImageCarousel imageSources={imageSources} />
+                </div>
             </> 
         ), 
     }, 
@@ -64,7 +76,9 @@ export default function ProjectsPage() {
        content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">NAME OF PROJECT</h2> 
-                <p className="text-gray-600 flex-1">PICTURE</p> 
+               <div className="flex-1 rounded-lg overflow-hidden">
+                   <ImageCarousel imageSources={imageSources} />
+               </div>
             </> 
         ), 
     },
@@ -72,7 +86,9 @@ export default function ProjectsPage() {
        content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">NAME OF PROJECT</h2> 
-                <p className="text-gray-600 flex-1">PICTURE</p> 
+               <div className="flex-1 rounded-lg overflow-hidden">
+                   <ImageCarousel imageSources={imageSources} />
+               </div>
             </> 
         ), 
     }, 
@@ -80,7 +96,9 @@ export default function ProjectsPage() {
        content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">NAME OF PROJECT</h2> 
-                <p className="text-gray-600 flex-1">PICTURE</p> 
+               <div className="flex-1 rounded-lg overflow-hidden">
+                   <ImageCarousel imageSources={imageSources} />
+               </div>
             </> 
         ), 
     }, 

@@ -19,8 +19,6 @@ export default function AboutPage() {
     },
 
 
-
-
         {
             colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-1", backgroundColor: 'bg-orange-400',
         content: ( 
@@ -28,7 +26,7 @@ export default function AboutPage() {
 
                 <h2 className="text-2xl font-black mb-2">FRONTEND</h2>
 
-                <div className='flex flex-row  gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
+                <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
                     <SkillBadge icon={<SiReact size={18} color="#61DAFB" />} label="REACT" />
                     <SkillBadge icon={<SiTailwindcss size={18} color="#06B6D4" />} label="TAILWIND" />
                     <SkillBadge icon={<SiEmberdotjs size={18} color="#E04E39" />} label="EMBER.JS" />

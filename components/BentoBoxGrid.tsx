@@ -7,7 +7,8 @@ export type BentoBoxGridItem = {
   backgroundColor?: string;
   title?: string;
   content: React.ReactNode;
-  iconName?: string;
+    iconName?: string;
+    href?: string;
 };
 
 type BentoBoxGridProps = {

@@ -7,6 +7,13 @@ import PageLinkIcon from "../components/PageLinkIcon";
 import ImageCarousel from "../components/ImageCarousel";
 
 export default function Home() {
+
+    const imageSources: string[] = [
+        "/cSharp.svg",
+        "/cSharp.svg",
+        "/cSharp.svg"
+    ]
+
     const projectsForBentoGrid : BentoBoxGridItem[] = [
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4 md:row-span-4 lg:row-span-4 xl:row-span-4 2xl:row-span-4" , backgroundColor: 'bg-orange-400',
@@ -19,7 +26,8 @@ export default function Home() {
                             <h2 className="text-2xl font-black mb-2">FRONTEND</h2>
 
                             <div className='flex flex-row  gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
-                                <SkillBadge icon={<SiReact size={18} color="#61DAFB" />} label="REACT" />
+
+                                <SkillBadge icon={<SiReact color="#61DAFB" />} label="REACT" />
                                 <SkillBadge icon={<SiTailwindcss size={18} color="#06B6D4" />} label="TAILWIND" />
                                 <SkillBadge icon={<SiEmberdotjs size={18} color="#E04E39" />} label="EMBER.JS" />
                                 <SkillBadge icon={<SiBlazor size={18} color="#512BD4" />} label="BLAZOR" />
@@ -72,22 +80,22 @@ export default function Home() {
                 <div className='flex'> 
                     <PageLinkIcon />
                     <h2 className="text-4xl lg:text-2xl xl:text-4xl font-black mb-2 ml-2 text-center">ABOUT ME</h2> 
-               
-
                 </div> 
             ), 
+            href: "/about",
         }, 
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-4 xl:row-span-4 2xl:row-span-4", 
             content: ( 
-                <div>
-                    <h2 className="text-4xl font-black mb-2">PROJECTS, fix carousel</h2> 
-                    <div className="w-full max-w-4xl mx-auto overflow-hidden rounded-lg">
+                <div className="flex flex-col h-full">
+                    <h2 className="text-4xl font-black mb-2">
+                        PROJECTS
+                    </h2>
 
-                        <ImageCarousel />
+                    <div className="flex-1 bg-red-400 rounded-lg overflow-hidden">
+                        <ImageCarousel imageSources={imageSources} />
                     </div>
-                   
-                </div> 
+                </div>
             ), 
         }, 
         { colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1", 

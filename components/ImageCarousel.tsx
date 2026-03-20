@@ -5,9 +5,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default function ImageCarousel() {
+type ImageCarouselProps = {
+    imageSources: string[];
+}
+
+export default function ImageCarousel( {imageSources} : ImageCarouselProps) {
     return (
-        <div className="w-full max-w-4xl overflow-hidden">
+        <div className="w-full h-full overflow-hidden">
         <Swiper
             modules={[Autoplay, Navigation, Pagination]}
             autoplay={{
@@ -17,17 +21,15 @@ export default function ImageCarousel() {
             navigation
             pagination={{ clickable: true }}
             loop
-            className="w-full h-full"
+                className="w-full h-full"
         >
-            <SwiperSlide>
-                <img src="/cSharp.svg" className="w-full h-full object-cover" />
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src="/cSharp.svg" className="w-full h-full object-cover" />
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src="/cSharp.svg" className="w-full h-full object-cover" />
-            </SwiperSlide>
+                {imageSources.map((image, idx) => {
+                    return (
+                        <SwiperSlide key={idx}>
+                            <img src={image} className="w-full h-full object-contain pt-4 pb-4" />
+                        </SwiperSlide>
+                    );
+                })}
             </Swiper>
         </div>
     );

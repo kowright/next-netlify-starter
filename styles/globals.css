@@ -55,7 +55,7 @@ svg {
     pointer-events: none;
 }
 
-.swiper-pagination {
+/*.swiper-pagination {
     border: 4px solid black;
     box-shadow: 4px 4px 0px black;
     border-radius: 8px;
@@ -63,7 +63,7 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 .swiper-pagination-bullet-active {
     background-color: black !important;
