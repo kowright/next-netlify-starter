@@ -3,7 +3,8 @@ import Layout from "../components/Layout";
 import { SiGithub, SiReact, SiTailwindcss, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiFigma, SiStorybook } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import SkillBadge from "../components/SkillBadge";
-import PageLinkIcon  from "../components/PageLinkIcon";
+import PageLinkIcon from "../components/PageLinkIcon";
+import ImageCarousel from "../components/ImageCarousel";
 
 export default function Home() {
     const projectsForBentoGrid : BentoBoxGridItem[] = [
@@ -79,10 +80,14 @@ export default function Home() {
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-4 xl:row-span-4 2xl:row-span-4", 
             content: ( 
-                <>
-                     <h2 className="text-4xl font-black mb-2">PROJECTS</h2> 
+                <div>
+                    <h2 className="text-4xl font-black mb-2">PROJECTS, fix carousel</h2> 
+                    <div className="w-full max-w-4xl mx-auto overflow-hidden rounded-lg">
 
-                </> 
+                        <ImageCarousel />
+                    </div>
+                   
+                </div> 
             ), 
         }, 
         { colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1", 
