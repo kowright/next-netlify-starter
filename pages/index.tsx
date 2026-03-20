@@ -4,7 +4,6 @@ import { SiReact, SiTailwindcss, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescri
 import SkillBadge from "../components/SkillBadge";
 import ImageCarousel from "../components/ImageCarousel";
 import { GithubBox, LinkedInBox, NavBox } from "../components/BoxUtil";
-import { FaLink } from "react-icons/fa";
 
 export default function Home() {
 
