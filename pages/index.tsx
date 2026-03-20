@@ -3,16 +3,7 @@ import Layout from "../components/Layout";
 import { SiGithub, SiReact, SiTailwindcss, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiFigma, SiStorybook } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import SkillBadge from "../components/SkillBadge";
-import { FaLink } from "react-icons/fa";
-
-function PageLinkIcon() {
-    return (
-        <div className="absolute">
-            <FaLink />
-        </div>
-    )
-}
-
+import PageLinkIcon  from "../components/PageLinkIcon";
 
 export default function Home() {
     const projectsForBentoGrid : BentoBoxGridItem[] = [

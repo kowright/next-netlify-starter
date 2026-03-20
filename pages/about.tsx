@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { SiGithub, SiReact, SiTailwindcss, SiJira, SiLinear, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiDocker, SiPython, SiFigma, SiStorybook, SiCplusplus, } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import SkillBadge from "../components/SkillBadge";
+import PageLinkIcon from "../components/PageLinkIcon";
 
 export default function AboutPage() {
 
@@ -11,7 +12,7 @@ export default function AboutPage() {
         content: ( 
             <> 
                 <h2 className="text-xl font-semibold mb-2">STORY</h2> 
-                <p className="text-gray-600 flex-1">WORDS</p> 
+                <p className="text-gray-600 flex-1">THERE IS NO HOME PAGE ICON HERE OOPS</p> 
             </> 
         ), 
     },
@@ -82,16 +83,21 @@ export default function AboutPage() {
             colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1",
             content: (
                 <div className="h-full flex-1">
+                    <PageLinkIcon />
+
                     <SiGithub size="100%" />
                 </div>
             ),
-        },
+        }, 
 
         {
             colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1",
             content: (
-                <div className="h-full flex-1">
+                <div className="h-full flex-1 flex">
+                    <PageLinkIcon />
+
                     <FaLinkedin size='100%' className="text-blue-600" />
+
                 </div>
             ),
         }, 
