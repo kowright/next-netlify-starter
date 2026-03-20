@@ -13,6 +13,7 @@ export default function AboutPage() {
             <> 
                 <h2 className="text-xl font-semibold mb-2">STORY</h2> 
                 <p className="text-gray-600 flex-1">THERE IS NO HOME PAGE ICON HERE OOPS</p> 
+                <p className="text-gray-600 flex-1">WHICH BOX SHOULD NOT GET COLOR?</p> 
             </> 
         ), 
     },
@@ -20,7 +21,8 @@ export default function AboutPage() {
 
 
 
-            { colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-1", 
+        {
+            colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-1", backgroundColor: 'bg-orange-400',
         content: ( 
             <div> 
 
@@ -62,7 +64,7 @@ export default function AboutPage() {
      
 
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-2",
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-2", backgroundColor: 'bg-green-400',
             content: (
                 <div>
                     <h2 className="text-2xl font-black mb-2">GOOD NAME HERE</h2>
@@ -104,7 +106,7 @@ export default function AboutPage() {
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1 lg:row-span-1",
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1 lg:row-span-1", backgroundColor: 'bg-yellow-400',
             content: (
                 <div className=''>
 
@@ -122,17 +124,19 @@ export default function AboutPage() {
         {
             colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1",
             content: (
-                <>
-                    <h2 className="text-xl font-semibold mb-2">ABOUT PAGE</h2>
-                    <p className="text-gray-600 flex-1">NAV</p>
-                </>
+                <div className='flex justify-center items-center'>
+                    <h2 className="text-4xl lg:text-2xl xl:text-4xl font-black mb-2 ml-2 text-center">ABOUT ME</h2>
+
+
+                </div>
             ),
         },
 
 
        
 
-    { colSpanClass: "col-span-2 lg:col-span-6", rowSpanClass: "row-span-2 lg:row-span-1", 
+        {
+            colSpanClass: "col-span-2 lg:col-span-6", rowSpanClass: "row-span-2 lg:row-span-1", backgroundColor: 'bg-blue-500',
        content: ( 
             <div> 
                <h2 className="text-2xl font-black">TOOLS</h2>

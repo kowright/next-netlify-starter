@@ -42,7 +42,7 @@ export default function ProjectsPage() {
                 </div>
             ),
         }, 
-        { colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-1 lg:row-span-1", 
+        { colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-1 lg:row-span-1", backgroundColor: 'bg-orange-400',
         content: ( 
             <div className='flex items-center justify-center h-full'> 
                 <h2 className="text-4xl font-black mb-2 text-center">PROJECTS</h2>

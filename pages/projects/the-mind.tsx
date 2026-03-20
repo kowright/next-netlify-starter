@@ -20,7 +20,7 @@ export default function MindPage() {
             <>
                 <h2 className="text-4xl font-black mb-2">THE MIND</h2>
 
-            <p className="text-gray-600 flex-1">2026</p> 
+                <p className="text-gray-600 flex-1">2026</p> 
             </> 
         ),
     }, 

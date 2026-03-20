@@ -62,7 +62,7 @@ export default function Home() {
         { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-purple',
             content: ( 
                 <div className="flex justify-center items-center h-full"> 
-                     <h2 className="text-5xl font-black text-white mb-2">KORTNEY WRIGHT</h2>
+                     <h2 className="text-5xl font-black text-white mb-2 text-center">KORTNEY WRIGHT</h2>
                 </div> 
             ),
         }, 
@@ -70,7 +70,7 @@ export default function Home() {
             content: ( 
                 <div className='flex'> 
                     <PageLinkIcon />
-                    <h2 className="text-4xl lg:text-2xl xl:text-4xl font-black mb-2 ml-2">ABOUT ME</h2> 
+                    <h2 className="text-4xl lg:text-2xl xl:text-4xl font-black mb-2 ml-2 text-center">ABOUT ME</h2> 
                
 
                 </div> 
@@ -107,8 +107,8 @@ export default function Home() {
         { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-yellow-400',
             content: ( 
                 <div className="flex items-center justify-center h-full"> 
-                    <p className="break-words text-center text-black">
-                      kortneywright<wbr/>@email.com
+                    <p className="break-words text-center text-black font-black">
+                        kortneywright<wbr />@email.com
                     </p>
                 </div> 
             ), 
