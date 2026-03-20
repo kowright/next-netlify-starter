@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import { SiReact, SiTailwindcss, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiFigma, SiStorybook } from "react-icons/si";
 import SkillBadge from "../components/SkillBadge";
 import ImageCarousel from "../components/ImageCarousel";
-import { NavBox, GithubBox, LinkedInBox } from "../components/BoxUtil";
+import { GithubBox, LinkedInBox } from "../components/BoxUtil";
 import { FaLink } from "react-icons/fa";
 
 export default function Home() {
