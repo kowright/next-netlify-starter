@@ -2,7 +2,7 @@ import { FaHome } from "react-icons/fa";
 import { BentoBoxGridItem } from "../../components/BentoBoxGrid";
 import Layout from "../../components/Layout";
 import PageLinkIcon from "../../components/PageLinkIcon";
-import { SiBlazor, SiGithub, SiNodedotjs, SiReact } from "react-icons/si";
+import { SiGithub, SiNodedotjs, SiReact } from "react-icons/si";
 import SkillBadge from "../../components/SkillBadge";
 
 export default function MindPage() {
