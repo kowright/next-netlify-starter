@@ -1,10 +1,10 @@
 import { BentoBoxGridItem } from "../components/BentoBoxGrid";
 import Layout from "../components/Layout";
-import { SiGithub, SiReact, SiTailwindcss, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiFigma, SiStorybook } from "react-icons/si";
-import { FaLinkedin } from "react-icons/fa";
+import { SiReact, SiTailwindcss, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiFigma, SiStorybook } from "react-icons/si";
 import SkillBadge from "../components/SkillBadge";
-import PageLinkIcon from "../components/PageLinkIcon";
 import ImageCarousel from "../components/ImageCarousel";
+import { NavBox, GithubBox, LinkedInBox } from "../components/BoxUtil";
+import { FaLink } from "react-icons/fa";
 
 export default function Home() {
 
@@ -75,15 +75,18 @@ export default function Home() {
                 </div> 
             ),
         }, 
-        { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-blue-500',
-            content: ( 
-                <div className='flex'> 
-                    <PageLinkIcon />
-                    <h2 className="text-4xl lg:text-2xl xl:text-4xl font-black mb-2 ml-2 text-center">ABOUT ME</h2> 
-                </div> 
-            ), 
+        {
+            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-blue-500',
+            content: (
+                <div className="flex relative items-center justify-center h-full w-full" >
+                    <FaLink />
+                    <p className="text-2xl lg:text-2xl xl:text-3xl font-black mb-2 ml-2 text-center" >ABOUT ME</p>
+                </div>
+            ),
             href: "/about",
-        }, 
+        },
+
+
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-4 xl:row-span-4 2xl:row-span-4", 
             content: ( 
@@ -92,31 +95,14 @@ export default function Home() {
                         PROJECTS
                     </h2>
 
-                    <div className="flex-1 bg-red-400 rounded-lg overflow-hidden">
+                    <div className="flex-1 rounded-lg overflow-hidden">
                         <ImageCarousel imageSources={imageSources} />
                     </div>
                 </div>
             ), 
         }, 
-        { colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1", 
-            content: ( 
-                <div className="h-full flex-1">
-                    <PageLinkIcon />
-
-                  <SiGithub size="100%" />
-                </div>
-            ),
-        }, 
-        { colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1", 
-            content: ( 
-                <div className="h-full flex-1 flex">
-                    <PageLinkIcon />
-            
-                    <FaLinkedin size='100%' className="text-blue-600" />
-               
-                </div>
-            ), 
-        }, 
+        GithubBox(),
+        LinkedInBox,
         { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-yellow-400',
             content: ( 
                 <div className="flex items-center justify-center h-full"> 

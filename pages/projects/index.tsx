@@ -1,9 +1,8 @@
 import { BentoBoxGridItem } from "../../components/BentoBoxGrid"
 import Layout from "../../components/Layout";
-import { FaLinkedin } from "react-icons/fa";
-import PageLinkIcon from "../../components/PageLinkIcon";
-import { FaHome } from "react-icons/fa";
 import ImageCarousel from "../../components/ImageCarousel";
+import { HomeBox, LinkedInBox } from "../../components/BoxUtil";
+
 export default function ProjectsPage() {
     const imageSources: string[] = [
         "/cSharp.svg",
@@ -43,17 +42,8 @@ export default function ProjectsPage() {
         ), 
     }, 
 
-        {
-            colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1",
-            content: (
-                <div className="h-full flex-1 flex">
-                    <PageLinkIcon />
+ LinkedInBox, 
 
-                    <FaLinkedin size='100%' className="text-blue-600" />
-
-                </div>
-            ),
-        }, 
         { colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-1 lg:row-span-1", backgroundColor: 'bg-orange-400',
         content: ( 
             <div className='flex items-center justify-center h-full'> 
@@ -61,17 +51,9 @@ export default function ProjectsPage() {
             </div> 
         ), 
     },
-        {
-            colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1",
-            content: (
-                <div className="h-full flex-1 flex">
-                    <PageLinkIcon />
 
-                    <FaHome size='100%' className="text-black" />
+    HomeBox,
 
-                </div>
-            ),
-        },  
     { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-2", 
        content: ( 
             <> 

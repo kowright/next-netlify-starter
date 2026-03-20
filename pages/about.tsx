@@ -1,9 +1,8 @@
 import { BentoBoxGridItem } from "../components/BentoBoxGrid"
 import Layout from "../components/Layout";
-import { SiGithub, SiReact, SiTailwindcss, SiJira, SiLinear, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiDocker, SiPython, SiFigma, SiStorybook, SiCplusplus, } from "react-icons/si";
-import { FaLinkedin } from "react-icons/fa";
+import { SiReact, SiTailwindcss, SiJira, SiLinear, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiDocker, SiPython, SiFigma, SiStorybook, SiCplusplus, } from "react-icons/si";
 import SkillBadge from "../components/SkillBadge";
-import PageLinkIcon from "../components/PageLinkIcon";
+import { GithubBox, LinkedInBox } from "../components/BoxUtil";
 
 export default function AboutPage() {
 
@@ -78,30 +77,9 @@ export default function AboutPage() {
             ),
         },
 
+GithubBox(),
 
-        {
-            colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1",
-            content: (
-                <div className="h-full flex-1">
-                    <PageLinkIcon />
-
-                    <SiGithub size="100%" />
-                </div>
-            ),
-        }, 
-
-        {
-            colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1",
-            content: (
-                <div className="h-full flex-1 flex">
-                    <PageLinkIcon />
-
-                    <FaLinkedin size='100%' className="text-blue-600" />
-
-                </div>
-            ),
-        }, 
-
+LinkedInBox,
 
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1 lg:row-span-1", backgroundColor: 'bg-yellow-400',

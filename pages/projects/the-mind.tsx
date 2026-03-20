@@ -1,9 +1,8 @@
-import { FaHome } from "react-icons/fa";
 import { BentoBoxGridItem } from "../../components/BentoBoxGrid";
 import Layout from "../../components/Layout";
-import PageLinkIcon from "../../components/PageLinkIcon";
-import { SiGithub, SiNodedotjs, SiReact } from "react-icons/si";
+import { SiNodedotjs, SiReact } from "react-icons/si";
 import SkillBadge from "../../components/SkillBadge";
+import { HomeBox, GithubBox } from "../../components/BoxUtil";
 
 export default function MindPage() {
 
@@ -24,28 +23,9 @@ export default function MindPage() {
             </> 
         ),
     }, 
-        {
-            colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1",
-            content: (
-                <div className="h-full flex-1">
-                    <PageLinkIcon />
-
-                    <SiGithub size="100%" color='#181717'/>
-                </div>
-            ),
-        }, 
-        {
-            colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1",
-            content: (
-                <div className="h-full flex-1 flex">
-                    <PageLinkIcon />
-
-                    <FaHome size='100%' className="text-black" />
-
-                </div>
-            ),
-        }, 
-            { colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-2 lg:row-span-1", 
+        GithubBox('https://github.com/kowright/the-mind'), 
+HomeBox,
+            { colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-1 lg:row-span-2", 
         content: ( 
             <div>
                 <h2 className="text-xl font-semibold mb-2">STACK</h2> 
@@ -58,9 +38,21 @@ export default function MindPage() {
                     <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
 
                 </div>
+
             </div>
         ), 
-    }, 
+        }, 
+
+        {
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1",
+            content: (
+                <>
+                    <h2 className="text-xl font-semibold mb-2">IMPACT</h2>
+                    {/*<p className="text-gray-600 flex-1">SUCCESS MEASURES OR STATS</p>*/}
+                    <p className="text-gray-600 flex-1">SOMETHING LIKE I AM KNOWLEDGEABLE ABOUT WEBSOCKETS AND REACT NATIVE?</p>
+                </>
+            ),
+        }, 
         { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2", 
         content: ( 
             <div>
@@ -82,15 +74,7 @@ export default function MindPage() {
     }, 
  
 
-    { colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", 
-        content: ( 
-            <>
-                <h2 className="text-xl font-semibold mb-2">IMPACT</h2> 
-                {/*<p className="text-gray-600 flex-1">SUCCESS MEASURES OR STATS</p>*/}
-                <p className="text-gray-600 flex-1">SOMETHING LIKE I AM KNOWLEDGEABLE ABOUT WEBSOCKETS AND REACT NATIVE?</p>
-            </>
-        ), 
-    }, 
+
 
   ];
 

@@ -6,24 +6,25 @@ type BentoItemBoxProps = {
 };
 
 export default function BentoItemBox({ item }: BentoItemBoxProps) {
-    const box = (
-        <div
-            className={`flex flex-col justify-between shadow-[8px_8px_0px_rgba(0,0,0,1)] border-8 border-black rounded-lg
-        p-3 md:p-4 lg:p-6 transition-all duration-300 
-        hover:scale-105 hover:shadow-xl hover:z-10
-        ${item.colSpanClass ?? ""} ${item.rowSpanClass ?? ""}
-        ${item.backgroundColor ?? "bg-white"}
-      `}
-        >
+    const baseClasses = `
+    flex flex-col justify-between shadow-[8px_8px_0px_rgba(0,0,0,1)] border-8 border-black rounded-lg
+    p-3 md:p-4 lg:p-6 transition-all duration-300 
+    hover:scale-105 hover:shadow-xl hover:z-10 h-full
+    ${item.colSpanClass ?? ""} ${item.rowSpanClass ?? ""}
+    ${item.backgroundColor ?? "bg-white"}
+  `;
+
+    if (item.href) {
+        return (
+            <Link href={item.href} className={`${baseClasses} block`}>
+                {item.content}
+            </Link>
+        );
+    }
+
+    return (
+        <div className={baseClasses}>
             {item.content}
         </div>
-    );
-
-    return item.href ? (
-        <Link href={item.href} className="block h-full">
-            {box}
-        </Link>
-    ) : (
-        box
     );
 }
