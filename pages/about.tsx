@@ -123,7 +123,7 @@ LinkedInBox,
                    <SkillBadge icon={<SiDocker size={18} color="#2496ED" />} label="DOCKER" />
                    <SkillBadge icon={<SiFigma size={18} color="#F24E1E" />} label="FIGMA" />
                    <SkillBadge icon={<SiStorybook size={18} color="#FF4785" />} label="STORYBOOK" />
-                   <SkillBadge icon={<SiPostman size={18} color="#FF4785" />} label="POSTMAN" />
+                   <SkillBadge icon={<SiPostman size={18} color="#FF6C37" />} label="POSTMAN" />
                </div>
             </div> 
         ), 

@@ -2,15 +2,27 @@ import { BentoBoxGridItem } from "../components/BentoBoxGrid";
 import Layout from "../components/Layout";
 import { SiReact, SiTailwindcss, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiFigma, SiStorybook } from "react-icons/si";
 import SkillBadge from "../components/SkillBadge";
-import ImageCarousel from "../components/ImageCarousel";
+import ImageCarousel, { ImageCarouselSlideProps } from "../components/ImageCarousel";
 import { GithubBox, LinkedInBox, NavBox } from "../components/BoxUtil";
+import Link from "next/link";
 
 export default function Home() {
 
-    const imageSources: string[] = [
-        "/cSharp.svg",
-        "/cSharp.svg",
-        "/cSharp.svg"
+    const imageSources: ImageCarouselSlideProps[] = [
+        {
+            imageSource: "/cSharp.svg",
+            linkSource: "/about"
+        },
+        {
+            imageSource: "/cSharp.svg",
+            linkSource: "/about"
+        },
+        {
+            imageSource: "/cSharp.svg",
+            linkSource: "/about"
+        },
+     
+
     ]
 
     const projectsForBentoGrid: BentoBoxGridItem[] = [
@@ -82,16 +94,15 @@ export default function Home() {
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-4 xl:row-span-4 2xl:row-span-4", 
             content: ( 
-                <div className="flex flex-col h-full">
-                    <h2 className="text-4xl font-black mb-2">
-                        PROJECTS
-                    </h2>
+                <div className="flex flex-col h-full min-h-0">
+                    <h2 className="text-4xl font-black mb-2">PROJECTS</h2>
 
                     <div className="flex-1 rounded-lg overflow-hidden">
                         <ImageCarousel imageSources={imageSources} />
                     </div>
                 </div>
             ), 
+            href: "/projects", 
         }, 
         GithubBox(),
         LinkedInBox,
