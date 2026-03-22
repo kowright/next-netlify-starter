@@ -2,30 +2,49 @@ import { BentoBoxGridItem } from "../components/BentoBoxGrid";
 import Layout from "../components/Layout";
 import { SiReact, SiTailwindcss, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiFigma, SiStorybook } from "react-icons/si";
 import SkillBadge from "../components/SkillBadge";
-import ImageCarousel, { ImageCarouselSlideProps } from "../components/ImageCarousel";
+import ImageCarousel from "../components/ImageCarousel";
 import { GithubBox, LinkedInBox, NavBox } from "../components/BoxUtil";
-import Link from "next/link";
+
 
 export default function Home() {
 
-    const imageSources: ImageCarouselSlideProps[] = [
-        {
-            imageSource: "/cSharp.svg",
-            linkSource: "/about"
-        },
-        {
-            imageSource: "/cSharp.svg",
-            linkSource: "/about"
-        },
-        {
-            imageSource: "/cSharp.svg",
-            linkSource: "/about"
-        },
+    const imageSources: string[] = [
+        
+          "/cSharp.svg",
+        "/cSharp.svg",
+        "/cSharp.svg",
      
 
     ]
 
     const projectsForBentoGrid: BentoBoxGridItem[] = [
+        {
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-purple-500',
+            content: (
+                <div className="flex justify-center items-center h-full">
+                    <h2 className="text-5xl font-black text-white mb-2 text-center">KORTNEY WRIGHT</h2>
+                </div>
+            ),
+        },
+        NavBox('ABOUT ME', '/about', 'bg-blue-500'),
+       
+
+        {
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-4 xl:row-span-4 2xl:row-span-4",
+            content: (
+                <div className="flex flex-col h-full min-h-0">
+                    <h2 className="text-4xl font-black mb-2">PROJECTS</h2>
+
+                    <div className="flex-1 rounded-lg overflow-hidden">
+                        <ImageCarousel imageSources={imageSources} />
+                    </div>
+                </div>
+            ),
+            href: "/projects",
+        }, 
+
+
+    
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4 md:row-span-4 lg:row-span-4 xl:row-span-4 2xl:row-span-4", backgroundColor: 'bg-orange-400',
             content: (
@@ -50,9 +69,9 @@ export default function Home() {
 
                             <h2 className="text-2xl font-black mb-2">BACKEND</h2>
                             <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
-                                <SkillBadge icon={<SiDjango size={18} color="#092E20" />} label="DJANGO" />
                                 <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
                                 <SkillBadge icon={<SiPostgresql size={18} color="#4169E1" />} label="POSTGRES" />
+                                <SkillBadge icon={<SiDjango size={18} color="#092E20" />} label="DJANGO" />
                             </div>
                         </div>
 
@@ -80,33 +99,10 @@ export default function Home() {
                 </div>
             ),
         },
-        {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-purple',
-            content: (
-                <div className="flex justify-center items-center h-full">
-                    <h2 className="text-5xl font-black text-white mb-2 text-center">KORTNEY WRIGHT</h2>
-                </div>
-            ),
-        },
-        NavBox('ABOUT ME'),
 
-
-        {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-4 xl:row-span-4 2xl:row-span-4", 
-            content: ( 
-                <div className="flex flex-col h-full min-h-0">
-                    <h2 className="text-4xl font-black mb-2">PROJECTS</h2>
-
-                    <div className="flex-1 rounded-lg overflow-hidden">
-                        <ImageCarousel imageSources={imageSources} />
-                    </div>
-                </div>
-            ), 
-            href: "/projects", 
-        }, 
         GithubBox(),
         LinkedInBox,
-        { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-yellow-400',
+        { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-yellow-300',
             content: ( 
                 <div className="flex items-center justify-center h-full"> 
                     <p className="break-words text-center text-black font-black">

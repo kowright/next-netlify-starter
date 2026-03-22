@@ -6,9 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-        colors: {
-            purple: "#A78BFA",
-        },
+        //colors: {
+        //    purple: "#A78BFA",
+        //},
     },
   },
   safelist: [

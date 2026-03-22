@@ -1,62 +1,63 @@
 import { BentoBoxGridItem } from "../../components/BentoBoxGrid"
 import Layout from "../../components/Layout";
-import ImageCarousel, { ImageCarouselSlideProps } from "../../components/ImageCarousel";
+import ImageCarousel from "../../components/ImageCarousel";
 import { HomeBox, LinkedInBox } from "../../components/BoxUtil";
 import SkillBadge from "../../components/SkillBadge";
-import { SiReact, SiTailwindcss, SiEmberdotjs, SiBlazor } from "react-icons/si";
+import { SiReact, SiTailwindcss, SiTypescript, SiNodedotjs, SiJavascript, SiPostgresql, SiUnity } from "react-icons/si";
 
 export default function ProjectsPage() {
-    const imageSources: ImageCarouselSlideProps[] = [
-        {
-            imageSource: "/cSharp.svg",
-            linkSource: "/about"
-        },
-        {
-            imageSource: "/cSharp.svg",
-            linkSource: "/about"
-        },
-        {
-            imageSource: "/cSharp.svg",
-            linkSource: "/about"
-        },
+    const imageSources: string[] = [
+
+        "/cSharp.svg",
+        "/cSharp.svg",
+        "/cSharp.svg",
+
+
     ]
+
+    const theMindImageSources: string[] = [
+        "/the-mind/the-mind-1.jpg",
+        "/the-mind/the-mind-2.jpg",
+    ]
+
 
     const projectsForBentoGrid : BentoBoxGridItem[] = [ 
     { colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2", 
         content: ( 
             <div className="flex flex-col h-full">
                 <h2 className="text-xl font-semibold mb-2">
-                    NAME OF PROJECT
+                    THE MIND
                 </h2>
                 <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
                     <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
-                        <ImageCarousel imageSources={imageSources} />
+                        <ImageCarousel imageSources={theMindImageSources} />
                     </div>
 
                     <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
 
-                        <SkillBadge keepSmall icon={<SiReact color="#61DAFB" />} label="REACT" />
-                        <SkillBadge keepSmall icon={<SiTailwindcss color="#06B6D4" />} label="TAILWIND" />
-                        <SkillBadge keepSmall icon={<SiEmberdotjs color="#E04E39" />} label="EMBER.JS" />
-                        <SkillBadge keepSmall icon={<SiBlazor color="#512BD4" />} label="BLAZOR" />
-                        <SkillBadge keepSmall icon={<SiBlazor color="#512BD4" />} label="BLAZOR" />
+                        <SkillBadge keepSmall icon={<SiReact color="#61DAFB" />} label="REACT NATIVE" />
+                        <SkillBadge keepSmall icon={<SiTailwindcss color="#06B6D4" />} label="WEBSOCKETS" />
+                        <SkillBadge keepSmall icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
+                        <SkillBadge keepSmall icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
+
                     </div>
                    
                 </div>
                
-                <p className="text-gray-600">This is a good project, ya</p> 
+                <p className="text-black">A multiplayer card game</p> 
 
 
             </div>
-        ), 
+            ), 
+           href: '/projects/the-mind',
     },
         {
             colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
                 <div className="flex flex-col h-full">
                     <h2 className="text-xl font-semibold mb-2">
-                        NAME OF PROJECT
+                        CONSTRUCTION TOUR VR
                     </h2>
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
@@ -66,11 +67,9 @@ export default function ProjectsPage() {
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
 
-                            <SkillBadge keepSmall icon={<SiReact color="#61DAFB" />} label="REACT" />
-                            <SkillBadge keepSmall icon={<SiTailwindcss color="#06B6D4" />} label="TAILWIND" />
-                            <SkillBadge keepSmall icon={<SiEmberdotjs color="#E04E39" />} label="EMBER.JS" />
-                            <SkillBadge keepSmall icon={<SiBlazor color="#512BD4" />} label="BLAZOR" />
-                            <SkillBadge keepSmall icon={<SiBlazor color="#512BD4" />} label="BLAZOR" />
+                            <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
+
+                
                         </div>
 
                     </div>
@@ -99,7 +98,7 @@ export default function ProjectsPage() {
             content: (
                 <div className="flex flex-col h-full">
                     <h2 className="text-xl font-semibold mb-2">
-                        NAME OF PROJECT
+                       MINIMAP
                     </h2>
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
@@ -108,12 +107,8 @@ export default function ProjectsPage() {
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-
-                            <SkillBadge keepSmall icon={<SiReact color="#61DAFB" />} label="REACT" />
-                            <SkillBadge keepSmall icon={<SiTailwindcss color="#06B6D4" />} label="TAILWIND" />
-                            <SkillBadge keepSmall icon={<SiEmberdotjs color="#E04E39" />} label="EMBER.JS" />
-                            <SkillBadge keepSmall icon={<SiBlazor color="#512BD4" />} label="BLAZOR" />
-                            <SkillBadge keepSmall icon={<SiBlazor color="#512BD4" />} label="BLAZOR" />
+                            <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
+                            <SkillBadge keepSmall icon={<img src="/cSharp.svg" className="w-4 h-4" />} label="C#" />
                         </div>
 
                     </div>
@@ -129,7 +124,7 @@ export default function ProjectsPage() {
             content: (
                 <div className="flex flex-col h-full">
                     <h2 className="text-xl font-semibold mb-2">
-                        NAME OF PROJECT
+                        PROJECT MANAGEMENT TOOL
                     </h2>
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
@@ -141,9 +136,13 @@ export default function ProjectsPage() {
 
                             <SkillBadge keepSmall icon={<SiReact color="#61DAFB" />} label="REACT" />
                             <SkillBadge keepSmall icon={<SiTailwindcss color="#06B6D4" />} label="TAILWIND" />
-                            <SkillBadge keepSmall icon={<SiEmberdotjs color="#E04E39" />} label="EMBER.JS" />
-                            <SkillBadge keepSmall icon={<SiBlazor color="#512BD4" />} label="BLAZOR" />
-                            <SkillBadge keepSmall icon={<SiBlazor color="#512BD4" />} label="BLAZOR" />
+                            <SkillBadge keepSmall icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
+                            <SkillBadge keepSmall label="SQL" />
+                            <SkillBadge keepSmall label="POSTMAN" />
+                            <SkillBadge keepSmall icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
+
+                            <SkillBadge keepSmall icon={<SiPostgresql size={18} color="#4169E1" />} label="POSTGRES" />
+
                         </div>
 
                     </div>
@@ -154,6 +153,155 @@ export default function ProjectsPage() {
                 </div>
             ),
         },
+        {
+            colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            content: (
+                <div className="flex flex-col h-full">
+                    <h2 className="text-xl font-semibold mb-2">
+                        PLATFORM INTEGRATION
+                    </h2>
+                    <div className="flex flex-row flex-1 min-h-0 min-w-0">
+
+                        <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
+                            <ImageCarousel imageSources={imageSources} />
+                        </div>
+
+                        <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
+                            <SkillBadge keepSmall icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
+                            <SkillBadge keepSmall icon={<SiJavascript size={18} color="#F7DF1E" />} label="JAVASCRIPT" />
+
+                            <SkillBadge keepSmall label="WEBHOOKS" />
+     
+                        </div>
+
+                    </div>
+
+                    <p className="text-gray-600">This is a good project, ya</p>
+
+
+                </div>
+            ),
+        },
+
+        {
+            colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            content: (
+                <div className="flex flex-col h-full">
+                    <h2 className="text-xl font-semibold mb-2">
+                        INDUSTRIAL AR
+                    </h2>
+                    <div className="flex flex-row flex-1 min-h-0 min-w-0">
+
+                        <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
+                            <ImageCarousel imageSources={imageSources} />
+                        </div>
+
+                        <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
+                            <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
+
+
+                        </div>
+
+                    </div>
+
+                    <p className="text-gray-600">This is a good project, ya</p>
+
+
+                </div>
+            ),
+        },
+
+        {
+            colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            content: (
+                <div className="flex flex-col h-full">
+                    <h2 className="text-xl font-semibold mb-2">
+                        3D MODELING
+                    </h2>
+                    <div className="flex flex-row flex-1 min-h-0 min-w-0">
+
+                        <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
+                            <ImageCarousel imageSources={imageSources} />
+                        </div>
+
+                        <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
+                            <SkillBadge keepSmall label="REVIT"  />
+                            <SkillBadge keepSmall label="NAVISWORKS" />
+                            <SkillBadge keepSmall label="SKETCHUP" />
+                            <SkillBadge keepSmall label="MAYA" />
+                            <SkillBadge keepSmall label="SUBSTANCE PAINTER" />
+
+                        </div>
+
+                    </div>
+
+                    <p className="text-gray-600">This is a good project, ya</p>
+
+
+                </div>
+            ),
+        },
+
+        {
+            colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            content: (
+                <div className="flex flex-col h-full">
+                    <h2 className="text-xl font-semibold mb-2">
+                        MEP COORDINATION
+                    </h2>
+                    <div className="flex flex-row flex-1 min-h-0 min-w-0">
+
+                        <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
+                            <ImageCarousel imageSources={imageSources} />
+                        </div>
+
+                        <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
+                            <SkillBadge keepSmall label="REVIT" />
+                            <SkillBadge keepSmall label="NAVISWORKS" />
+                            <SkillBadge keepSmall label="BLUEBEAM" />
+
+
+                        </div>
+
+                    </div>
+
+                    <p className="text-gray-600">This is a good project, ya</p>
+
+
+                </div>
+            ),
+        },
+
+        {
+            colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            content: (
+                <div className="flex flex-col h-full">
+                    <h2 className="text-xl font-semibold mb-2">
+                        REALITY CAPTURE
+                    </h2>
+                    <div className="flex flex-row flex-1 min-h-0 min-w-0">
+
+                        <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
+                            <ImageCarousel imageSources={imageSources} />
+                        </div>
+
+                        <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
+                            <SkillBadge keepSmall label="REVIT" />
+                            <SkillBadge keepSmall label="NAVISWORKS" />
+                            <SkillBadge keepSmall label="BLUEBEAM" />
+
+
+                        </div>
+
+                    </div>
+
+                    <p className="text-gray-600">This is a good project, ya</p>
+
+
+                </div>
+            ),
+        },
+
 
   ];
 

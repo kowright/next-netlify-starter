@@ -29,19 +29,19 @@ export const LinkedInBox: BentoBoxGridItem = {
      href: "https://www.linkedin.com/in/kortney-w-a0341680/",
 }
 
-export function NavBox(title: string): BentoBoxGridItem {
+export function NavBox(title: string, link: string, color: string): BentoBoxGridItem {
     return (
         {
-            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1 md:row-span-1", backgroundColor: 'bg-blue-500',
+            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1 md:row-span-1", backgroundColor: color,
             content: (
                 <div className= "flex relative items-center justify-center h-full w-full" >
                     <div className="absolute top-0 right-0">
                         <FaLink />
                     </div>
-                    <p className="text-2xl lg:text-xl xl:text-2xl font-black mb-2 ml-2" > { title } </p>
+                    <p className="text-2xl lg:text-xl xl:text-2xl font-black mb-2 ml-2 text-center" > { title } </p>
                 </div>
                 ),
-            href: "/about",
+            href: link,
         }
     )
 }
