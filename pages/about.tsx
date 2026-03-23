@@ -8,7 +8,7 @@ export default function AboutPage() {
 
     const projectsForBentoGrid : BentoBoxGridItem[] = [ 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-3", backgroundColor: 'bg-red-300',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-3", backgroundColor: 'bg-[#F57195]',
         content: ( 
             <div> 
                 <h2 className="text-2xl font-black mb-2">MY STORY</h2>
@@ -16,7 +16,7 @@ export default function AboutPage() {
                     <div className="relative">
                         <div className="absolute -left-[2.4rem] top-[0.4rem] w-6 h-6 bg-black rounded-full" />
                         <div className="bg-white border-4 font-bold p-1 border-black rounded-lg">
-                            2017 - Graduate College in Civil Engineering
+                            2017 - Graduated College in Civil Engineering
                         </div>
                     </div>
                     <div className="relative">
@@ -50,7 +50,7 @@ export default function AboutPage() {
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1", backgroundColor: 'bg-orange-400',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1", backgroundColor: 'bg-[#F59733]',
         content: ( 
             <div> 
 
@@ -71,7 +71,7 @@ export default function AboutPage() {
 
    
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1 md:row-span-2",
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1 md:row-span-2", backgroundColor: 'bg-[#8AD86E]',
             content: (
                 <div>
                     <h2 className="text-2xl font-black mb-2">LANGUAGES</h2>
@@ -98,7 +98,7 @@ GithubBox(),
 LinkedInBox,
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1 lg:row-span-1", backgroundColor: 'bg-yellow-400',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1 lg:row-span-1", backgroundColor: 'bg-[#FFF1B0]',
             content: (
                 <div className=''>
 
@@ -134,7 +134,7 @@ LinkedInBox,
         //},
 
         {
-            colSpanClass: "col-span-1 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-blue-400',
+            colSpanClass: "col-span-1 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-[#73B2F4]',
             content: (
                 <div className='flex justify-center items-center h-full'>
                     <h2 className="text-4xl lg:text-2xl xl:text-4xl font-black mb-2 ml-2 text-center">ABOUT ME</h2>
@@ -164,7 +164,7 @@ LinkedInBox,
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: '',
+            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-[#C28AE0]',
             content: (
                 <div className="flex items-center justify-center h-full">
                     <p className="break-words text-center text-black font-black">

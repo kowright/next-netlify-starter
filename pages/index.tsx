@@ -1,12 +1,48 @@
+"use client";
+
 import { BentoBoxGridItem } from "../components/BentoBoxGrid";
 import Layout from "../components/Layout";
 import { SiReact, SiTailwindcss, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiFigma, SiStorybook } from "react-icons/si";
 import SkillBadge from "../components/SkillBadge";
 import ImageCarousel from "../components/ImageCarousel";
 import { GithubBox, LinkedInBox, NavBox } from "../components/BoxUtil";
+import PageLinkIcon from "../components/PageLinkIcon";
+import { useEffect, useState } from "react";
 
 
 export default function Home() {
+
+    const [showSplash, setShowSplash] = useState(null);
+    const [fadeOut, setFadeOut] = useState(false);
+
+    useEffect(() => {
+        const hasSeenSplash = sessionStorage.getItem("seenSplash");
+
+        if (hasSeenSplash) {
+            setShowSplash(false);
+            return;
+        }
+
+        setShowSplash(true);
+        sessionStorage.setItem("seenSplash", "true");
+
+        // Start fade out after 1.5s
+        const fadeTimer = setTimeout(() => {
+            setFadeOut(true);
+        }, 4500);
+
+        // Remove splash after fade completes
+        const removeTimer = setTimeout(() => {
+            setShowSplash(false);
+        }, 7000);
+
+        return () => {
+            clearTimeout(fadeTimer);
+            clearTimeout(removeTimer);
+        };
+    }, []);
+
+    if (showSplash === null) return null;
 
     const imageSources: string[] = [
         
@@ -19,23 +55,25 @@ export default function Home() {
 
     const projectsForBentoGrid: BentoBoxGridItem[] = [
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-purple-500',
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-[#B218E0]',
             content: (
                 <div className="flex justify-center items-center h-full">
                     <h2 className="text-5xl font-black text-white mb-2 text-center">KORTNEY WRIGHT</h2>
                 </div>
             ),
         },
-        NavBox('ABOUT ME', '/about', 'bg-blue-500'),
+        NavBox('ABOUT ME', '/about', 'bg-[#28B2F4]'),
        
 
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-4 xl:row-span-4 2xl:row-span-4",
             content: (
-                <div className="flex flex-col h-full min-h-0">
+                <div className="flex flex-col h-full min-h-0 relative">
                     <h2 className="text-4xl font-black mb-2">PROJECTS</h2>
+                    <PageLinkIcon />
 
                     <div className="flex-1 rounded-lg overflow-hidden">
+                     
                         <ImageCarousel imageSources={imageSources} />
                     </div>
                 </div>
@@ -102,7 +140,8 @@ export default function Home() {
 
         GithubBox(),
         LinkedInBox,
-        { colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-yellow-300',
+        {
+            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-[#F7E23E]',
             content: ( 
                 <div className="flex items-center justify-center h-full"> 
                     <p className="break-words text-center text-black font-black">
@@ -114,6 +153,23 @@ export default function Home() {
     ];
 
   return (
-    <Layout items={projectsForBentoGrid} />
+    
+     <>
+      {showSplash && (
+        <div
+                  className={`fixed inset-0 z-[9999] flex items-center justify-center bg-black text-white transition-opacity duration-500 ${
+            fadeOut ? "opacity-0" : "opacity-100"
+          }`}
+        >
+                  <h1 className='text-white drop-shadow-glow font-black tracking-widest text-4xl lg:text-7xl animate-pulse'>KORTNEY WRIGHT</h1>
+        </div>
+      )}
+
+      {/* Your actual page */}
+          <main>
+   
+              <Layout items={projectsForBentoGrid} />
+      </main>
+    </>
   );
 }

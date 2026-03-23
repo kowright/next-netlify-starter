@@ -74,7 +74,7 @@ export default function ProjectsPage() {
 
                     </div>
 
-                    <p className="text-gray-600">This is a good project, ya</p>
+                    <p className="text-gray-600">A virtual reality construction site for education.</p>
 
 
                 </div>
@@ -113,7 +113,7 @@ export default function ProjectsPage() {
 
                     </div>
 
-                    <p className="text-gray-600">This is a good project, ya</p>
+                    <p className="text-gray-600">A virtual reality interaction for a 3D map.</p>
 
 
                 </div>
@@ -137,11 +137,10 @@ export default function ProjectsPage() {
                             <SkillBadge keepSmall icon={<SiReact color="#61DAFB" />} label="REACT" />
                             <SkillBadge keepSmall icon={<SiTailwindcss color="#06B6D4" />} label="TAILWIND" />
                             <SkillBadge keepSmall icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
-                            <SkillBadge keepSmall label="SQL" />
-                            <SkillBadge keepSmall label="POSTMAN" />
+
                             <SkillBadge keepSmall icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
 
-                            <SkillBadge keepSmall icon={<SiPostgresql size={18} color="#4169E1" />} label="POSTGRES" />
+                        
 
                         </div>
 
@@ -152,6 +151,7 @@ export default function ProjectsPage() {
 
                 </div>
             ),
+            href: '/projects/project-management',
         },
         {
             colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",

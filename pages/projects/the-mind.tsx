@@ -16,7 +16,7 @@ export default function TheMindPage() {
 
     const projectsForBentoGrid: BentoBoxGridItem[] = [
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-3 lg:row-span-3",
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-3 lg:row-span-3", 
             content: (
                 <>
                     <h2 className="text-xl font-semibold mb-2">PICTURES</h2>
@@ -37,10 +37,10 @@ export default function TheMindPage() {
             ),
         },
         GithubBox('https://github.com/kowright/the-mind'),
-        NavBox('PROJECTS', '/projects', 'bg-[#39FF14]'),
+        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', true),
 
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-yellow-300',
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#b9e158]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold mb-2">STACK</h2>
@@ -63,11 +63,11 @@ export default function TheMindPage() {
         },
 
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-pink-300',
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#F5918D]',
             content: (
                 <>
                     <h2 className="text-xl font-semibold mb-2">IMPACT</h2>
-                    {/*<p className="text-gray-600 flex-1">SUCCESS MEASURES OR STATS</p>*/}
+                    {/*<p className="text-black flex-1">SUCCESS MEASURES OR STATS</p>*/}
                     <p>Learned how to design event-driven architectures, translating client actions into server-side events and broadcasting state updates efficiently.</p>
                     <p>Developed a deeper understanding of networking concepts such as message protocols and connection lifecycle management in multiplayer applications.</p>
                
@@ -76,7 +76,7 @@ export default function TheMindPage() {
         },
     
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-2", backgroundColor: 'bg-blue-600',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-2", backgroundColor: 'bg-[#f76135]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold mb-2 text-white">WHAT</h2>
@@ -86,15 +86,16 @@ export default function TheMindPage() {
             ),
         },
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-2", backgroundColor: 'bg-orange-400',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-2", backgroundColor: 'bg-[#FCBB21]',
             content: (
                 <div>
-                    <h2 className="text-xl font-semibold text-white mb-2">WHY</h2>
+                    <h2 className="text-xl font-semibold text-black mb-2">WHY</h2>
                     {/*<p className="text-gray-600 flex-1">OR WHAT EX. WHAT THE PROJECT DOES. solution is multiple bullet points with soft skills, not grandular, for recruiter</p> */}
-                    <p className="flex-1">Implemented bidirectional communication between client and server.</p>
-                    <p className='text-white'>Built a real-time messaging system using WebSockets to synchronize multiple clients at once.</p>
-                    <p>Developed a centralized game engine on the server to manage game state, validate player actions, and broadcast updates to connected clients.</p>
-                    <p className='text-white'>On the client side, built a responsive React Native interface that listens for server events and updates UI state in real time.</p>
+                    <p className=" text-black flex-1">Implemented cross communication between client and server.</p>
+                    <p className='text-black'>Built a real-time messaging system using WebSockets to synchronize multiple clients at once.</p>
+                    <p className="text-black">Developed a centralized game engine on the server to manage game state, validate player actions, and broadcast updates to clients.</p>
+                    <p className='text-black'>On the client side, built a responsive React Native interface that listens for server events and updates UI state in real time.</p>
+                    <p className='text-black'>Created design and did a user test session to improve user interactions.</p>
                 </div>
             ),
         },
