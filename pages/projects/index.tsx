@@ -15,11 +15,6 @@ export default function ProjectsPage() {
 
     ]
 
-    const theMindImageSources: string[] = [
-        "/the-mind/the-mind-1.jpg",
-        "/the-mind/the-mind-2.jpg",
-    ]
-
 
     const projectsForBentoGrid : BentoBoxGridItem[] = [ 
     { colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2", 
@@ -31,7 +26,8 @@ export default function ProjectsPage() {
                 <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
                     <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
-                        <ImageCarousel imageSources={theMindImageSources} />
+                        <ImageCarousel imageSources={["/the-mind/the-mind-1.jpg",
+                            "/the-mind/the-mind-2.jpg"]} />
                     </div>
 
                     <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
@@ -45,7 +41,7 @@ export default function ProjectsPage() {
                    
                 </div>
                
-                <p className="text-black">A multiplayer card game</p> 
+                <p className="text-black">Web & mobile app for a multiplayer card game.</p> 
 
 
             </div>
@@ -62,7 +58,7 @@ export default function ProjectsPage() {
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
                         <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
-                            <ImageCarousel imageSources={imageSources} />
+                            <ImageCarousel imageSources={['./construction-tour/constructionvrsite.png', './construction-tour/constructionvrsite1.png']} />
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
@@ -74,11 +70,12 @@ export default function ProjectsPage() {
 
                     </div>
 
-                    <p className="text-gray-600">A virtual reality construction site for education.</p>
+                    <p className="text-gray-600">Virtual reality app of a construction site for education.</p>
 
 
                 </div>
             ),
+            href: '/projects/construction-tour',
         },
 
  LinkedInBox, 
@@ -103,7 +100,7 @@ export default function ProjectsPage() {
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
                         <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
-                            <ImageCarousel imageSources={imageSources} />
+                            <ImageCarousel imageSources={['./minimap/minimap.png', './minimap/minimap1.png']} />
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
@@ -113,7 +110,7 @@ export default function ProjectsPage() {
 
                     </div>
 
-                    <p className="text-gray-600">A virtual reality interaction for a 3D map.</p>
+                    <p className="text-gray-600">Virtual reality interactions for a 3D map.</p>
 
 
                 </div>
@@ -129,7 +126,7 @@ export default function ProjectsPage() {
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
                         <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
-                            <ImageCarousel imageSources={imageSources} />
+                            <ImageCarousel imageSources={['./project-management/site.png']} />
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
@@ -146,7 +143,7 @@ export default function ProjectsPage() {
 
                     </div>
 
-                    <p className="text-gray-600">This is a good project, ya</p>
+                    <p className="text-gray-600">Website for viewing project schedules in different formats.</p>
 
 
                 </div>
@@ -163,7 +160,7 @@ export default function ProjectsPage() {
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
                         <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
-                            <ImageCarousel imageSources={imageSources} />
+                            <ImageCarousel imageSources={['./platform-integration/splash.png']} />
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
@@ -176,7 +173,7 @@ export default function ProjectsPage() {
 
                     </div>
 
-                    <p className="text-gray-600">This is a good project, ya</p>
+                    <p className="text-gray-600">Automation workflow between Notion, Discord and Linear.</p>
 
 
                 </div>
@@ -193,7 +190,7 @@ export default function ProjectsPage() {
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
                         <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
-                            <ImageCarousel imageSources={imageSources} />
+                            <ImageCarousel imageSources={['./industrial-ar/unity-plane.png', './industrial-ar/train-transparent.jpg']} />
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
@@ -204,7 +201,7 @@ export default function ProjectsPage() {
 
                     </div>
 
-                    <p className="text-gray-600">This is a good project, ya</p>
+                    <p className="text-gray-600">App for transporation vehicle education in AR.</p>
 
 
                 </div>
@@ -221,7 +218,7 @@ export default function ProjectsPage() {
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
                         <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
-                            <ImageCarousel imageSources={imageSources} />
+                            <ImageCarousel imageSources={['./modeling/skull.jpg', './modeling/trap.jpg', './modeling/1700site2.png']} />
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
@@ -235,7 +232,7 @@ export default function ProjectsPage() {
 
                     </div>
 
-                    <p className="text-gray-600">This is a good project, ya</p>
+                    <p className="text-gray-600">Various models I created.</p>
 
 
                 </div>
@@ -252,7 +249,7 @@ export default function ProjectsPage() {
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
                         <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
-                            <ImageCarousel imageSources={imageSources} />
+                            <ImageCarousel imageSources={['./mep-coordination/mduct1.jpg', './mep-coordination/mep1.jpg']} />
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
@@ -265,7 +262,7 @@ export default function ProjectsPage() {
 
                     </div>
 
-                    <p className="text-gray-600">This is a good project, ya</p>
+                    <p className="text-gray-600">Managing and modeling utitilies for construction.</p>
 
 
                 </div>
@@ -282,7 +279,7 @@ export default function ProjectsPage() {
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
                         <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
-                            <ImageCarousel imageSources={imageSources} />
+                            <ImageCarousel imageSources={['./reality-capture/example.jpg', './reality-capture/example3.jpg', './reality-capture/olivina.png']} />
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
@@ -295,7 +292,38 @@ export default function ProjectsPage() {
 
                     </div>
 
-                    <p className="text-gray-600">This is a good project, ya</p>
+                    <p className="text-gray-600">Scanning built environments and digitizing them.</p>
+
+
+                </div>
+            ),
+        },
+
+
+        {
+            colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            content: (
+                <div className="flex flex-col h-full">
+                    <h2 className="text-xl font-semibold mb-2">
+                        PORTFOLIO WEBSITE
+                    </h2>
+                    <div className="flex flex-row flex-1 min-h-0 min-w-0">
+
+                        <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
+                            <ImageCarousel imageSources={['./portfolio/aboutme.png', './portfolio/homemobile.png']} />
+                        </div>
+
+                        <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
+                            <SkillBadge keepSmall label="REVIT" />
+                            <SkillBadge keepSmall label="NAVISWORKS" />
+                            <SkillBadge keepSmall label="BLUEBEAM" />
+
+
+                        </div>
+
+                    </div>
+
+                    <p className="text-gray-600">This website!</p>
 
 
                 </div>

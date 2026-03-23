@@ -45,11 +45,11 @@ export default function Home() {
     if (showSplash === null) return null;
 
     const imageSources: string[] = [
-        
-          "/cSharp.svg",
-        "/cSharp.svg",
-        "/cSharp.svg",
-     
+        "/the-mind/the-mind-2.jpg",
+        './minimap/minimap.png',
+        './industrial-ar/train-transparent.jpg',
+        './modeling/skull.jpg',
+        './reality-capture/example3.jpg',
 
     ]
 
