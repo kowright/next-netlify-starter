@@ -12,7 +12,7 @@ export default function AboutPage() {
         content: ( 
             <div> 
                 <h2 className="text-2xl font-black mb-2">MY STORY</h2>
-                <div className="relative border-l-4 border-black pl-6 pt-6 space-y-6 h-full flex flex-col">
+                <div className="relative border-l-4 border-black pl-6 md:pt-6 space-y-6 h-full flex flex-col">
                     <div className="relative">
                         <div className="absolute -left-[2.4rem] top-[0.4rem] w-6 h-6 bg-black rounded-full" />
                         <div className="bg-white border-4 font-bold p-1 border-black rounded-lg">
@@ -39,7 +39,7 @@ export default function AboutPage() {
                     </div>
                     <div className="relative">
                         <div className="absolute -left-[2.4rem] top-[0.4rem] w-6 h-6 bg-black rounded-full" />
-                        <div className="bg-white border-4 p-1 font-bold border-black rounded-lg">
+                        <div className="bg-white border-4 md:p-1 font-bold border-black rounded-lg">
                             2024 - Gym Management Platform
                         </div>
                     </div>
@@ -71,7 +71,7 @@ export default function AboutPage() {
 
    
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1 md:row-span-2", backgroundColor: 'bg-[#8AD86E]',
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#8AD86E]',
             content: (
                 <div>
                     <h2 className="text-2xl font-black mb-2">LANGUAGES</h2>
@@ -145,7 +145,7 @@ LinkedInBox,
         },
 
         {
-            colSpanClass: "col-span-2 lg:col-span-5", rowSpanClass: "row-span-2 lg:row-span-1", backgroundColor: 'bg-pink-200',
+            colSpanClass: "col-span-2 lg:col-span-5", rowSpanClass: "row-span-2 md:row-span-1", backgroundColor: 'bg-pink-200',
        content: ( 
             <div> 
                <h2 className="text-2xl font-black">TOOLS</h2>

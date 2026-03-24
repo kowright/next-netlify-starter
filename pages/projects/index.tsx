@@ -3,7 +3,7 @@ import Layout from "../../components/Layout";
 import ImageCarousel from "../../components/ImageCarousel";
 import { HomeBox, LinkedInBox } from "../../components/BoxUtil";
 import SkillBadge from "../../components/SkillBadge";
-import { SiReact, SiTailwindcss, SiTypescript, SiNodedotjs, SiJavascript, SiPostgresql, SiUnity } from "react-icons/si";
+import { SiReact, SiTailwindcss, SiTypescript, SiNodedotjs, SiJavascript, SiNextdotjs, SiUnity, SiAutodesk, SiAutodeskrevit, SiAutodeskmaya, SiSketchup } from "react-icons/si";
 
 export default function ProjectsPage() {
     const imageSources: string[] = [
@@ -17,10 +17,11 @@ export default function ProjectsPage() {
 
 
     const projectsForBentoGrid : BentoBoxGridItem[] = [ 
-    { colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2", 
+        {
+            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2", 
         content: ( 
             <div className="flex flex-col h-full">
-                <h2 className="text-xl font-semibold mb-2">
+                <h2 className="text-xl font-bold mb-2">
                     THE MIND
                 </h2>
                 <div className="flex flex-row flex-1 min-h-0 min-w-0">
@@ -49,10 +50,10 @@ export default function ProjectsPage() {
            href: '/projects/the-mind',
     },
         {
-            colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
                 <div className="flex flex-col h-full">
-                    <h2 className="text-xl font-semibold mb-2">
+                    <h2 className="text-xl font-bold mb-2">
                         CONSTRUCTION TOUR VR
                     </h2>
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
@@ -64,6 +65,7 @@ export default function ProjectsPage() {
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
 
                             <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
+                            <SkillBadge keepSmall icon={<img src="/cSharp.svg" className="w-4 h-4" />} label="C#" />
 
                 
                         </div>
@@ -80,9 +82,10 @@ export default function ProjectsPage() {
 
  LinkedInBox, 
 
-        { colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-1 lg:row-span-1", backgroundColor: 'bg-orange-400',
+        {
+            colSpanClass: "col-span-2 lg:col-span-4 md:col-span-2", rowSpanClass: "row-span-1 lg:row-span-1", backgroundColor: 'bg-orange-400',
         content: ( 
-            <div className='flex items-center justify-center h-full'> 
+            <div className='flex items-center justify-center h-full active:shadow-[inset_0px_8px_12px_rgba(0,0,0,0.4)]'> 
                 <h2 className="text-4xl font-black mb-2 text-center">PROJECTS</h2>
             </div> 
         ), 
@@ -91,10 +94,10 @@ export default function ProjectsPage() {
     HomeBox,
 
         {
-            colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
                 <div className="flex flex-col h-full">
-                    <h2 className="text-xl font-semibold mb-2">
+                    <h2 className="text-xl font-bold mb-2">
                        MINIMAP
                     </h2>
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
@@ -117,10 +120,10 @@ export default function ProjectsPage() {
             ),
         },
         {
-            colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
                 <div className="flex flex-col h-full">
-                    <h2 className="text-xl font-semibold mb-2">
+                    <h2 className="text-xl font-bold mb-2">
                         PROJECT MANAGEMENT TOOL
                     </h2>
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
@@ -151,10 +154,10 @@ export default function ProjectsPage() {
             href: '/projects/project-management',
         },
         {
-            colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
                 <div className="flex flex-col h-full">
-                    <h2 className="text-xl font-semibold mb-2">
+                    <h2 className="text-xl font-bold mb-2">
                         PLATFORM INTEGRATION
                     </h2>
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
@@ -181,10 +184,10 @@ export default function ProjectsPage() {
         },
 
         {
-            colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
                 <div className="flex flex-col h-full">
-                    <h2 className="text-xl font-semibold mb-2">
+                    <h2 className="text-xl font-bold mb-2">
                         INDUSTRIAL AR
                     </h2>
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
@@ -209,10 +212,10 @@ export default function ProjectsPage() {
         },
 
         {
-            colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
                 <div className="flex flex-col h-full">
-                    <h2 className="text-xl font-semibold mb-2">
+                    <h2 className="text-xl font-bold mb-2">
                         3D MODELING
                     </h2>
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
@@ -222,10 +225,9 @@ export default function ProjectsPage() {
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-                            <SkillBadge keepSmall label="REVIT"  />
-                            <SkillBadge keepSmall label="NAVISWORKS" />
-                            <SkillBadge keepSmall label="SKETCHUP" />
-                            <SkillBadge keepSmall label="MAYA" />
+                            <SkillBadge keepSmall icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT"  />
+                            <SkillBadge keepSmall icon={<SiSketchup size={18} color="#005F9E" />} label="SKETCHUP" />
+                            <SkillBadge keepSmall icon={<SiAutodeskmaya size={18} color="#37A5CC" />} label="MAYA" />
                             <SkillBadge keepSmall label="SUBSTANCE PAINTER" />
 
                         </div>
@@ -240,10 +242,10 @@ export default function ProjectsPage() {
         },
 
         {
-            colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
                 <div className="flex flex-col h-full">
-                    <h2 className="text-xl font-semibold mb-2">
+                    <h2 className="text-xl font-bold mb-2">
                         MEP COORDINATION
                     </h2>
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
@@ -253,8 +255,10 @@ export default function ProjectsPage() {
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-                            <SkillBadge keepSmall label="REVIT" />
-                            <SkillBadge keepSmall label="NAVISWORKS" />
+
+                            <SkillBadge keepSmall icon={<SiAutodesk size={18} color="#FFFFFF" />} label="NAVISWORKS" invert />
+                            <SkillBadge keepSmall icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT" />
+
                             <SkillBadge keepSmall label="BLUEBEAM" />
 
 
@@ -270,10 +274,10 @@ export default function ProjectsPage() {
         },
 
         {
-            colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
                 <div className="flex flex-col h-full">
-                    <h2 className="text-xl font-semibold mb-2">
+                    <h2 className="text-xl font-bold mb-2">
                         REALITY CAPTURE
                     </h2>
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
@@ -283,9 +287,9 @@ export default function ProjectsPage() {
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-                            <SkillBadge keepSmall label="REVIT" />
-                            <SkillBadge keepSmall label="NAVISWORKS" />
-                            <SkillBadge keepSmall label="BLUEBEAM" />
+                            <SkillBadge keepSmall label="LASER SCANNING" />
+                            <SkillBadge keepSmall icon={<SiAutodesk size={18} color="#FFFFFF" />} label="RECAP" invert />
+                            <SkillBadge keepSmall label="POINT CLOUDS" />
 
 
                         </div>
@@ -301,10 +305,10 @@ export default function ProjectsPage() {
 
 
         {
-            colSpanClass: "col-span-2 md:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
                 <div className="flex flex-col h-full">
-                    <h2 className="text-xl font-semibold mb-2">
+                    <h2 className="text-xl font-bold mb-2">
                         PORTFOLIO WEBSITE
                     </h2>
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
@@ -314,9 +318,9 @@ export default function ProjectsPage() {
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-                            <SkillBadge keepSmall label="REVIT" />
-                            <SkillBadge keepSmall label="NAVISWORKS" />
-                            <SkillBadge keepSmall label="BLUEBEAM" />
+                            <SkillBadge keepSmall icon={<SiNextdotjs size={18} color="#FFFFFF" />} label="NEXT.JS" invert />
+                            <SkillBadge keepSmall icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
+                            <SkillBadge keepSmall icon={<SiReact color="#61DAFB" />} label="REACT" />
 
 
                         </div>

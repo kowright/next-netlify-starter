@@ -68,7 +68,7 @@ export default function Home() {
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-4 xl:row-span-4 2xl:row-span-4",
             content: (
-                <div className="flex flex-col h-full min-h-0 relative">
+                <div className="flex flex-col h-full min-h-0 relative group active:shadow-[inset_0px_8px_12px_rgba(0,0,0,0.4)]">
                     <h2 className="text-4xl font-black mb-2">PROJECTS</h2>
                     <PageLinkIcon />
 
@@ -84,7 +84,7 @@ export default function Home() {
 
     
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4 md:row-span-4 lg:row-span-4 xl:row-span-4 2xl:row-span-4", backgroundColor: 'bg-orange-400',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4 md:row-span-4 lg:row-span-4 xl:row-span-4 2xl:row-span-4", backgroundColor: 'bg-[#27F5F5]',
             content: (
                 <div className="flex flex-col h-full">
                     <h2 className="text-4xl font-black mb-2">TOP SKILLS</h2>
@@ -141,7 +141,7 @@ export default function Home() {
         GithubBox(),
         LinkedInBox,
         {
-            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-[#F7E23E]',
+            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-[#A287E0]',
             content: ( 
                 <div className="flex items-center justify-center h-full"> 
                     <p className="break-words text-center text-black font-black">
@@ -165,7 +165,6 @@ export default function Home() {
         </div>
       )}
 
-      {/* Your actual page */}
           <main>
    
               <Layout items={projectsForBentoGrid} />
