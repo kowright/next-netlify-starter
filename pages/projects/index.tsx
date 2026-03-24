@@ -4,23 +4,16 @@ import ImageCarousel from "../../components/ImageCarousel";
 import { HomeBox, LinkedInBox } from "../../components/BoxUtil";
 import SkillBadge from "../../components/SkillBadge";
 import { SiReact, SiTailwindcss, SiTypescript, SiNodedotjs, SiJavascript, SiNextdotjs, SiUnity, SiAutodesk, SiAutodeskrevit, SiAutodeskmaya, SiSketchup } from "react-icons/si";
+import PageLinkIcon from "../../components/PageLinkIcon";
 
 export default function ProjectsPage() {
-    const imageSources: string[] = [
-
-        "/cSharp.svg",
-        "/cSharp.svg",
-        "/cSharp.svg",
-
-
-    ]
-
 
     const projectsForBentoGrid : BentoBoxGridItem[] = [ 
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2", 
         content: ( 
-            <div className="flex flex-col h-full">
+            <div className="flex flex-col h-full relative group">
+                <PageLinkIcon />
                 <h2 className="text-xl font-bold mb-2">
                     THE MIND
                 </h2>
@@ -52,7 +45,8 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full">
+                <div className="flex flex-col h-full relative group">
+                    <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         CONSTRUCTION TOUR VR
                     </h2>
@@ -85,7 +79,7 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 lg:col-span-4 md:col-span-2", rowSpanClass: "row-span-1 lg:row-span-1", backgroundColor: 'bg-orange-400',
         content: ( 
-            <div className='flex items-center justify-center h-full active:shadow-[inset_0px_8px_12px_rgba(0,0,0,0.4)]'> 
+            <div className='flex items-center justify-center h-full'> 
                 <h2 className="text-4xl font-black mb-2 text-center">PROJECTS</h2>
             </div> 
         ), 
@@ -96,7 +90,8 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full">
+                <div className="flex flex-col h-full relative group">
+                    <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                        MINIMAP
                     </h2>
@@ -122,7 +117,8 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full">
+                <div className="flex flex-col h-full relative group">
+                    <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         PROJECT MANAGEMENT TOOL
                     </h2>
@@ -156,7 +152,8 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full">
+                <div className="flex flex-col h-full relative group">
+                    <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         PLATFORM INTEGRATION
                     </h2>
@@ -186,7 +183,8 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full">
+                <div className="flex flex-col h-full relative group">
+                    <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         INDUSTRIAL AR
                     </h2>
@@ -214,7 +212,8 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full">
+                <div className="flex flex-col h-full relative group">
+                    <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         3D MODELING
                     </h2>
@@ -244,7 +243,8 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full">
+                <div className="flex flex-col h-full relative group">
+                    <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         MEP COORDINATION
                     </h2>
@@ -276,7 +276,8 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full">
+                <div className="flex flex-col h-full relative group">
+                    <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         REALITY CAPTURE
                     </h2>
@@ -307,7 +308,8 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full">
+                <div className="flex flex-col h-full relative group">
+                    <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         PORTFOLIO WEBSITE
                     </h2>

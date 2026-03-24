@@ -58,7 +58,7 @@ export default function Home() {
             colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-[#B218E0]',
             content: (
                 <div className="flex justify-center items-center h-full">
-                    <h2 className="text-5xl font-black text-white mb-2 text-center">KORTNEY WRIGHT</h2>
+                    <h2 className="text-5xl font-black text-white mb-2 text-center hover:drop-shadow-glow">KORTNEY WRIGHT</h2>
                 </div>
             ),
         },
