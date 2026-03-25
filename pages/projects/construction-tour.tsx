@@ -1,6 +1,6 @@
 import { BentoBoxGridItem } from "../../components/BentoBoxGrid";
 import Layout from "../../components/Layout";
-import { SiNodedotjs, SiReact, SiTypescript, SiUnity } from "react-icons/si";
+import { SiUnity } from "react-icons/si";
 import SkillBadge from "../../components/SkillBadge";
 import { GithubBox, LinkedInBox, NavBox } from "../../components/BoxUtil";
 import VideoPlayer from "../../components/VideoPlayer";
