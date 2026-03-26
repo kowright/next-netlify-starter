@@ -7,7 +7,11 @@ import VideoPlayer from "../../components/VideoPlayer";
 
 export default function MinimapPage() {
 
-    //"/minimap/minimap3.mp4", "/minimap/minimap4.mp4" , "/minimap/minimapdrop.mp4"
+
+    const minimap2 = "https://res.cloudinary.com/drqmbimij/video/upload/v1774462681/minimap2_rbrziv.mp4"
+    const minimap3 = "https://res.cloudinary.com/drqmbimij/video/upload/v1774462681/minimap3_awo0ys.mp4"
+    const minimap4 = "https://res.cloudinary.com/drqmbimij/video/upload/v1774462669/minimap4_aozsfy.mp4"
+    const minimapdrop = "https://res.cloudinary.com/drqmbimij/video/upload/v1774462665/minimapdrop_heh7e9.mp4"
 
     const projectsForBentoGrid: BentoBoxGridItem[] = [
         {
@@ -16,7 +20,7 @@ export default function MinimapPage() {
                 <>
                     <h2 className="text-xl font-semibold mb-2">VIDEOS</h2>
                     <div className="flex-1 rounded-lg overflow-hidden">
-                        <VideoPlayer videos={["/minimap/minimapdrop.mp4"]} />
+                        <VideoPlayer videos={[minimap2, minimap3, minimap4, minimapdrop]} />
 
                     </div>
                 </>

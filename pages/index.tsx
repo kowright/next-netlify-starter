@@ -9,7 +9,6 @@ import { GithubBox, LinkedInBox, NavBox } from "../components/BoxUtil";
 import PageLinkIcon from "../components/PageLinkIcon";
 import { useEffect, useState } from "react";
 
-
 export default function Home() {
 
     const [showSplash, setShowSplash] = useState(null);
@@ -62,9 +61,9 @@ export default function Home() {
                 </div>
             ),
         },
+
         NavBox('ABOUT ME', '/about', 'bg-[#28B2F4]'),
        
-
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-4 xl:row-span-4 2xl:row-span-4",
             content: (

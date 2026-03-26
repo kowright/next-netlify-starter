@@ -126,7 +126,7 @@ export default function ProjectsPage() {
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
                         <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
-                            <ImageCarousel imageSources={['./project-management/site.png']} />
+                            <ImageCarousel imageSources={["/project-management/project1.png", "/project-management/project2.png", "/project-management/project3.png", "/project-management/project4.png"]} />
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">

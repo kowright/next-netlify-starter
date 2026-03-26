@@ -7,6 +7,10 @@ import VideoPlayer from "../../components/VideoPlayer";
 
 export default function ConstructionTourPage() {
 
+    const trophys = "https://res.cloudinary.com/drqmbimij/video/upload/v1774465277/Night_to_Day_vseb3t.mp4";
+    const uiToggle = "https://res.cloudinary.com/drqmbimij/video/upload/v1774465283/UI_Menu_Toggle_yxsiel.mp4";
+    const nightToDay = "https://res.cloudinary.com/drqmbimij/video/upload/v1774465277/Night_to_Day_vseb3t.mp4";
+
     const projectsForBentoGrid: BentoBoxGridItem[] = [
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-3",
@@ -14,7 +18,7 @@ export default function ConstructionTourPage() {
                 <>
                     <h2 className="text-xl font-semibold mb-2">VIDEOS</h2>
                     <div className="flex-1 rounded-lg overflow-hidden">
-                        <VideoPlayer videos={["/construction-tour/trophys.mp4", "/construction-tour/nighttoday.mp4"]} />
+                        <VideoPlayer videos={[trophys, uiToggle, nightToDay]} />
                     </div>
                 </>
             ),

@@ -20,7 +20,7 @@ export default function ImageCarousel( {imageSources} : ImageCarouselProps) {
             modules={[Autoplay, Navigation, Pagination]}
             autoplay={{
                 delay: 3000,
-                disableOnInteraction: false,
+                disableOnInteraction: true,
             }}
             navigation
             pagination={{ clickable: true }}
