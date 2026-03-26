@@ -12,7 +12,7 @@ export default function ProjectManagementTool() {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-3",
             content: (
                 <>
-                    <h2 className="text-xl font-semibold mb-2">PICTURE</h2>
+                    <h2 className="text-xl font-semibold mb-2">PICTURES/VIDEOS</h2>
                     <div className="flex-1 rounded-lg overflow-hidden">
                         <ImageCarousel imageSources={["/project-management/pm-1.gif", "/project-management/pm-2.gif","/project-management/project1.png", "/project-management/project2.png", "/project-management/project3.png", "/project-management/project4.png"]} />
 
