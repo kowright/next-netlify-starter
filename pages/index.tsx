@@ -67,7 +67,7 @@ export default function Home() {
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-4 xl:row-span-4 2xl:row-span-4",
             content: (
-                <div className="flex flex-col h-full min-h-0 relative group active:shadow-[inset_0px_8px_12px_rgba(0,0,0,0.4)]">
+                <div className="flex flex-col h-full min-h-0 relative group/card active:shadow-[inset_0px_8px_12px_rgba(0,0,0,0.4)]">
                     <h2 className="text-4xl font-black mb-2">PROJECTS</h2>
                     <PageLinkIcon />
 

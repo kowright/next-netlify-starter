@@ -8,7 +8,7 @@ type BadgeProps = {
 export default function Badge({ icon, label, invert, keepSmall = false }: BadgeProps) {
     return (
         <div
-            className={`
+            className={`group/badge
         flex items-center gap-2 
         px-2 py-1 sm:px-3 sm:py-1.5
         border-4 border-black rounded-md
@@ -18,10 +18,10 @@ export default function Badge({ icon, label, invert, keepSmall = false }: BadgeP
         ${invert ? "bg-black text-white" : "bg-white text-black"}
       `}
         >
-            {/*<div className="w-4 h-4 xl:w-6 xl:h-6 2xl:w-8 2xl:h-8">*/}
-            {/*    {icon}*/}
-            {/*</div>*/}
-            {icon}
+            <div className="group-hover/badge:animate-shake">
+                {icon}
+            </div>
+            {/*{icon}*/}
             {label}
         </div>
     );

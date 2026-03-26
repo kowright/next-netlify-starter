@@ -12,7 +12,7 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2", 
         content: ( 
-            <div className="flex flex-col h-full relative group">
+            <div className="flex flex-col h-full relative group/card">
                 <PageLinkIcon />
                 <h2 className="text-xl font-bold mb-2">
                     THE MIND
@@ -26,7 +26,9 @@ export default function ProjectsPage() {
 
                     <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
 
-                        <SkillBadge keepSmall icon={<SiReact color="#61DAFB" />} label="REACT NATIVE" />
+             
+                            <SkillBadge keepSmall icon={<SiReact color="#61DAFB" className="" />} label="REACT NATIVE" />
+           
                         <SkillBadge keepSmall icon={<SiTailwindcss color="#06B6D4" />} label="WEBSOCKETS" />
                         <SkillBadge keepSmall icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
                         <SkillBadge keepSmall icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
@@ -45,7 +47,7 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full relative group">
+                <div className="flex flex-col h-full relative group/card">
                     <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         CONSTRUCTION TOUR VR
@@ -90,7 +92,7 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full relative group">
+                <div className="flex flex-col h-full relative group/card">
                     <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                        MINIMAP
@@ -118,7 +120,7 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full relative group">
+                <div className="flex flex-col h-full relative group/card">
                     <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         PROJECT MANAGEMENT TOOL
@@ -153,7 +155,7 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full relative group">
+                <div className="flex flex-col h-full relative group/card">
                     <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         PLATFORM INTEGRATION
@@ -185,7 +187,7 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full relative group">
+                <div className="flex flex-col h-full relative group/card">
                     <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         INDUSTRIAL AR
@@ -214,7 +216,7 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full relative group">
+                <div className="flex flex-col h-full relative group/card">
                     <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         3D MODELING
@@ -245,7 +247,7 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full relative group">
+                <div className="flex flex-col h-full relative group/card">
                     <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         MEP COORDINATION
@@ -278,7 +280,7 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full relative group">
+                <div className="flex flex-col h-full relative group/card">
                     <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         REALITY CAPTURE
@@ -310,7 +312,7 @@ export default function ProjectsPage() {
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
-                <div className="flex flex-col h-full relative group">
+                <div className="flex flex-col h-full relative group/card">
                     <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
                         PORTFOLIO WEBSITE

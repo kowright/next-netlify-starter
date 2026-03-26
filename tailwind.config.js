@@ -16,7 +16,17 @@ module.exports = {
                   "0 0px 25px rgba(143, 5, 255,0.6)",
                   "0 0px 200px rgba(170, 0, 255,0.9)"
               ]
-          }
+          },
+          keyframes: {
+              shake: {
+                  '0%, 100%': { transform: 'rotate(0deg)' },
+                  '25%': { transform: 'rotate(-20deg)' },
+                  '75%': { transform: 'rotate(20deg)' },
+              },
+          },
+          animation: {
+              shake: 'shake 0.4s ease-in-out',
+          },
     },
   },
   safelist: [

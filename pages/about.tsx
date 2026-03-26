@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { SiReact, SiTailwindcss, SiJira, SiLinear, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiDocker, SiPython, SiFigma, SiStorybook, SiCplusplus, } from "react-icons/si";
 import SkillBadge from "../components/SkillBadge";
 import { GithubBox, LinkedInBox, HomeBox } from "../components/BoxUtil";
+import { FaUserGraduate, FaCheese, FaDumbbell, FaHardHat, FaSign } from "react-icons/fa";
 
 export default function AboutPage() {
 
@@ -14,31 +15,41 @@ export default function AboutPage() {
                 <h2 className="text-2xl font-black mb-2">MY STORY</h2>
                 <div className="relative border-l-4 border-black pl-6 md:pt-6 space-y-6 h-full flex flex-col">
                     <div className="relative">
-                        <div className="absolute -left-[2.4rem] top-[0.4rem] w-6 h-6 bg-black rounded-full" />
-                        <div className="bg-white border-4 font-bold p-1 border-black rounded-lg">
+                        <div className="absolute -left-[2.4rem] top-[0.4rem] w-6 h-6 bg-white outline rounded-full flex items-center justify-content hover:animate-shake">
+                            <FaUserGraduate size={16} color="#F57195" />
+                        </div>
+                        <div className="bg-white border-4 font-bold p-1 border-black rounded-lg flex">
                             2017 - Graduated College in Civil Engineering
                         </div>
                     </div>
                     <div className="relative">
-                        <div className="absolute -left-[2.4rem] top-[0.4rem] w-6 h-6 bg-black rounded-full" />
+                        <div className="absolute -left-[2.4rem] top-[0.5rem] w-6 h-6 bg-white outline rounded-full flex items-center justify-content hover:animate-shake" >
+                            <FaHardHat size={16} color="#F57195" />
+                        </div>
                         <div className="bg-white border-4 font-bold p-1 border-black rounded-lg">
                             2018 - Virtual Construction Contractor
                         </div>
                     </div>
                     <div className="relative">
-                        <div className="absolute -left-[2.4rem] top-[0.4rem] w-6 h-6 bg-black rounded-full" />
-                        <div className="bg-white border-4 p-1 font-bold border-black rounded-lg">
+                        <div className="absolute -left-[2.4rem] top-[0.5rem] w-6 h-6 bg-white outline rounded-full flex items-center justify-content hover:animate-shake" >
+                            <FaCheese size={16} color="#F57195" />
+                        </div>
+                        <div className="bg-white border-4 p-1 font-bold border-black rounded-lg flex">
                             2021 - Cheese Factory Manufacturer
                         </div>
                     </div>
                     <div className="relative">
-                        <div className="absolute -left-[2.4rem] top-[0.4rem] w-6 h-6 bg-black rounded-full" />
+                        <div className="absolute -left-[2.4rem] top-[0.5rem] w-6 h-6 bg-white outline rounded-full flex items-center justify-content hover:animate-shake" >
+                            <FaSign size={16} color="#F57195" />
+                        </div>
                         <div className="bg-white border-4 p-1 font-bold border-black rounded-lg">
                             2021 - Virtual Tour Startup
                         </div>
                     </div>
                     <div className="relative">
-                        <div className="absolute -left-[2.4rem] top-[0.4rem] w-6 h-6 bg-black rounded-full" />
+                        <div className="absolute -left-[2.4rem] top-[0.5rem] w-6 h-6 bg-white outline rounded-full flex items-center justify-content hover:animate-shake" >
+                            <FaDumbbell size={16} color="#F57195" />
+                        </div>
                         <div className="bg-white border-4 md:p-1 font-bold border-black rounded-lg">
                             2024 - Gym Management Platform
                         </div>
