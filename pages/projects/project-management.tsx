@@ -1,6 +1,6 @@
 import { BentoBoxGridItem } from "../../components/BentoBoxGrid";
 import Layout from "../../components/Layout";
-import { SiFigma, SiNodedotjs, SiPostgresql, SiPostman, SiReact, SiTailwindcss, SiTypescript, SiUnity } from "react-icons/si";
+import { SiFigma, SiNodedotjs, SiPostgresql, SiPostman, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 import SkillBadge from "../../components/SkillBadge";
 import { GithubBox, LinkedInBox, NavBox } from "../../components/BoxUtil";
 import ImageCarousel from "../../components/ImageCarousel";
