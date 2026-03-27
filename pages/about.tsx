@@ -2,7 +2,7 @@ import { BentoBoxGridItem } from "../components/BentoBoxGrid"
 import Layout from "../components/Layout";
 import { SiReact, SiTailwindcss, SiJira, SiLinear, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiDocker, SiPython, SiFigma, SiStorybook, SiCplusplus, } from "react-icons/si";
 import SkillBadge from "../components/SkillBadge";
-import { GithubBox, LinkedInBox, HomeBox } from "../components/BoxUtil";
+import { GithubBox, LinkedInBox, HomeBox, CSharpSkillBadge } from "../components/BoxUtil";
 import { FaUserGraduate, FaCheese, FaDumbbell, FaHardHat, FaSign } from "react-icons/fa";
 
 export default function AboutPage() {
@@ -88,7 +88,7 @@ export default function AboutPage() {
                     <h2 className="text-2xl font-black mb-2">LANGUAGES</h2>
                     <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
                         <SkillBadge keepSmall icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
-                        <SkillBadge keepSmall icon={<img src="/cSharp.svg" className="w-4 h-4" />} label="C#" />
+                        <CSharpSkillBadge />
                         <SkillBadge keepSmall icon={<SiJavascript size={18} color="#F7DF1E" />} label="JAVASCRIPT" />
                         <SkillBadge keepSmall icon={<SiPython size={18} color="#3776AB" />} label="PYTHON" />
                         <SkillBadge keepSmall icon={<SiCplusplus size={18} color="#A8B9CC" />} label="C++" />

@@ -2,7 +2,7 @@ import { BentoBoxGridItem } from "../../components/BentoBoxGrid";
 import Layout from "../../components/Layout";
 import { SiUnity } from "react-icons/si";
 import SkillBadge from "../../components/SkillBadge";
-import { GithubBox, LinkedInBox, NavBox } from "../../components/BoxUtil";
+import { CSharpSkillBadge, GithubBox, LinkedInBox, NavBox } from "../../components/BoxUtil";
 import VideoPlayer from "../../components/VideoPlayer";
 
 export default function ConstructionTourPage() {
@@ -63,7 +63,7 @@ export default function ConstructionTourPage() {
                     <h2 className="text-xl font-semibold mb-2 text-white">STACK</h2>
                     <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
                     <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
-                    <SkillBadge keepSmall icon={<img src="/cSharp.svg" className="w-4 h-4" />} label="C#" />
+                        <CSharpSkillBadge />
                     <SkillBadge keepSmall label="VR" />
                    
                     </div>

@@ -2,6 +2,7 @@ import { BentoBoxGridItem } from "../components/BentoBoxGrid";
 import { SiGithub } from "react-icons/si";
 import { FaHome, FaLink, FaLinkedin } from "react-icons/fa";
 import PageLinkIcon from "../components/PageLinkIcon";
+import SkillBadge from "./SkillBadge";
 
 export function GithubBox(url: string = "https://github.com/kowright"): BentoBoxGridItem  {
     return (
@@ -56,3 +57,9 @@ export const HomeBox: BentoBoxGridItem = {
     ),
     href: "/",
 };
+
+export function CSharpSkillBadge() {
+    return (
+        <SkillBadge keepSmall icon={<img src="/cSharp.svg" className="w-5 h-5" />} label="C#" />
+    )
+}

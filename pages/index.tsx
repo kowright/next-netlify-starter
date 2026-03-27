@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import { SiReact, SiTailwindcss, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiFigma, SiStorybook } from "react-icons/si";
 import SkillBadge from "../components/SkillBadge";
 import ImageCarousel from "../components/ImageCarousel";
-import { GithubBox, LinkedInBox, NavBox } from "../components/BoxUtil";
+import { CSharpSkillBadge, GithubBox, LinkedInBox, NavBox } from "../components/BoxUtil";
 import PageLinkIcon from "../components/PageLinkIcon";
 import { useEffect, useState } from "react";
 
@@ -128,7 +128,7 @@ export default function Home() {
 
                             <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
                                 <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
-                                <SkillBadge icon={<img src="/cSharp.svg" className="w-4 h-4" />} label="C#" />
+                                <CSharpSkillBadge />
                                 <SkillBadge icon={<SiJavascript size={18} color="#F7DF1E" />} label="JAVASCRIPT" />
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 import { BentoBoxGridItem } from "../../components/BentoBoxGrid"
 import Layout from "../../components/Layout";
 import ImageCarousel from "../../components/ImageCarousel";
-import { HomeBox, LinkedInBox } from "../../components/BoxUtil";
+import { CSharpSkillBadge, HomeBox, LinkedInBox } from "../../components/BoxUtil";
 import SkillBadge from "../../components/SkillBadge";
 import { SiReact, SiTailwindcss, SiTypescript, SiNodedotjs, SiJavascript, SiNextdotjs, SiUnity, SiAutodesk, SiAutodeskrevit, SiAutodeskmaya, SiSketchup } from "react-icons/si";
 import PageLinkIcon from "../../components/PageLinkIcon";
@@ -61,7 +61,7 @@ export default function ProjectsPage() {
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
 
                             <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
-                            <SkillBadge keepSmall icon={<img src="/cSharp.svg" className="w-4 h-4" />} label="C#" />
+                            <CSharpSkillBadge />
 
                 
                         </div>
@@ -105,7 +105,7 @@ export default function ProjectsPage() {
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
                             <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
-                            <SkillBadge keepSmall icon={<img src="/cSharp.svg" className="w-4 h-4" />} label="C#" />
+                            <CSharpSkillBadge />
                         </div>
 
                     </div>
@@ -211,6 +211,7 @@ export default function ProjectsPage() {
 
                 </div>
             ),
+            href: './projects/industrial-ar'
         },
 
         {

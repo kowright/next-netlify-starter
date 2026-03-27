@@ -2,7 +2,7 @@ import { BentoBoxGridItem } from "../../components/BentoBoxGrid";
 import Layout from "../../components/Layout";
 import { SiUnity } from "react-icons/si";
 import SkillBadge from "../../components/SkillBadge";
-import { GithubBox, NavBox } from "../../components/BoxUtil";
+import { CSharpSkillBadge, GithubBox, NavBox } from "../../components/BoxUtil";
 import VideoPlayer from "../../components/VideoPlayer";
 
 export default function MinimapPage() {
@@ -59,7 +59,7 @@ export default function MinimapPage() {
                     
                     <div className='flex flex-row gap-2 flex-wrap'>
                         {/*<h2 className="text-xl font-semibold mb-2">STACK</h2>*/}
-                        <SkillBadge keepSmall icon={<img src="/cSharp.svg" className="w-4 h-4" />} label="C#" />
+                        <CSharpSkillBadge />
                         <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
                         
 
