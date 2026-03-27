@@ -220,7 +220,7 @@ export default function ProjectsPage() {
                 <div className="flex flex-col h-full relative group/card">
                     <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
-                        3D MODELING
+                        2D/3D MODELING
                     </h2>
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
@@ -243,6 +243,7 @@ export default function ProjectsPage() {
 
                 </div>
             ),
+            href: './projects/modeling'
         },
 
         {
