@@ -5,7 +5,7 @@ import SkillBadge from "../../components/SkillBadge";
 import { NavBox, LinkedInBox } from "../../components/BoxUtil";
 import VideoPlayer from "../../components/VideoPlayer";
 
-export default function MEPPage() {
+export default function RealityCapturePage() {
 
 
     const topconBuilding = "https://res.cloudinary.com/drqmbimij/video/upload/v1774657617/Topcon_7901_Mass_Data_2_mgz1wl.mp4";
