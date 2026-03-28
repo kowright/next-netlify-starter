@@ -309,6 +309,7 @@ export default function ProjectsPage() {
 
                 </div>
             ),
+            href: "./projects/reality-capture"
         },
 
 
