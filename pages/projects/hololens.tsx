@@ -7,9 +7,6 @@ import ImageCarousel from "../../components/ImageCarousel";
 
 export default function HololensPage() {
 
-
-    const topconBuilding = "https://res.cloudinary.com/drqmbimij/video/upload/v1774657617/Topcon_7901_Mass_Data_2_mgz1wl.mp4";
-
     const projectsForBentoGrid: BentoBoxGridItem[] = [
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-3",

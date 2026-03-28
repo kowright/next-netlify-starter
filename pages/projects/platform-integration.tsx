@@ -2,7 +2,7 @@ import { BentoBoxGridItem } from "../../components/BentoBoxGrid";
 import Layout from "../../components/Layout";
 import { SiJavascript, SiNodedotjs } from "react-icons/si";
 import SkillBadge from "../../components/SkillBadge";
-import { GithubBox, NavBox } from "../../components/BoxUtil";
+import { NavBox } from "../../components/BoxUtil";
 import ImageCarousel from "../../components/ImageCarousel";
 
 export default function PlatformIntegrationPage() {

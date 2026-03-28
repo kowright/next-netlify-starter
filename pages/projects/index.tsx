@@ -8,8 +8,6 @@ import PageLinkIcon from "../../components/PageLinkIcon";
 
 export default function ProjectsPage() {
 
-    //TODO: check every mobile page
-    //TODO: link correct github
     //TODOL make readmes better
 
     const projectsForBentoGrid : BentoBoxGridItem[] = [ 

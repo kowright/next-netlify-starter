@@ -19,7 +19,7 @@ export default function IndustrialARPage() {
                 <>
                     <h2 className="text-xl font-semibold mb-2">VIDEOS</h2>
                     <div className="flex-1 rounded-lg overflow-hidden">
-                        <VideoPlayer videos={[spawn]} />
+                        <VideoPlayer videos={[planeParts, train, portals, spawn]} />
                     </div>
                 </>
             ),

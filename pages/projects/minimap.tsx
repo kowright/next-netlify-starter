@@ -2,7 +2,7 @@ import { BentoBoxGridItem } from "../../components/BentoBoxGrid";
 import Layout from "../../components/Layout";
 import { SiUnity } from "react-icons/si";
 import SkillBadge from "../../components/SkillBadge";
-import { CSharpSkillBadge, GithubBox, NavBox } from "../../components/BoxUtil";
+import { CSharpSkillBadge,NavBox } from "../../components/BoxUtil";
 import VideoPlayer from "../../components/VideoPlayer";
 
 export default function MinimapPage() {

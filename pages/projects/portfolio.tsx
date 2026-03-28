@@ -7,8 +7,6 @@ import ImageCarousel from "../../components/ImageCarousel";
 
 export default function PortfolioPage() {
 
-    //TODO: update PORTFOLIO PAGES
-
     const projectsForBentoGrid: BentoBoxGridItem[] = [
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-3",
