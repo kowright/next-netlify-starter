@@ -8,6 +8,8 @@ import PageLinkIcon from "../../components/PageLinkIcon";
 
 export default function ProjectsPage() {
 
+    //TODO: check every mobile page
+
     const projectsForBentoGrid : BentoBoxGridItem[] = [ 
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2", 
@@ -361,8 +363,9 @@ export default function ProjectsPage() {
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
                             <SkillBadge keepSmall icon={<SiAutodesk size={18} color="#FFFFFF" />} label="NAVISWORKS" invert />
+                            <SkillBadge keepSmall icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT" />
 
-                            <SkillBadge keepSmall icon={<SiTrimble size={18} color="#0063A3" />} label="TRIMBLE CONENCT" />
+                            <SkillBadge keepSmall icon={<SiTrimble size={18} color="#0063A3" />} label="TRIMBLE CONNECT" />
 
 
                         </div>
@@ -374,6 +377,7 @@ export default function ProjectsPage() {
 
                 </div>
             ),
+            href: './projects/hololens'
         },
 
 
