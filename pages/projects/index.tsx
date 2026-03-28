@@ -8,8 +8,6 @@ import PageLinkIcon from "../../components/PageLinkIcon";
 
 export default function ProjectsPage() {
 
-    //TODOL make readmes better
-
     const projectsForBentoGrid : BentoBoxGridItem[] = [ 
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2", 
