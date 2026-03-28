@@ -46,50 +46,7 @@ export default function ProjectsPage() {
             ), 
            href: '/projects/the-mind',
     },
-        {
-            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
-            content: (
-                <div className="flex flex-col h-full relative group/card">
-                    <PageLinkIcon />
-                    <h2 className="text-xl font-bold mb-2">
-                        CONSTRUCTION TOUR VR
-                    </h2>
-                    <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
-                        <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
-                            <ImageCarousel imageSources={['./construction-tour/constructionvrsite.png', './construction-tour/constructionvrsite1.png']} />
-                        </div>
-
-                        <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-
-                            <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
-                            <CSharpSkillBadge />
-
-                
-                        </div>
-
-                    </div>
-
-                    <p className="text-gray-600">Virtual reality app of a construction site for education.</p>
-
-
-                </div>
-            ),
-            href: '/projects/construction-tour',
-        },
-
- LinkedInBox, 
-
-        {
-            colSpanClass: "col-span-2 lg:col-span-4 md:col-span-2", rowSpanClass: "row-span-1 lg:row-span-1", backgroundColor: 'bg-orange-400',
-        content: ( 
-            <div className='flex items-center justify-center h-full'> 
-                <h2 className="text-4xl font-black mb-2 text-center">PROJECTS</h2>
-            </div> 
-        ), 
-    },
-
-    HomeBox,
 
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
@@ -97,7 +54,7 @@ export default function ProjectsPage() {
                 <div className="flex flex-col h-full relative group/card">
                     <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
-                       MINIMAP
+                        MINIMAP
                     </h2>
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
@@ -119,6 +76,54 @@ export default function ProjectsPage() {
             ),
             href: './projects/minimap'
         },
+
+ LinkedInBox, 
+
+        {
+            colSpanClass: "col-span-2 lg:col-span-4 md:col-span-2", rowSpanClass: "row-span-1 lg:row-span-1", backgroundColor: 'bg-orange-400',
+        content: ( 
+            <div className='flex items-center justify-center h-full'> 
+                <h2 className="text-4xl font-black mb-2 text-center">PROJECTS</h2>
+            </div> 
+        ), 
+    },
+
+    HomeBox,
+
+        {
+            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            content: (
+                <div className="flex flex-col h-full relative group/card">
+                    <PageLinkIcon />
+                    <h2 className="text-xl font-bold mb-2">
+                        CONSTRUCTION TOUR VR
+                    </h2>
+                    <div className="flex flex-row flex-1 min-h-0 min-w-0">
+
+                        <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
+                            <ImageCarousel imageSources={['./construction-tour/constructionvrsite.png', './construction-tour/constructionvrsite1.png']} />
+                        </div>
+
+                        <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
+
+                            <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
+                            <CSharpSkillBadge />
+
+
+                        </div>
+
+                    </div>
+
+                    <p className="text-gray-600">Virtual reality app of a construction site for education.</p>
+
+
+                </div>
+            ),
+            href: '/projects/construction-tour',
+        },
+
+
+
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
@@ -154,6 +159,73 @@ export default function ProjectsPage() {
             ),
             href: '/projects/project-management',
         },
+
+        {
+            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            content: (
+                <div className="flex flex-col h-full relative group/card">
+                    <PageLinkIcon />
+                    <h2 className="text-xl font-bold mb-2">
+                        HOLOLENS
+                    </h2>
+                    <div className="flex flex-row flex-1 min-h-0 min-w-0">
+
+                        <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
+                            <ImageCarousel imageSources={['./hololens/20200302_141258_HoloLens.jpg']} />
+                        </div>
+
+                        <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
+                            <SkillBadge keepSmall icon={<SiAutodesk size={18} color="#FFFFFF" />} label="NAVISWORKS" invert />
+                            <SkillBadge keepSmall icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT" />
+
+                            <SkillBadge keepSmall icon={<SiTrimble size={18} color="#0063A3" />} label="TRIMBLE CONNECT" />
+
+
+                        </div>
+
+                    </div>
+
+                    <p className="text-gray-600">Overlaying 3D models on their real work counterparts </p>
+
+
+                </div>
+            ),
+            href: './projects/hololens'
+        },
+
+        {
+            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            content: (
+                <div className="flex flex-col h-full relative group/card">
+                    <PageLinkIcon />
+                    <h2 className="text-xl font-bold mb-2">
+                        PORTFOLIO WEBSITE
+                    </h2>
+                    <div className="flex flex-row flex-1 min-h-0 min-w-0">
+
+                        <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
+                            <ImageCarousel imageSources={['./portfolio/aboutme.png', './portfolio/homemobile.png']} />
+                        </div>
+
+                        <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
+                            <SkillBadge keepSmall icon={<SiNextdotjs size={18} color="#FFFFFF" />} label="NEXT.JS" invert />
+                            <SkillBadge keepSmall icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
+                            <SkillBadge keepSmall icon={<SiReact color="#61DAFB" />} label="REACT" />
+
+
+                        </div>
+
+                    </div>
+
+                    <p className="text-gray-600">This website!</p>
+
+
+                </div>
+            ),
+            href: './projects/portfolio'
+        },
+
+
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
             content: (
@@ -315,71 +387,8 @@ export default function ProjectsPage() {
         },
 
 
-        {
-            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
-            content: (
-                <div className="flex flex-col h-full relative group/card">
-                    <PageLinkIcon />
-                    <h2 className="text-xl font-bold mb-2">
-                        PORTFOLIO WEBSITE
-                    </h2>
-                    <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
-                        <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
-                            <ImageCarousel imageSources={['./portfolio/aboutme.png', './portfolio/homemobile.png']} />
-                        </div>
-
-                        <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-                            <SkillBadge keepSmall icon={<SiNextdotjs size={18} color="#FFFFFF" />} label="NEXT.JS" invert />
-                            <SkillBadge keepSmall icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
-                            <SkillBadge keepSmall icon={<SiReact color="#61DAFB" />} label="REACT" />
-
-
-                        </div>
-
-                    </div>
-
-                    <p className="text-gray-600">This website!</p>
-
-
-                </div>
-            ),
-            href: './projects/portfolio'
-        },
-
-        {
-            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
-            content: (
-                <div className="flex flex-col h-full relative group/card">
-                    <PageLinkIcon />
-                    <h2 className="text-xl font-bold mb-2">
-                        HOLOLENS 
-                    </h2>
-                    <div className="flex flex-row flex-1 min-h-0 min-w-0">
-
-                        <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
-                            <ImageCarousel imageSources={['./hololens/20200302_141258_HoloLens.jpg']} />
-                        </div>
-
-                        <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-                            <SkillBadge keepSmall icon={<SiAutodesk size={18} color="#FFFFFF" />} label="NAVISWORKS" invert />
-                            <SkillBadge keepSmall icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT" />
-
-                            <SkillBadge keepSmall icon={<SiTrimble size={18} color="#0063A3" />} label="TRIMBLE CONNECT" />
-
-
-                        </div>
-
-                    </div>
-
-                    <p className="text-gray-600">Overlaying 3D models on their real work counterparts </p>
-
-
-                </div>
-            ),
-            href: './projects/hololens'
-        },
-
+     
 
   ];
 
