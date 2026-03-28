@@ -71,16 +71,16 @@ export default function PlatformIntegrationPage() {
             content: (
                 <div>
                     <h2 className="text-xl font-semibold text-black mb-2">WHY</h2>
-                    {/*<p className="text-gray-600 flex-1">OR WHAT EX. WHAT THE PROJECT DOES. solution is multiple bullet points with soft skills, not grandular, for recruiter</p> */}
+             
                     <p className="text-black">
                         The team relied on separate tools for core workflows:
-                        <ul className="list-disc pl-6 space-y-1">
+                        <ul className="list-disc pl-6 space-y-1 pt-2 pb-2">
                             <li>Notion for documentation</li>
                             <li>Linear for task management</li>
                             <li>Discord for communication</li>
                         </ul>
                         While each tool worked well independently, there was no seamless connection between them. This led to:
-                        <ul className="list-disc pl-6 space-y-1">
+                    <ul className="list-disc pl-6 space-y-1 pt-2 pb-2">
                             <li>Manual updates when work progressed between teams</li>
                             <li>Missed or delayed notifications</li>
                             <li>Lack of clarity around ownership at each stage</li>
@@ -88,7 +88,7 @@ export default function PlatformIntegrationPage() {
                         </ul>
 
                         I wanted to explore how a status-driven system could automatically orchestrate workflows across tools, removing the need for manual coordination while maintaining flexibility for collaboration.</p>
-
+            
                 </div>
             ),
         },

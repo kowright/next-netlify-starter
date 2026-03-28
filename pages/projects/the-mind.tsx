@@ -76,7 +76,7 @@ export default function TheMindPage() {
         },
     
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-2", backgroundColor: 'bg-[#f76135]',
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2", backgroundColor: 'bg-[#f76135]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold mb-2 text-white">WHAT</h2>
@@ -86,16 +86,18 @@ export default function TheMindPage() {
             ),
         },
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-2", backgroundColor: 'bg-[#FCBB21]',
+            colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-2", backgroundColor: 'bg-[#FCBB21]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold text-black mb-2">WHY</h2>
-                    {/*<p className="text-gray-600 flex-1">OR WHAT EX. WHAT THE PROJECT DOES. solution is multiple bullet points with soft skills, not grandular, for recruiter</p> */}
+                    <div className='lg:space-y-4 space-y-2'>
+
                     <p className=" text-black flex-1">Implemented cross communication between client and server.</p>
                     <p className='text-black'>Built a real-time messaging system using WebSockets to synchronize multiple clients at once.</p>
                     <p className="text-black">Developed a centralized game engine on the server to manage game state, validate player actions, and broadcast updates to clients.</p>
                     <p className='text-black'>On the client side, built a responsive React Native interface that listens for server events and updates UI state in real time.</p>
-                    <p className='text-black'>Created design and did a user test session to improve user interactions.</p>
+                        <p className='text-black'>Created the design and did a user test session to improve user interactions.</p>
+                    </div>
                 </div>
             ),
         },

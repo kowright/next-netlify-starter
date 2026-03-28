@@ -47,7 +47,7 @@ export default function MinimapPage() {
             content: (
                 <div>
                     <h2 className="text-xl font-semibold">IMPACT</h2>
-                    <p>The prototype was well-received by the team and adopted into the actual product, transitioning from a learning exercise into a production feature. The minimap was demoed in front of multiple clients, who cited the minimap as an innovative & desirable feature. The team decided to invest heavily into adding features into the minimap, which resulted in some of the features mentioned on this page.</p>
+                    <p>The prototype was well-received by the team and adopted into the actual product. The minimap was demoed in front of multiple clients, who cited the minimap as an innovative & desirable feature. The team decided to invest heavily into adding features into the minimap, which resulted in some of the features mentioned on this page.</p>
                 </div>
             ),
         },
@@ -73,10 +73,12 @@ export default function MinimapPage() {
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3", backgroundColor: 'bg-[#f76135]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4", backgroundColor: 'bg-[#f76135]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold mb-2 text-white">WHAT</h2>
+                    <div className='lg:space-y-4 space-y-2'>
+
                     <p className="text-white">Designed and developed a 3D interactive map.
 
                         Key functionality included:</p>
@@ -97,7 +99,8 @@ export default function MinimapPage() {
                     <p className="text-white"><span className="underline">Interaction design: </span>
                         Minimal-button input system for intuitive control
                         Physical movement of map for different views and dimensions for intuivive control
-                        Drag-and-relocate functionality, similar to Google Maps-style repositioning</p>
+                            Drag-and-relocate functionality, similar to Google Maps-style repositioning</p>
+                        </div>
                 </div>
             ),
         },
@@ -107,11 +110,12 @@ export default function MinimapPage() {
  
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3", backgroundColor: 'bg-[#FCBB21]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4", backgroundColor: 'bg-[#FCBB21]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold text-black mb-2">WHY</h2>
-                    {/*<p className="text-gray-600 flex-1">OR WHAT EX. WHAT THE PROJECT DOES. solution is multiple bullet points with soft skills, not grandular, for recruiter</p> */}
+                    <div className='lg:space-y-4 space-y-2'>
+
                     <p className="text-black">The feature was created as an introductory task to learn a company's codebase, but was intentionally scoped to solve a real usability problem I had.</p>
 
                         <p>With my background in construction where spatial awareness of a building is critical, I recognized that it was easy to lose track of where I was in a 3D virtual space and I recognized some similarities in the barriers I and others had with a laptop screen navigating a 3D soon-to-be constructed building and a person in VR navigating a 3D buliding. The goal was to:</p> 
@@ -120,7 +124,7 @@ export default function MinimapPage() {
                         <p>Create a system that is intuitive and low-friction, especially for users unfamiliar with the controllers or app controls</p> 
                         <p>Reduce cognitive load by minimizing controller inputs</p> 
                         <p>The idea was to explore how natural interactions could replace traditional UI-heavy map systems in a 3D virtual world.</p>
-                   
+                   </div>
                 </div>
             ),
         },
