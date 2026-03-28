@@ -3,7 +3,7 @@ import Layout from "../../components/Layout";
 import ImageCarousel from "../../components/ImageCarousel";
 import { CSharpSkillBadge, HomeBox, LinkedInBox } from "../../components/BoxUtil";
 import SkillBadge from "../../components/SkillBadge";
-import { SiReact, SiTailwindcss, SiTypescript, SiNodedotjs, SiJavascript, SiNextdotjs, SiUnity, SiAutodesk, SiAutodeskrevit, SiAutodeskmaya, SiSketchup } from "react-icons/si";
+import { SiReact, SiTailwindcss, SiTypescript, SiNodedotjs, SiJavascript, SiNextdotjs, SiUnity, SiAutodesk, SiAutodeskrevit, SiAutodeskmaya, SiSketchup, SiTrimble } from "react-icons/si";
 import PageLinkIcon from "../../components/PageLinkIcon";
 
 export default function ProjectsPage() {
@@ -252,7 +252,7 @@ export default function ProjectsPage() {
                 <div className="flex flex-col h-full relative group/card">
                     <PageLinkIcon />
                     <h2 className="text-xl font-bold mb-2">
-                        MEP COORDINATION
+                        MEP COORDINATION & SIMULATION
                     </h2>
                     <div className="flex flex-row flex-1 min-h-0 min-w-0">
 
@@ -272,11 +272,12 @@ export default function ProjectsPage() {
 
                     </div>
 
-                    <p className="text-gray-600">Managing and modeling utitilies for construction.</p>
+                    <p className="text-gray-600">Managing and simulating phases of construction.</p>
 
 
                 </div>
             ),
+            href: './projects/mep'
         },
 
         {
@@ -336,6 +337,37 @@ export default function ProjectsPage() {
                     </div>
 
                     <p className="text-gray-600">This website!</p>
+
+
+                </div>
+            ),
+        },
+
+        {
+            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            content: (
+                <div className="flex flex-col h-full relative group/card">
+                    <PageLinkIcon />
+                    <h2 className="text-xl font-bold mb-2">
+                        HOLOLENS 
+                    </h2>
+                    <div className="flex flex-row flex-1 min-h-0 min-w-0">
+
+                        <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
+                            <ImageCarousel imageSources={['./hololens/20200302_141258_HoloLens.jpg']} />
+                        </div>
+
+                        <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
+                            <SkillBadge keepSmall icon={<SiAutodesk size={18} color="#FFFFFF" />} label="NAVISWORKS" invert />
+
+                            <SkillBadge keepSmall icon={<SiTrimble size={18} color="#0063A3" />} label="TRIMBLE CONENCT" />
+
+
+                        </div>
+
+                    </div>
+
+                    <p className="text-gray-600">Overlaying 3D models on their real work counterparts </p>
 
 
                 </div>
