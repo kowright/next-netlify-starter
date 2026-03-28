@@ -50,7 +50,7 @@ export default function AboutPage() {
                         <div className="absolute -left-[2.4rem] top-[0.5rem] w-6 h-6 bg-white outline rounded-full flex items-center justify-content hover:animate-shake" >
                             <FaDumbbell size={16} color="#F57195" />
                         </div>
-                        <div className="bg-white border-4 md:p-1 font-bold border-black rounded-lg">
+                        <div className="bg-white border-4 p-1 font-bold border-black rounded-lg">
                             2024 - Gym Management Platform
                         </div>
                     </div>
@@ -70,7 +70,7 @@ export default function AboutPage() {
                 <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
                     <SkillBadge keepSmall icon={<SiReact size={18} color="#61DAFB" />} label="REACT" />
                     <SkillBadge keepSmall icon={<SiTailwindcss size={18} color="#06B6D4" />} label="TAILWIND" />
-                    <SkillBadge keepSmall icon={<SiEmberdotjs size={18} color="#E04E39" />} label="EMBER.JS" />
+                    <SkillBadge keepSmall icon={<SiEmberdotjs size={18} color="#E04E39" />} label="EMBER" />
                     <SkillBadge keepSmall icon={<SiBlazor size={18} color="#512BD4" />} label="BLAZOR" />
 
                 </div>
@@ -126,23 +126,6 @@ LinkedInBox,
 
 
     HomeBox,
-
-        //{
-        //    colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-1", backgroundColor: 'bg-green-400',
-        //    content: (
-        //        <div>
-        //            <h2 className="text-2xl font-black mb-2">GOOD NAME HERE</h2>
-
-        //            <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
-
-        //                <SkillBadge keepSmall label="MANAGEMENT" />
-        //                <SkillBadge keepSmall label="UI/UX" />
-        //                <SkillBadge keepSmall label="VIRTUAL REALITY" />
-        //                <SkillBadge keepSmall label="REST API" />
-        //            </div>
-        //        </div>
-        //    ),
-        //},
 
         {
             colSpanClass: "col-span-1 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-[#73B2F4]',

@@ -7,7 +7,6 @@ import VideoPlayer from "../../components/VideoPlayer";
 
 export default function MinimapPage() {
 
-
     const minimap2 = "https://res.cloudinary.com/drqmbimij/video/upload/v1774462681/minimap2_rbrziv.mp4"
     const minimap3 = "https://res.cloudinary.com/drqmbimij/video/upload/v1774462681/minimap3_awo0ys.mp4"
     const minimap4 = "https://res.cloudinary.com/drqmbimij/video/upload/v1774462669/minimap4_aozsfy.mp4"
@@ -37,13 +36,28 @@ export default function MinimapPage() {
             ),
         },
        
-        GithubBox('https://github.com/kowright/the-mind'),
+        {
+            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#b9e158]',
+            content: (
+                <div>
 
+                    <div>
+                        <h2 className="text-xl font-semibold mb-2">STACK</h2>
+                        <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-4 flex-wrap'>
 
+                            <CSharpSkillBadge />
+                            <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
+                        </div>
+
+                    </div>
+
+                </div>
+            ),
+        },
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#F5918D]',
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-2", backgroundColor: 'bg-[#F5918D]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold">IMPACT</h2>
@@ -52,28 +66,13 @@ export default function MinimapPage() {
             ),
         },
 
-        {
-            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1 lg:row-span-1", backgroundColor: 'bg-[#b9e158]',
-            content: (
-                <div>
-                    
-                    <div className='flex flex-row gap-2 flex-wrap'>
-                        {/*<h2 className="text-xl font-semibold mb-2">STACK</h2>*/}
-                        <CSharpSkillBadge />
-                        <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
-                        
 
-                    </div>
-
-                </div>
-            ),
-        },
 
         NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', true),
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4", backgroundColor: 'bg-[#f76135]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-5 lg:row-span-4", backgroundColor: 'bg-[#f76135]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold mb-2 text-white">WHAT</h2>
@@ -110,7 +109,7 @@ export default function MinimapPage() {
  
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4", backgroundColor: 'bg-[#FCBB21]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-5 lg:row-span-4", backgroundColor: 'bg-[#FCBB21]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold text-black mb-2">WHY</h2>

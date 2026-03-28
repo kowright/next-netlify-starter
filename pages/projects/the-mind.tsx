@@ -27,7 +27,7 @@ export default function TheMindPage() {
             ),
         },
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-red-600',
+            colSpanClass: "col-span-1 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-red-600',
             content: (
                 <>
                     <h2 className="text-4xl font-black text-white mb-2">THE MIND</h2>
@@ -48,13 +48,10 @@ export default function TheMindPage() {
 
                         <SkillBadge keepSmall label="WEBSOCKETS" />
                         <SkillBadge keepSmall icon={<SiReact size={18} color="#06B6D4" />} label="REACT NATIVE" />
-                        <SkillBadge keepSmall label="WEB" />
-                        <SkillBadge keepSmall label="MOBILE" />
-                        <SkillBadge keepSmall label="MULTIPLAYER" />
-                        <SkillBadge keepSmall label="UI/UX" />
+          
                         <SkillBadge keepSmall icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
                         <SkillBadge keepSmall icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
-                        <SkillBadge keepSmall label="FULLSTACK" />
+         
 
                     </div>
 
@@ -63,7 +60,7 @@ export default function TheMindPage() {
         },
 
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#F5918D]',
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-2", backgroundColor: 'bg-[#F5918D]',
             content: (
                 <>
                     <h2 className="text-xl font-semibold mb-2">IMPACT</h2>
@@ -86,7 +83,7 @@ export default function TheMindPage() {
             ),
         },
         {
-            colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-2", backgroundColor: 'bg-[#FCBB21]',
+            colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-3 lg:row-span-2", backgroundColor: 'bg-[#FCBB21]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold text-black mb-2">WHY</h2>

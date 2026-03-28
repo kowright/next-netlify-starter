@@ -41,7 +41,7 @@ export default function PlatformIntegrationPage() {
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4", backgroundColor: 'bg-[#f76135]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-5 lg:row-span-4", backgroundColor: 'bg-[#f76135]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold mb-2 text-white">WHAT</h2>
@@ -117,7 +117,7 @@ export default function PlatformIntegrationPage() {
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-6", rowSpanClass: "row-span-1 lg:row-span-1", backgroundColor: 'bg-[#F5918D]',
+            colSpanClass: "col-span-2 lg:col-span-6", rowSpanClass: "row-span-2 lg:row-span-1", backgroundColor: 'bg-[#F5918D]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold">IMPACT</h2>

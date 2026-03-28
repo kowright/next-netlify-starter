@@ -39,7 +39,7 @@ export default function RealityCapturePage() {
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#F5918D]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-2", backgroundColor: 'bg-[#F5918D]',
             content: (
                 <div className='space-y-2'>
                     <h2 className="text-xl font-semibold text">IMPACT</h2>
@@ -77,7 +77,7 @@ export default function RealityCapturePage() {
         LinkedInBox,
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3", backgroundColor: 'bg-[#f76135]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4 lg:row-span-3", backgroundColor: 'bg-[#f76135]',
             content: (
                 <div className='lg:space-y-4 space-y-2'>
                     <h2 className="text-xl font-semibold mb-2 text-white">WHY</h2>
@@ -108,7 +108,7 @@ export default function RealityCapturePage() {
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3", backgroundColor: 'bg-[#FCBB21]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4 lg:row-span-3", backgroundColor: 'bg-[#FCBB21]',
             content: (
                 <div className='lg:space-y-4 space-y-2'>
                     <h2 className="text-xl font-semibold">WHAT</h2>

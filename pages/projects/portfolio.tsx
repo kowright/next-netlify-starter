@@ -55,9 +55,11 @@ export default function PortfolioPage() {
                 </div>
             ),
         },
-        GithubBox('SOMETHING'),
+
 
         NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', true),
+
+        GithubBox('https://github.com/kowright/next-netlify-starter'),
 
         LinkedInBox,
 
@@ -100,7 +102,7 @@ export default function PortfolioPage() {
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#F5918D]',
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-2", backgroundColor: 'bg-[#F5918D]',
             content: (
                 <div className='space-y-2'>
                     <h2 className="text-xl font-semibold text">IMPACT</h2>

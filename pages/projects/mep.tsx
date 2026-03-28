@@ -24,7 +24,7 @@ export default function MEPPage() {
             ),
         },
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1", backgroundColor: 'bg-red-600',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-1", backgroundColor: 'bg-red-600',
             content: (
                 <>
                     <h2 className="text-4xl font-black text-white">MEP COORDINATION & SIMULATIONS</h2>
@@ -39,7 +39,7 @@ export default function MEPPage() {
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#F5918D]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-2", backgroundColor: 'bg-[#F5918D]',
             content: (
                 <div className='space-y-2'>
                     <h2 className="text-xl font-semibold">IMPACT</h2>
@@ -72,7 +72,7 @@ export default function MEPPage() {
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4", backgroundColor: 'bg-[#f76135]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-5 lg:row-span-4", backgroundColor: 'bg-[#f76135]',
             content: (
                 <div className='lg:space-y-4 space-y-2'>
                     <h2 className="text-xl font-semibold mb-2 text-white">SOLUTION</h2>

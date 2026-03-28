@@ -46,7 +46,7 @@ export default function ModelingPage() {
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#b9e158]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2", backgroundColor: 'bg-[#b9e158]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold mb-2">STACK</h2>
@@ -94,7 +94,7 @@ export default function ModelingPage() {
         },
 
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#F5918D]',
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-2", backgroundColor: 'bg-[#F5918D]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold mb-2">IMPACT</h2>

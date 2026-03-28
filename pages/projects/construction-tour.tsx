@@ -24,17 +24,16 @@ export default function ConstructionTourPage() {
             ),
         },
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-red-600',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1", backgroundColor: 'bg-red-600',
             content: (
                 <>
-                    <h2 className="text-4xl font-black text-white">CONSTRUCTION TOUR</h2>
+                    <h2 className="text-4xl font-black text-white mb-2">CONSTRUCTION TOUR</h2>
 
-                    <p className="flex-1 text-black">2020</p>
+                    <p className="flex-1 text-white">2020</p>
                 </>
             ),
         },
 
-        GithubBox('https://github.com/kowright/the-mind'),
 
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#b9e158]',

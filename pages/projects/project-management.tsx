@@ -2,7 +2,7 @@ import { BentoBoxGridItem } from "../../components/BentoBoxGrid";
 import Layout from "../../components/Layout";
 import { SiFigma, SiNodedotjs, SiPostgresql, SiPostman, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 import SkillBadge from "../../components/SkillBadge";
-import { GithubBox, LinkedInBox, NavBox } from "../../components/BoxUtil";
+import { GithubBox, NavBox } from "../../components/BoxUtil";
 import ImageCarousel from "../../components/ImageCarousel";
 
 export default function ProjectManagementTool() {
@@ -21,27 +21,27 @@ export default function ProjectManagementTool() {
             ),
         },
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-red-600',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1", backgroundColor: 'bg-red-600',
             content: (
                 <>
-                    <h2 className="text-3xl font-black text-white">PROJECT MANAGEMENT TOOL</h2>
+                    <h2 className="text-3xl font-black text-white mb-2">PROJECT MANAGEMENT TOOL</h2>
 
-                    <p className="flex-1 text-black">2024</p>
+                    <p className="flex-1 text-white">2024</p>
                 </>
             ),
         },
 
-        GithubBox('https://github.com/kowright/the-mind'),
+    
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#b9e158]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-2", backgroundColor: 'bg-[#b9e158]',
             content: (
                 <>
                     <h2 className="text-xl font-semibold">WHAT</h2>
 
 
                     <p>Built a prototype of a project management tool centered around a single source of truth with multi-view flexibility:</p>
-                    <ul className="list-disc pl-6 space-y-1">
+                    <ul className="list-disc pl-6 space-y-1 pt-2 pb-2">
 
                         <li>View the same dataset across Table, List, Timeline, and Kanban layouts</li>
                         <li>Create and edit tags, tasks, milestones and more</li>
@@ -56,7 +56,7 @@ export default function ProjectManagementTool() {
         },
 
         {
-            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-3", backgroundColor: 'bg-[#F5918D]',
+            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-2 lg:row-span-3", backgroundColor: 'bg-[#F5918D]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold mb-2 text-white">STACK</h2>
@@ -87,12 +87,12 @@ export default function ProjectManagementTool() {
             ),
         },
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3", backgroundColor: 'bg-[#FCBB21]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4 lg:row-span-3", backgroundColor: 'bg-[#FCBB21]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold mb-2">WHY</h2>
                     <p>Existing tools like JIRA, Miro, Microsoft Project, Notion, and Linear each solve specific problems well, but fall short when used together in my experience: </p>
-                    <ul className="list-disc pl-6 space-y-1">
+                    <ul className="list-disc pl-6 space-y-1 pt-2 pb-2">
                         <li>Linear offers strong roadmapping, but lacks shared milestones across multiple disciplines</li>
                         <li>Miro enables creative freedom to make freeform shapes, but lacks structure to be updated without manually moving every shape</li>
                         <li>Notion provides multiple views, but requires manual setup to make objects heavily overlap each other</li>
@@ -106,8 +106,7 @@ export default function ProjectManagementTool() {
         NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', true),
 
 
-
-        LinkedInBox,
+        GithubBox('https://github.com/kowright/pm-node'),
 
     ];
 

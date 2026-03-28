@@ -96,7 +96,7 @@ export default function Home() {
 
                                 <SkillBadge icon={<SiReact color="#61DAFB" />} label="REACT" />
                                 <SkillBadge icon={<SiTailwindcss size={18} color="#06B6D4" />} label="TAILWIND" />
-                                <SkillBadge icon={<SiEmberdotjs size={18} color="#E04E39" />} label="EMBER.JS" />
+                                <SkillBadge icon={<SiEmberdotjs size={18} color="#E04E39" />} label="EMBER" />
                                 <SkillBadge icon={<SiBlazor size={18} color="#512BD4" />} label="BLAZOR" />
 
                             </div>
