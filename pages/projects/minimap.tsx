@@ -43,10 +43,10 @@ export default function MinimapPage() {
 
                     <div>
                         <h2 className="text-xl font-semibold mb-2">STACK</h2>
-                        <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-4 flex-wrap'>
+                        <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
 
                             <CSharpSkillBadge />
-                            <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
+                            <SkillBadge icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
                         </div>
 
                     </div>

@@ -60,10 +60,10 @@ export default function ConstructionTourPage() {
             content: (
                 <div>
                     <h2 className="text-xl font-semibold mb-2 text-white">STACK</h2>
-                    <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
-                    <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
+                    <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
+                    <SkillBadge icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
                         <CSharpSkillBadge />
-                    <SkillBadge keepSmall label="VR" />
+                    <SkillBadge label="VR" />
                    
                     </div>
                </div>

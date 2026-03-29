@@ -60,6 +60,6 @@ export const HomeBox: BentoBoxGridItem = {
 
 export function CSharpSkillBadge() {
     return (
-        <SkillBadge keepSmall icon={<img src="/cSharp.svg" className="w-5 h-5" />} label="C#" />
+        <SkillBadge icon={<img src="/cSharp.svg" className="w-5 h-5" />} label="C#" />
     )
 }

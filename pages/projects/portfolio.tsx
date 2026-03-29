@@ -41,10 +41,10 @@ export default function PortfolioPage() {
                 <div>
 
                     <h2 className="text-xl font-semibold mb-2">STACK</h2>
-                    <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-4 flex-wrap'>
-                        <SkillBadge keepSmall icon={<SiNextdotjs size={18} color="#FFFFFF" />} label="NEXT.JS" invert />
-                        <SkillBadge keepSmall icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
-                        <SkillBadge keepSmall icon={<SiReact color="#61DAFB" />} label="REACT" />
+                    <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
+                        <SkillBadge icon={<SiNextdotjs size={18} color="#FFFFFF" />} label="NEXT.JS" invert />
+                        <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
+                        <SkillBadge icon={<SiReact color="#61DAFB" />} label="REACT" />
 
                         
 
@@ -70,7 +70,7 @@ export default function PortfolioPage() {
                 <div className='lg:space-y-4 space-y-2'>
                     <h2 className="text-xl font-semibold">WHAT</h2>
 
-                    <p>Created a public portfolio website to showcase projects and skilled I have gained over the years for others to explore and learn. It was inspired by Neo-Brutalist style and bento box UI organization.</p>
+                    <p>Created a public portfolio website to showcase projects and skills I have gained over the years for others to explore and learn. It was inspired by Neo-Brutalist style and bento box UI organization.</p>
 
                 </div>
             ),
@@ -104,7 +104,7 @@ export default function PortfolioPage() {
             content: (
                 <div className='space-y-2'>
                     <h2 className="text-xl font-semibold text">IMPACT</h2>
-                    <p>A website created by me that can be continuously updated.</p>
+                    <p>A responsive website created by me that can be continuously updated.</p>
                     <p>A more cost-effective solution to website builders.</p>
                     <p>Explored the Next.js framework and am more similar with those workflows.</p>
                 </div>

@@ -58,7 +58,7 @@ export default function Home() {
                         <div>
                             <h2 className="text-2xl font-black mb-2">FRONTEND</h2>
 
-                            <div className='flex flex-row  gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
+                            <div className='flex flex-row  gap-2 xl:gap-4 flex-wrap'>
 
                                 <SkillBadge icon={<SiReact color="#61DAFB" />} label="REACT" />
                                 <SkillBadge icon={<SiTailwindcss size={18} color="#06B6D4" />} label="TAILWIND" />
@@ -71,7 +71,7 @@ export default function Home() {
                         <div className=''>
 
                             <h2 className="text-2xl font-black mb-2">BACKEND</h2>
-                            <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
+                            <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
                                 <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
                                 <SkillBadge icon={<SiPostgresql size={18} color="#4169E1" />} label="POSTGRES" />
                                 <SkillBadge icon={<SiDjango size={18} color="#092E20" />} label="DJANGO" />
@@ -80,19 +80,19 @@ export default function Home() {
 
                         <div>
                             <h2 className="text-2xl font-black">TOOLS</h2>
-                            <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
+                            <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
 
                                 <SkillBadge icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
                                 <SkillBadge icon={<SiFigma size={18} color="#F24E1E" />} label="FIGMA" />
                                 <SkillBadge icon={<SiStorybook size={18} color="#FF4785" />} label="STORYBOOK" />
-                                <SkillBadge icon={<SiPostman size={18} color="#FF4785" />} label="POSTMAN" />
+                                <SkillBadge icon={<SiPostman size={18} color="#FF6C37" />} label="POSTMAN" />
                             </div>
                         </div>
 
                         <div>
                             <h2 className="text-2xl font-black">LANGUAGES</h2>
 
-                            <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
+                            <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
                                 <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
                                 <CSharpSkillBadge />
                                 <SkillBadge icon={<SiJavascript size={18} color="#F7DF1E" />} label="JAVASCRIPT" />

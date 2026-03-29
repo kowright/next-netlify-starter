@@ -41,9 +41,9 @@ export default function IndustrialARPage() {
             content: (
                 <div>
                  
-                    <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
+                    <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
 
-                        <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
+                        <SkillBadge icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
                         <CSharpSkillBadge />
 
                     </div>

@@ -56,10 +56,10 @@ export default function MEPPage() {
                 <div>
 
                     <h2 className="text-xl font-semibold mb-2">STACK</h2>
-                    <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
+                    <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
 
-                        <SkillBadge keepSmall icon={<SiAutodesk size={18} color="#FFFFFF" />} label="NAVISWORKS" invert />
-                        <SkillBadge keepSmall icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT" />
+                        <SkillBadge icon={<SiAutodesk size={18} color="#FFFFFF" />} label="NAVISWORKS" invert />
+                        <SkillBadge icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT" />
 
 
                     </div>

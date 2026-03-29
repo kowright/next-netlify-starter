@@ -99,12 +99,12 @@ export default function PlatformIntegrationPage() {
             content: (
                 <div>
                     <h2 className="text-xl font-semibold mb-2">STACK</h2>
-                    <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
+                    <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
 
-                        <SkillBadge keepSmall icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
-                        <SkillBadge keepSmall icon={<SiJavascript size={18} color="#F7DF1E" />} label="JAVASCRIPT" />
+                        <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
+                        <SkillBadge icon={<SiJavascript size={18} color="#F7DF1E" />} label="JAVASCRIPT" />
 
-                        <SkillBadge keepSmall label="WEBHOOKS" />
+                        <SkillBadge label="WEBHOOKS" />
 
 
                     </div>

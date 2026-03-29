@@ -67,11 +67,11 @@ export default function AboutPage() {
 
                 <h2 className="text-2xl font-black mb-2">FRONTEND</h2>
 
-                <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
-                    <SkillBadge keepSmall icon={<SiReact size={18} color="#61DAFB" />} label="REACT" />
-                    <SkillBadge keepSmall icon={<SiTailwindcss size={18} color="#06B6D4" />} label="TAILWIND" />
-                    <SkillBadge keepSmall icon={<SiEmberdotjs size={18} color="#E04E39" />} label="EMBER" />
-                    <SkillBadge keepSmall icon={<SiBlazor size={18} color="#512BD4" />} label="BLAZOR" />
+                <div className='flex flex-row gap-2 flex-wrap'>
+                    <SkillBadge icon={<SiReact size={18} color="#61DAFB" />} label="REACT" />
+                    <SkillBadge icon={<SiTailwindcss size={18} color="#06B6D4" />} label="TAILWIND" />
+                    <SkillBadge icon={<SiEmberdotjs size={18} color="#E04E39" />} label="EMBER" />
+                    <SkillBadge icon={<SiBlazor size={18} color="#512BD4" />} label="BLAZOR" />
 
                 </div>
             </div> 
@@ -86,12 +86,12 @@ export default function AboutPage() {
             content: (
                 <div>
                     <h2 className="text-2xl font-black mb-2">LANGUAGES</h2>
-                    <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
-                        <SkillBadge keepSmall icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
+                    <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
+                        <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
                         <CSharpSkillBadge />
-                        <SkillBadge keepSmall icon={<SiJavascript size={18} color="#F7DF1E" />} label="JAVASCRIPT" />
-                        <SkillBadge keepSmall icon={<SiPython size={18} color="#3776AB" />} label="PYTHON" />
-                        <SkillBadge keepSmall icon={<SiCplusplus size={18} color="#A8B9CC" />} label="C++" />
+                        <SkillBadge icon={<SiJavascript size={18} color="#F7DF1E" />} label="JAVASCRIPT" />
+                        <SkillBadge icon={<SiPython size={18} color="#3776AB" />} label="PYTHON" />
+                        <SkillBadge icon={<SiCplusplus size={18} color="#A8B9CC" />} label="C++" />
 
 
                     </div>
@@ -114,11 +114,11 @@ LinkedInBox,
                 <div className=''>
 
                     <h2 className="text-2xl font-black mb-2">BACKEND</h2>
-                    <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
-                        <SkillBadge keepSmall icon={<SiDjango size={18} color="#092E20" />} label="DJANGO" />
-                        <SkillBadge keepSmall icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
-                        <SkillBadge keepSmall icon={<SiPostgresql size={18} color="#4169E1" />} label="POSTGRES" />
-                        <SkillBadge keepSmall label="SQL" />
+                    <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
+                        <SkillBadge icon={<SiDjango size={18} color="#092E20" />} label="DJANGO" />
+                        <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
+                        <SkillBadge icon={<SiPostgresql size={18} color="#4169E1" />} label="POSTGRES" />
+                        <SkillBadge label="SQL" />
                     </div>
                 </div>
             ),
@@ -143,14 +143,14 @@ LinkedInBox,
        content: ( 
             <div> 
                <h2 className="text-2xl font-black">TOOLS</h2>
-               <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
-                   <SkillBadge keepSmall icon={<SiJira size={18} color="#0052CC" />} label="JIRA" />
-                   <SkillBadge keepSmall icon={<SiLinear size={18} color="#5E6AD2" />} label="LINEAR" />
-                   <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
-                   <SkillBadge keepSmall icon={<SiDocker size={18} color="#2496ED" />} label="DOCKER" />
-                   <SkillBadge keepSmall icon={<SiFigma size={18} color="#F24E1E" />} label="FIGMA" />
-                   <SkillBadge keepSmall icon={<SiStorybook size={18} color="#FF4785" />} label="STORYBOOK" />
-                   <SkillBadge keepSmall icon={<SiPostman size={18} color="#FF6C37" />} label="POSTMAN" />
+               <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
+                   <SkillBadge icon={<SiJira size={18} color="#0052CC" />} label="JIRA" />
+                   <SkillBadge icon={<SiLinear size={18} color="#5E6AD2" />} label="LINEAR" />
+                   <SkillBadge icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
+                   <SkillBadge icon={<SiDocker size={18} color="#2496ED" />} label="DOCKER" />
+                   <SkillBadge icon={<SiFigma size={18} color="#F24E1E" />} label="FIGMA" />
+                   <SkillBadge icon={<SiStorybook size={18} color="#FF4785" />} label="STORYBOOK" />
+                   <SkillBadge icon={<SiPostman size={18} color="#FF6C37" />} label="POSTMAN" />
                </div>
             </div> 
         ), 

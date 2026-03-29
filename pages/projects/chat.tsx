@@ -45,20 +45,20 @@ export default function ChatPage() {
             content: (
                 <div>
                     <h2 className="text-xl font-semibold mb-2">STACK</h2>
-                    <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
+                    <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
                         
-                        <SkillBadge keepSmall label="WEBSOCKETS" />
-                        <SkillBadge keepSmall icon={<SiReact size={18} color="#06B6D4" />} label="REACT NATIVE" />
-                        <SkillBadge keepSmall label="WEB" />
-                        <SkillBadge keepSmall label="MOBILE" />
-                        <SkillBadge keepSmall label="MULTIPLAYER" />
-                        <SkillBadge keepSmall icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
-                        <SkillBadge keepSmall label="WEBSOCKETS" />
-                        <SkillBadge keepSmall icon={<SiReact size={18} color="#06B6D4" />} label="REACT NATIVE" />
-                        <SkillBadge keepSmall label="WEB" />
-                        <SkillBadge keepSmall label="MOBILE" />
-                        <SkillBadge keepSmall label="MULTIPLAYER" />
-                        <SkillBadge keepSmall icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
+                        <SkillBadge label="WEBSOCKETS" />
+                        <SkillBadge icon={<SiReact size={18} color="#06B6D4" />} label="REACT NATIVE" />
+                        <SkillBadge label="WEB" />
+                        <SkillBadge label="MOBILE" />
+                        <SkillBadge label="MULTIPLAYER" />
+                        <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
+                        <SkillBadge label="WEBSOCKETS" />
+                        <SkillBadge icon={<SiReact size={18} color="#06B6D4" />} label="REACT NATIVE" />
+                        <SkillBadge label="WEB" />
+                        <SkillBadge label="MOBILE" />
+                        <SkillBadge label="MULTIPLAYER" />
+                        <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
                     </div>
 
                 </div>

@@ -60,7 +60,7 @@ export default function ProjectManagementTool() {
             content: (
                 <div>
                     <h2 className="text-xl font-semibold mb-2 text-white">STACK</h2>
-                    <div className='flex flex-row gap-2 xl:gap-4 2xl:gap-8 flex-wrap'>
+                    <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
 
                         <SkillBadge keepSmall icon={<SiReact color="#61DAFB" />} label="REACT" />
                         <SkillBadge keepSmall icon={<SiTailwindcss color="#06B6D4" />} label="TAILWIND" />
