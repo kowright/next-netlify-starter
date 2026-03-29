@@ -169,7 +169,7 @@ LinkedInBox,
         }, 
   ];
 
-  return (
-    <Layout items={projectsForBentoGrid} />
+    return (
+        <Layout items={projectsForBentoGrid} />
   );
 }

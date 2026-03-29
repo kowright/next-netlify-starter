@@ -7,41 +7,7 @@ import SkillBadge from "../components/SkillBadge";
 import ImageCarousel from "../components/ImageCarousel";
 import { CSharpSkillBadge, GithubBox, LinkedInBox, NavBox } from "../components/BoxUtil";
 import PageLinkIcon from "../components/PageLinkIcon";
-import { useEffect, useState } from "react";
-
 export default function Home() {
-
-    const [showSplash, setShowSplash] = useState(null);
-    const [fadeOut, setFadeOut] = useState(false);
-
-    useEffect(() => {
-        const hasSeenSplash = sessionStorage.getItem("seenSplash");
-
-        if (hasSeenSplash) {
-            setShowSplash(false);
-            return;
-        }
-
-        setShowSplash(true);
-        sessionStorage.setItem("seenSplash", "true");
-
-        // Start fade out after 1.5s
-        const fadeTimer = setTimeout(() => {
-            setFadeOut(true);
-        }, 4500);
-
-        // Remove splash after fade completes
-        const removeTimer = setTimeout(() => {
-            setShowSplash(false);
-        }, 7000);
-
-        return () => {
-            clearTimeout(fadeTimer);
-            clearTimeout(removeTimer);
-        };
-    }, []);
-
-    if (showSplash === null) return null;
 
     const imageSources: string[] = [
         "/the-mind/the-mind-2.jpg",
@@ -151,23 +117,11 @@ export default function Home() {
         }, 
     ];
 
-  return (
-    
-     <>
-      {showSplash && (
-        <div
-                  className={`fixed inset-0 z-[9999] flex items-center justify-center bg-black text-white transition-opacity duration-500 ${
-            fadeOut ? "opacity-0" : "opacity-100"
-          }`}
-        >
-                  <h1 className='text-white drop-shadow-glow font-black tracking-widest text-4xl lg:text-7xl animate-pulse'>KORTNEY WRIGHT</h1>
-        </div>
-      )}
-
-          <main>
-   
-              <Layout items={projectsForBentoGrid} />
-      </main>
-    </>
-  );
+    return (
+        <>
+            <main>
+                <Layout items={projectsForBentoGrid} />
+            </main>
+        </>
+    );
 }
