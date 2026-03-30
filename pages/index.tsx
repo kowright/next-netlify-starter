@@ -1,6 +1,6 @@
 "use client";
 
-import { BentoBoxGridItem } from "../components/BentoBoxGrid";
+import { BentoBoxGridItem } from "../components/BentoItemBox";
 import Layout from "../components/Layout";
 import { SiReact, SiTailwindcss, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiFigma, SiStorybook } from "react-icons/si";
 import SkillBadge from "../components/SkillBadge";
@@ -28,7 +28,7 @@ export default function Home() {
             ),
         },
 
-        NavBox('ABOUT ME', '/about', 'bg-[#28B2F4]'),
+        NavBox('ABOUT ME', '/about', 'bg-[#28B2F4]', 'View About Me Page'),
        
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-4 xl:row-span-4 2xl:row-span-4",
@@ -44,6 +44,7 @@ export default function Home() {
                 </div>
             ),
             href: "/projects",
+            ariaLabel: 'View Projects Page'
         }, 
 
 

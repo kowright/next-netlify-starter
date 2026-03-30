@@ -1,18 +1,8 @@
 import React from "react";
-import BentoItemBox from "./BentoItemBox";
-
-export type BentoBoxGridItem = {
-  colSpanClass?: string;
-  rowSpanClass?: string;
-  backgroundColor?: string;
-  title?: string;
-  content: React.ReactNode;
-    iconName?: string;
-    href?: string;
-};
+import BentoItemBox, { BentoBoxGridItem} from "./BentoItemBox";
 
 type BentoBoxGridProps = {
-  items: BentoBoxGridItem[];
+    items: BentoBoxGridItem[];
 };
 
 export default function BentoBoxGrid({ items }: BentoBoxGridProps) {

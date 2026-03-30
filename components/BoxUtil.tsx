@@ -14,7 +14,8 @@ export function GithubBox(url: string = "https://github.com/kowright"): BentoBox
                     < SiGithub className="w-16 h-16 xl:h-20 xl:w-20 " />
                 </div >
             ),
-            href: url ,
+            href: url,
+            ariaLabel: 'Go to Github.com for project code',
         }
     )
 };
@@ -27,10 +28,11 @@ export const LinkedInBox: BentoBoxGridItem = {
         <FaLinkedin className="w-16 h-16 xl:h-20 xl:w-20  text-blue-600" />
         </div>
         ),
-     href: "https://www.linkedin.com/in/kortney-w-a0341680/",
+    href: "https://www.linkedin.com/in/kortney-w-a0341680/",
+    ariaLabel: 'Go to LinkedIn.com for profile',
 }
 
-export function NavBox(title: string, link: string, color: string, whiteText = false): BentoBoxGridItem {
+export function NavBox(title: string, link: string, color: string, ariaLabel: string, whiteText = false): BentoBoxGridItem {
     return (
         {
             colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1 md:row-span-1", backgroundColor: color,
@@ -43,6 +45,7 @@ export function NavBox(title: string, link: string, color: string, whiteText = f
                 </div>
                 ),
             href: link,
+            ariaLabel: ariaLabel,
         }
     )
 }
@@ -56,6 +59,7 @@ export const HomeBox: BentoBoxGridItem = {
         </div>
     ),
     href: "/",
+    ariaLabel: 'View Home Page',
 };
 
 export function CSharpSkillBadge() {

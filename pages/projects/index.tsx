@@ -1,4 +1,4 @@
-import { BentoBoxGridItem } from "../../components/BentoBoxGrid"
+import { BentoBoxGridItem } from "../../components/BentoItemBox"
 import Layout from "../../components/Layout";
 import ImageCarousel from "../../components/ImageCarousel";
 import { CSharpSkillBadge, HomeBox, LinkedInBox } from "../../components/BoxUtil";
@@ -27,11 +27,11 @@ export default function ProjectsPage() {
                     <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
 
              
-                            <SkillBadge keepSmall icon={<SiReact color="#61DAFB" className="" />} label="REACT NATIVE" />
+                            <SkillBadge icon={<SiReact color="#61DAFB" className="" />} label="REACT NATIVE" />
            
-                        <SkillBadge keepSmall icon={<SiTailwindcss color="#06B6D4" />} label="WEBSOCKETS" />
-                        <SkillBadge keepSmall icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
-                        <SkillBadge keepSmall icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
+                        <SkillBadge icon={<SiTailwindcss color="#06B6D4" />} label="WEBSOCKETS" />
+                        <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
+                        <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
 
                     </div>
                    
@@ -42,7 +42,8 @@ export default function ProjectsPage() {
 
             </div>
             ), 
-           href: '/projects/the-mind',
+            href: '/projects/the-mind',
+           ariaLabel: 'View The Mind Project Page',
     },
 
 
@@ -61,7 +62,7 @@ export default function ProjectsPage() {
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-                            <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
+                            <SkillBadge icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
                             <CSharpSkillBadge />
                         </div>
 
@@ -72,7 +73,8 @@ export default function ProjectsPage() {
 
                 </div>
             ),
-            href: './projects/minimap'
+            href: './projects/minimap',
+            ariaLabel: 'View Minimap Project Page',
         },
 
  LinkedInBox, 
@@ -104,7 +106,7 @@ export default function ProjectsPage() {
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
 
-                            <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
+                            <SkillBadge icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
                             <CSharpSkillBadge />
 
 
@@ -118,6 +120,7 @@ export default function ProjectsPage() {
                 </div>
             ),
             href: '/projects/construction-tour',
+            ariaLabel: 'View Construction Tour Project Page',
         },
 
 
@@ -138,11 +141,11 @@ export default function ProjectsPage() {
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
 
-                            <SkillBadge keepSmall icon={<SiReact color="#61DAFB" />} label="REACT" />
-                            <SkillBadge keepSmall icon={<SiTailwindcss color="#06B6D4" />} label="TAILWIND" />
-                            <SkillBadge keepSmall icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
+                            <SkillBadge icon={<SiReact color="#61DAFB" />} label="REACT" />
+                            <SkillBadge icon={<SiTailwindcss color="#06B6D4" />} label="TAILWIND" />
+                            <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
 
-                            <SkillBadge keepSmall icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
+                            <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
 
                         
 
@@ -156,6 +159,7 @@ export default function ProjectsPage() {
                 </div>
             ),
             href: '/projects/project-management',
+            ariaLabel: 'View Project Management Tool Project Page',
         },
 
         {
@@ -173,10 +177,10 @@ export default function ProjectsPage() {
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-                            <SkillBadge keepSmall icon={<SiAutodesk size={18} color="#FFFFFF" />} label="NAVISWORKS" invert />
-                            <SkillBadge keepSmall icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT" />
+                            <SkillBadge icon={<SiAutodesk size={18} color="#FFFFFF" />} label="NAVISWORKS" invert />
+                            <SkillBadge icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT" />
 
-                            <SkillBadge keepSmall icon={<SiTrimble size={18} color="#0063A3" />} label="TRIMBLE CONNECT" />
+                            <SkillBadge icon={<SiTrimble size={18} color="#0063A3" />} label="TRIMBLE CONNECT" />
 
 
                         </div>
@@ -188,7 +192,8 @@ export default function ProjectsPage() {
 
                 </div>
             ),
-            href: './projects/hololens'
+            href: './projects/hololens',
+            ariaLabel: 'View Hololens Project Page',
         },
 
         {
@@ -206,9 +211,9 @@ export default function ProjectsPage() {
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-                            <SkillBadge keepSmall icon={<SiNextdotjs size={18} color="#FFFFFF" />} label="NEXT.JS" invert />
-                            <SkillBadge keepSmall icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
-                            <SkillBadge keepSmall icon={<SiReact color="#61DAFB" />} label="REACT" />
+                            <SkillBadge icon={<SiNextdotjs size={18} color="#FFFFFF" />} label="NEXT.JS" invert />
+                            <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
+                            <SkillBadge icon={<SiReact color="#61DAFB" />} label="REACT" />
 
 
                         </div>
@@ -220,7 +225,8 @@ export default function ProjectsPage() {
 
                 </div>
             ),
-            href: './projects/portfolio'
+            href: './projects/portfolio',
+            ariaLabel: 'View Portfolio Project Page',
         },
 
 
@@ -239,10 +245,10 @@ export default function ProjectsPage() {
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-                            <SkillBadge keepSmall icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
-                            <SkillBadge keepSmall icon={<SiJavascript size={18} color="#F7DF1E" />} label="JAVASCRIPT" />
+                            <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
+                            <SkillBadge icon={<SiJavascript size={18} color="#F7DF1E" />} label="JAVASCRIPT" />
 
-                            <SkillBadge keepSmall label="WEBHOOKS" />
+                            <SkillBadge label="WEBHOOKS" />
      
                         </div>
 
@@ -253,7 +259,8 @@ export default function ProjectsPage() {
 
                 </div>
             ),
-            href: './projects/platform-integration'
+            href: './projects/platform-integration',
+            ariaLabel: 'View Platform Integration Project Page',
         },
 
         {
@@ -271,7 +278,7 @@ export default function ProjectsPage() {
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-                            <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
+                            <SkillBadge icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
 
 
                         </div>
@@ -283,7 +290,8 @@ export default function ProjectsPage() {
 
                 </div>
             ),
-            href: './projects/industrial-ar'
+            href: './projects/industrial-ar',
+            ariaLabel: 'View Industrial AR Project Page',
         },
 
         {
@@ -301,10 +309,10 @@ export default function ProjectsPage() {
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-                            <SkillBadge keepSmall icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT"  />
-                            <SkillBadge keepSmall icon={<SiSketchup size={18} color="#005F9E" />} label="SKETCHUP" />
-                            <SkillBadge keepSmall icon={<SiAutodeskmaya size={18} color="#37A5CC" />} label="MAYA" />
-                            <SkillBadge keepSmall label="SUBSTANCE PAINTER" />
+                            <SkillBadge icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT"  />
+                            <SkillBadge icon={<SiSketchup size={18} color="#005F9E" />} label="SKETCHUP" />
+                            <SkillBadge icon={<SiAutodeskmaya size={18} color="#37A5CC" />} label="MAYA" />
+                            <SkillBadge label="SUBSTANCE PAINTER" />
 
                         </div>
 
@@ -315,7 +323,8 @@ export default function ProjectsPage() {
 
                 </div>
             ),
-            href: './projects/modeling'
+            href: './projects/modeling',
+            ariaLabel: 'View 2D & 3D Modeling Project Page',
         },
 
         {
@@ -334,10 +343,10 @@ export default function ProjectsPage() {
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
 
-                            <SkillBadge keepSmall icon={<SiAutodesk size={18} color="#FFFFFF" />} label="NAVISWORKS" invert />
-                            <SkillBadge keepSmall icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT" />
+                            <SkillBadge icon={<SiAutodesk size={18} color="#FFFFFF" />} label="NAVISWORKS" invert />
+                            <SkillBadge icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT" />
 
-                            <SkillBadge keepSmall label="BLUEBEAM" />
+                            <SkillBadge label="BLUEBEAM" />
 
 
                         </div>
@@ -349,7 +358,8 @@ export default function ProjectsPage() {
 
                 </div>
             ),
-            href: './projects/mep'
+            href: './projects/mep',
+            ariaLabel: 'View MEP Coordination & Simulation Project Page',
         },
 
         {
@@ -367,9 +377,9 @@ export default function ProjectsPage() {
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-                            <SkillBadge keepSmall label="LASER SCANNING" />
-                            <SkillBadge keepSmall icon={<SiAutodesk size={18} color="#FFFFFF" />} label="RECAP" invert />
-                            <SkillBadge keepSmall label="POINT CLOUDS" />
+                            <SkillBadge label="LASER SCANNING" />
+                            <SkillBadge icon={<SiAutodesk size={18} color="#FFFFFF" />} label="RECAP" invert />
+                            <SkillBadge label="POINT CLOUDS" />
 
 
                         </div>
@@ -381,12 +391,9 @@ export default function ProjectsPage() {
 
                 </div>
             ),
-            href: "./projects/reality-capture"
+            href: "./projects/reality-capture",
+            ariaLabel: 'View Reality Capture Project Page',
         },
-
-
-
-     
 
   ];
 
