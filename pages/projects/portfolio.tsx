@@ -55,7 +55,7 @@ export default function PortfolioPage() {
         },
 
 
-        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', true),
+        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', 'View Projects Page', true),
 
         GithubBox('https://github.com/kowright/next-netlify-starter'),
 

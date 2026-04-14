@@ -1,4 +1,4 @@
-import { BentoBoxGridItem } from "../../components/BentoBoxGrid";
+import { BentoBoxGridItem } from "../../components/BentoItemBox";
 import Layout from "../../components/Layout";
 import { SiAutodesk, SiAutodeskrevit } from "react-icons/si";
 import SkillBadge from "../../components/SkillBadge";
@@ -72,7 +72,7 @@ export default function RealityCapturePage() {
             ),
         },
 
-        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', true),
+        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', 'View Projects Page', true),
 
         LinkedInBox,
 

@@ -91,7 +91,7 @@ export default function ConstructionTourPage() {
                 </div>
             ),
         },
-        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', true),
+        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', 'View Projects Page', true),
 
 
 

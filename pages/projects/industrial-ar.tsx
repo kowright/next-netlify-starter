@@ -52,7 +52,7 @@ export default function IndustrialARPage() {
             ),
         },
 
-        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', true),
+        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', 'View Projects Page', true),
 
         {
             colSpanClass: "col-span-2 lg:col-span-4", rowSpanClass: "row-span-3 lg:row-span-2", backgroundColor: 'bg-[#f76135]',

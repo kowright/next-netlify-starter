@@ -30,7 +30,7 @@ export default function HololensPage() {
                 </>
             ),
         },
-        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', true),
+        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', 'View Projects Page', true),
 
 
 

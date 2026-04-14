@@ -1,4 +1,4 @@
-import { BentoBoxGridItem } from "../../components/BentoBoxGrid";
+import { BentoBoxGridItem } from "../../components/BentoItemBox";
 import Layout from "../../components/Layout";
 import { SiFigma, SiNodedotjs, SiPostgresql, SiPostman, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 import SkillBadge from "../../components/SkillBadge";
@@ -62,14 +62,14 @@ export default function ProjectManagementTool() {
                     <h2 className="text-xl font-semibold mb-2 text-white">STACK</h2>
                     <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
 
-                        <SkillBadge keepSmall icon={<SiReact color="#61DAFB" />} label="REACT" />
-                        <SkillBadge keepSmall icon={<SiTailwindcss color="#06B6D4" />} label="TAILWIND" />
-                        <SkillBadge keepSmall icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
+                        <SkillBadge icon={<SiReact color="#61DAFB" />} label="REACT" />
+                        <SkillBadge icon={<SiTailwindcss color="#06B6D4" />} label="TAILWIND" />
+                        <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
 
-                        <SkillBadge keepSmall icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
-                        <SkillBadge keepSmall icon={<SiPostman size={18} color="#FF6C37" />} label="POSTMAN" />
-                        <SkillBadge keepSmall icon={<SiFigma size={18} color="#F24E1E" />} label="FIGMA" />
-                        <SkillBadge keepSmall icon={<SiPostgresql size={18} color="#4169E1" />} label="POSTGRES" />
+                        <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
+                        <SkillBadge icon={<SiPostman size={18} color="#FF6C37" />} label="POSTMAN" />
+                        <SkillBadge icon={<SiFigma size={18} color="#F24E1E" />} label="FIGMA" />
+                        <SkillBadge icon={<SiPostgresql size={18} color="#4169E1" />} label="POSTGRES" />
 
                     </div>
                 </div>
@@ -103,7 +103,7 @@ export default function ProjectManagementTool() {
                 </div>
             ),
         },
-        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', true),
+        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', 'View Projects Page', true),
 
 
         GithubBox('https://github.com/kowright/pm-node'),

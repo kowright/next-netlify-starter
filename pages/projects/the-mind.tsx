@@ -1,4 +1,4 @@
-import { BentoBoxGridItem } from "../../components/BentoBoxGrid";
+import { BentoBoxGridItem } from "../../components/BentoItemBox";
 import Layout from "../../components/Layout";
 import { SiNodedotjs, SiReact, SiTypescript } from "react-icons/si";
 import SkillBadge from "../../components/SkillBadge";
@@ -37,7 +37,7 @@ export default function TheMindPage() {
             ),
         },
         GithubBox('https://github.com/kowright/the-mind'),
-        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', true),
+        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', 'View Projects Page', true),
 
         {
             colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#b9e158]',
