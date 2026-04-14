@@ -15,8 +15,8 @@ function Application({ Component, pageProps }: AppProps) {
     const router = useRouter();
 
 
-    const [showSplash, setShowSplash] = useState(null);
-    const [fadeOut, setFadeOut] = useState(false);
+    const [showSplash, setShowSplash] = useState<boolean | null>(null);
+    const [fadeOut, setFadeOut] = useState<boolean>(false);
 
     useEffect(() => {
         const hasSeenSplash = sessionStorage.getItem("seenSplash");
@@ -29,7 +29,7 @@ function Application({ Component, pageProps }: AppProps) {
         setShowSplash(true);
         sessionStorage.setItem("seenSplash", "true");
 
-        // Start fade out after 1.5s
+        // Start fade out 
         const fadeTimer = setTimeout(() => {
             setFadeOut(true);
         }, 4500);
