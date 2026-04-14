@@ -1,4 +1,5 @@
-import BentoBoxGrid, { BentoBoxGridItem } from "./BentoBoxGrid";
+import BentoBoxGrid from "./BentoBoxGrid";
+import { BentoBoxGridItem } from "./BentoItemBox";
 
 type LayoutProps = {
    items: BentoBoxGridItem[];

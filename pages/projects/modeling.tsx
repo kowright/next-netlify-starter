@@ -1,4 +1,4 @@
-import { BentoBoxGridItem } from "../../components/BentoBoxGrid";
+import { BentoBoxGridItem } from "../../components/BentoItemBox";
 import Layout from "../../components/Layout";
 import { SiAutodeskmaya, SiAutodeskrevit, SiSketchup, SiAutocad, SiAutodesk, SiUnity, SiHoudini, SiBlender } from "react-icons/si";
 import SkillBadge from "../../components/SkillBadge";
@@ -42,7 +42,7 @@ export default function ModelingPage() {
                 </>
             ),
         },
-        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', true),
+        NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', 'Go to Projects', true),
 
 
         {
@@ -52,16 +52,16 @@ export default function ModelingPage() {
                     <h2 className="text-xl font-semibold mb-2">STACK</h2>
                     <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
 
-                        <SkillBadge keepSmall icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT" />
-                        <SkillBadge keepSmall icon={<SiSketchup size={18} color="#005F9E" />} label="SKETCHUP" />
-                        <SkillBadge keepSmall icon={<SiAutodeskmaya size={18} color="#37A5CC" />} label="MAYA" />
-                        <SkillBadge keepSmall icon={<SiAutocad size={18} color="#E51050" />} label="AUTOCAD" />
-                        <SkillBadge keepSmall label="SUBSTANCE PAINTER" />
-                        <SkillBadge keepSmall icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
-                        <SkillBadge keepSmall icon={<SiAutodesk size={18} color="#FFFFFF" />} label="NAVISWORKS" invert />
-                        <SkillBadge keepSmall icon={<SiHoudini size={18} color="#FF4713" />} label="HOUDINI" invert />
-                        <SkillBadge keepSmall icon={<SiBlender size={18} color="#E87D0D" />} label="BLENDER" />
-                        <SkillBadge keepSmall icon={<SiAutodesk size={18} color="#FFFFFF" />} label="INVENTOR" invert />
+                        <SkillBadge icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT" />
+                        <SkillBadge icon={<SiSketchup size={18} color="#005F9E" />} label="SKETCHUP" />
+                        <SkillBadge icon={<SiAutodeskmaya size={18} color="#37A5CC" />} label="MAYA" />
+                        <SkillBadge icon={<SiAutocad size={18} color="#E51050" />} label="AUTOCAD" />
+                        <SkillBadge label="SUBSTANCE PAINTER" />
+                        <SkillBadge icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
+                        <SkillBadge icon={<SiAutodesk size={18} color="#FFFFFF" />} label="NAVISWORKS" invert />
+                        <SkillBadge icon={<SiHoudini size={18} color="#FF4713" />} label="HOUDINI" invert />
+                        <SkillBadge icon={<SiBlender size={18} color="#E87D0D" />} label="BLENDER" />
+                        <SkillBadge icon={<SiAutodesk size={18} color="#FFFFFF" />} label="INVENTOR" invert />
 
 
                     </div>
@@ -86,7 +86,6 @@ export default function ModelingPage() {
             content: (
                 <div>
                     <h2 className="text-xl font-semibold text-black mb-2">WHY</h2>
-                    {/*<p className="text-gray-600 flex-1">OR WHAT EX. WHAT THE PROJECT DOES. solution is multiple bullet points with soft skills, not grandular, for recruiter</p> */}
                     <p className="text-black">Some models were created professionally for work and others for personal projects to learn more about a software or create assets for personal projects I had. Use cases range from architectural visualization, construction site phasing, game engine assets and more.</p>
 
                 </div>

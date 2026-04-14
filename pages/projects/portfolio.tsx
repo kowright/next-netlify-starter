@@ -1,4 +1,4 @@
-import { BentoBoxGridItem } from "../../components/BentoBoxGrid";
+import { BentoBoxGridItem } from "../../components/BentoItemBox";
 import Layout from "../../components/Layout";
 import { SiNextdotjs, SiReact, SiTypescript } from "react-icons/si";
 import SkillBadge from "../../components/SkillBadge";

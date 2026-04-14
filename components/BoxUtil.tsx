@@ -1,4 +1,4 @@
-import { BentoBoxGridItem } from "../components/BentoBoxGrid";
+import { BentoBoxGridItem } from "./BentoItemBox";
 import { SiGithub } from "react-icons/si";
 import { FaHome, FaLink, FaLinkedin } from "react-icons/fa";
 import PageLinkIcon from "../components/PageLinkIcon";
