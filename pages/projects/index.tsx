@@ -187,7 +187,7 @@ export default function ProjectsPage() {
 
                     </div>
 
-                    <p className="text-gray-600">Overlaying 3D models on their real work counterparts </p>
+                    <p className="text-gray-600">Overlaying 3D models on their real work counterparts.</p>
 
 
                 </div>

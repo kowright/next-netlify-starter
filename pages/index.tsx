@@ -111,7 +111,7 @@ export default function Home() {
             content: ( 
                 <div className="flex items-center justify-center h-full"> 
                     <p className="break-words text-center text-black font-black">
-                        kortneywright<wbr />@email.com
+                        kortneybwright<wbr />@gmail.com
                     </p>
                 </div> 
             ), 

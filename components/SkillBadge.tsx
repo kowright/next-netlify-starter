@@ -9,7 +9,7 @@ export default function Badge({ icon, label, invert }: BadgeProps) {
         <div
             className={`group/badge
         flex items-center ${icon && 'gap-2'} 
-        px-2 py-1 sm:px-3 sm:py-1.5
+        px-1 py-1 sm:px-3 sm:py-1.5
         border-4 border-black rounded-md
         font-bold text-xs sm:text-sm
         whitespace-nowrap

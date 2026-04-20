@@ -72,6 +72,8 @@ export default function AboutPage() {
                     <SkillBadge icon={<SiTailwindcss size={18} color="#06B6D4" />} label="TAILWIND" />
                     <SkillBadge icon={<SiEmberdotjs size={18} color="#E04E39" />} label="EMBER" />
                     <SkillBadge icon={<SiBlazor size={18} color="#512BD4" />} label="BLAZOR" />
+                    <SkillBadge label="CSS" />
+                    <SkillBadge label="HTML" />
 
                 </div>
             </div> 
@@ -162,7 +164,7 @@ LinkedInBox,
             content: (
                 <div className="flex items-center justify-center h-full">
                     <p className="break-words text-center text-black font-black">
-                        kortneywright<wbr />@email.com
+                        kortneybwright<wbr />@gmail.com
                     </p>
                 </div>
             ),
