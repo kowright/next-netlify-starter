@@ -11,9 +11,9 @@ export default function AboutPage() {
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-3", backgroundColor: 'bg-[#F57195]',
         content: ( 
-            <div> 
+            <div className="h-full flex flex-col"> 
                 <h2 className="text-2xl font-black mb-2">MY STORY</h2>
-                <div className="relative border-l-4 border-black pl-6 md:pt-6 space-y-6 h-full flex flex-col">
+                <div className="relative border-l-4 border-black pl-6 md:pt-6 justify-around h-full flex flex-1 flex-col">
                     <div className="relative">
                         <div className="absolute -left-[2.4rem] top-[0.4rem] w-6 h-6 bg-white outline rounded-full flex items-center justify-content hover:animate-shake">
                             <FaUserGraduate size={16} color="#F57195" />
@@ -27,7 +27,7 @@ export default function AboutPage() {
                             <FaHardHat size={16} color="#F57195" />
                         </div>
                         <div className="bg-white border-4 font-bold p-1 border-black rounded-lg">
-                            2018 - Virtual Construction Contractor
+                            2018 - Virtual Construction Contracting
                         </div>
                     </div>
                     <div className="relative">
@@ -35,7 +35,7 @@ export default function AboutPage() {
                             <FaCheese size={16} color="#F57195" />
                         </div>
                         <div className="bg-white border-4 p-1 font-bold border-black rounded-lg flex">
-                            2021 - Cheese Factory Manufacturer
+                            2021 - Cheese Manufacturer
                         </div>
                     </div>
                     <div className="relative">
@@ -90,11 +90,13 @@ export default function AboutPage() {
                     <h2 className="text-2xl font-black mb-2">LANGUAGES</h2>
                     <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
                         <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
-                        <CSharpSkillBadge />
                         <SkillBadge icon={<SiJavascript size={18} color="#F7DF1E" />} label="JAVASCRIPT" />
-                        <SkillBadge icon={<SiPython size={18} color="#3776AB" />} label="PYTHON" />
-                        <SkillBadge icon={<SiCplusplus size={18} color="#A8B9CC" />} label="C++" />
 
+                        <SkillBadge icon={<SiPython size={18} color="#3776AB" />} label="PYTHON" />
+                                                <CSharpSkillBadge />
+
+                        <SkillBadge icon={<SiCplusplus size={18} color="#A8B9CC" />} label="C++" />
+                        <SkillBadge label="SQL" />
 
                     </div>
                 </div>
@@ -108,7 +110,7 @@ export default function AboutPage() {
 
 GithubBox(),
 
-LinkedInBox,
+LinkedInBox(),
 
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1 lg:row-span-1", backgroundColor: 'bg-[#FFF1B0]',
@@ -120,14 +122,14 @@ LinkedInBox,
                         <SkillBadge icon={<SiDjango size={18} color="#092E20" />} label="DJANGO" />
                         <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
                         <SkillBadge icon={<SiPostgresql size={18} color="#4169E1" />} label="POSTGRES" />
-                        <SkillBadge label="SQL" />
+                        <SkillBadge label="ASP.NET"/>
                     </div>
                 </div>
             ),
         },
 
 
-    HomeBox,
+     HomeBox(),
 
         {
             colSpanClass: "col-span-1 lg:col-span-2", rowSpanClass: "row-span-1", backgroundColor: 'bg-[#73B2F4]',
@@ -163,7 +165,7 @@ LinkedInBox,
             colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-[#C28AE0]',
             content: (
                 <div className="flex items-center justify-center h-full">
-                    <p className="break-words text-center text-black font-black">
+                    <p className="break-words text-center text-black font-black lg:text-sm xl:text-md">
                         kortneybwright<wbr />@gmail.com
                     </p>
                 </div>

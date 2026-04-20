@@ -36,7 +36,7 @@ export default function ConstructionTourPage() {
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#b9e158]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-2", backgroundColor: 'bg-[#b9e158]',
             content: (
                 <>
                     <h2 className="text-xl font-semibold mb-2">WHAT</h2>
@@ -95,7 +95,7 @@ export default function ConstructionTourPage() {
 
 
 
-        LinkedInBox,
+        LinkedInBox(true),
 
     ];
 

@@ -99,7 +99,7 @@ export default function ChatPage() {
         NavBox('PROJECTS', '/projects', 'bg-[#39FF14]', 'Go To Projects'),
 
 
-        LinkedInBox,
+       LinkedInBox(),
 
     ];
 

@@ -20,16 +20,20 @@ export function GithubBox(url: string = "https://github.com/kowright"): BentoBox
     )
 };
 
-export const LinkedInBox: BentoBoxGridItem = {
-    colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1",
-    content: (
-        <div className= "flex relative items-center justify-center h-full w-full active:shadow-[inset_0px_8px_12px_rgba(0,0,0,0.4)]" >
-        <PageLinkIcon />
-        <FaLinkedin className="w-16 h-16 xl:h-20 xl:w-20  text-blue-600" />
-        </div>
+export function LinkedInBox(twoColumnsLong: boolean = false): BentoBoxGridItem {
+    const colSpan = twoColumnsLong ? "col-span-2 lg:col-span-1" : "col-span-1 lg:col-span-1";
+    return {
+
+        colSpanClass: colSpan, rowSpanClass: "row-span-1",
+        content: (
+            <div className="flex relative items-center justify-center h-full w-full active:shadow-[inset_0px_8px_12px_rgba(0,0,0,0.4)]" >
+                <PageLinkIcon />
+                <FaLinkedin className="w-16 h-16 xl:h-20 xl:w-20  text-blue-600" />
+            </div>
         ),
-    href: "https://www.linkedin.com/in/kortney-w-a0341680/",
-    ariaLabel: 'Go to LinkedIn.com for profile',
+        href: "https://www.linkedin.com/in/kortney-w-a0341680/",
+        ariaLabel: 'Go to LinkedIn.com for profile',
+    }
 }
 
 export function NavBox(title: string, link: string, color: string, ariaLabel: string, whiteText = false): BentoBoxGridItem {
@@ -50,17 +54,23 @@ export function NavBox(title: string, link: string, color: string, ariaLabel: st
     )
 }
 
-export const HomeBox: BentoBoxGridItem = {
-    colSpanClass: "col-span-1 lg:col-span-1", rowSpanClass: "row-span-1",
-    content: (
-        <div className="flex relative items-center justify-center h-full w-full group/card active:shadow-[inset_0px_8px_12px_rgba(0,0,0,0.4)]" >
-            <PageLinkIcon />
-            <FaHome size="100%" className="text-black" />
-        </div>
-    ),
-    href: "/",
-    ariaLabel: 'View Home Page',
-};
+export function HomeBox(twoColumnsLong: boolean = false): BentoBoxGridItem {
+    // two columns long on mobile screens only
+    const colSpan = twoColumnsLong ? "col-span-2 sm:col-span-1" : "col-span-1 lg:col-span-1";
+
+    return {
+        colSpanClass: colSpan,
+        rowSpanClass: "row-span-1",
+        content: (
+            <div className="flex relative items-center justify-center h-full w-full group/card active:shadow-[inset_0px_8px_12px_rgba(0,0,0,0.4)]">
+                <PageLinkIcon />
+                <FaHome size="80%" className="text-black" />
+            </div>
+        ),
+        href: "/",
+        ariaLabel: "View Home Page",
+    };
+}
 
 export function CSharpSkillBadge() {
     return (

@@ -67,10 +67,10 @@ export default function PlatformIntegrationPage() {
         },
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3", backgroundColor: 'bg-[#FCBB21]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4 sm:row-span-3", backgroundColor: 'bg-[#FCBB21]',
             content: (
                 <div>
-                    <h2 className="text-xl font-semibold text-black mb-2">WHY</h2>
+                    <h2 className="text-xl font-semibold text-black xl:mb-2">WHY</h2>
              
                     <p className="text-black">
                         The team relied on separate tools for core workflows:

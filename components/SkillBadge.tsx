@@ -12,8 +12,8 @@ export default function Badge({ icon, label, invert }: BadgeProps) {
         px-1 py-1 sm:px-3 sm:py-1.5
         border-4 border-black rounded-md
         font-bold text-xs sm:text-sm
-        whitespace-nowrap
-        w-fit max-w-[250px] 
+        sm:whitespace-nowrap
+        w-fit  text-center sm:max-w-[250px] 
         ${invert ? "bg-black text-white" : "bg-white text-black"}
       `}
         >
@@ -21,7 +21,7 @@ export default function Badge({ icon, label, invert }: BadgeProps) {
                 {icon}
             </div>
             {/*{icon}*/}
-            {label}
+                {label}
         </div>
     );
 }

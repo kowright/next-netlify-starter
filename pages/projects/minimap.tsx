@@ -2,7 +2,7 @@ import { BentoBoxGridItem } from "../../components/BentoItemBox";
 import Layout from "../../components/Layout";
 import { SiUnity } from "react-icons/si";
 import SkillBadge from "../../components/SkillBadge";
-import { CSharpSkillBadge,NavBox } from "../../components/BoxUtil";
+import { CSharpSkillBadge,NavBox, LinkedInBox } from "../../components/BoxUtil";
 import VideoPlayer from "../../components/VideoPlayer";
 
 export default function MinimapPage() {
@@ -37,7 +37,7 @@ export default function MinimapPage() {
         },
        
         {
-            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1 lg:row-span-2", backgroundColor: 'bg-[#b9e158]',
+            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-[#b9e158]',
             content: (
                 <div>
 
@@ -57,7 +57,7 @@ export default function MinimapPage() {
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-2", backgroundColor: 'bg-[#F5918D]',
+            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-3 xl:row-span-2", backgroundColor: 'bg-[#F5918D]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold">IMPACT</h2>
@@ -69,10 +69,12 @@ export default function MinimapPage() {
 
 
         NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', 'View Projects Page', true),
+        LinkedInBox(true),
+
 
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-5 lg:row-span-4", backgroundColor: 'bg-[#f76135]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-5 lg:row-span-4 xl:row-span-3", backgroundColor: 'bg-[#f76135]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold mb-2 text-white">WHAT</h2>
@@ -105,11 +107,20 @@ export default function MinimapPage() {
         },
 
 
-
+            {
+        colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1 xl:hidden", backgroundColor: 'bg-[#C28AE0]',
+        content: ( 
+            <div className="flex items-center justify-center h-full"> 
+                <p className="break-words text-center text-black font-black lg:text-sm xl:text-md">
+                    kortneybwright<wbr />@gmail.com
+                </p>
+            </div> 
+        ), 
+    }, 
  
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-5 lg:row-span-4", backgroundColor: 'bg-[#FCBB21]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-5 lg:row-span-4 xl:row-span-3", backgroundColor: 'bg-[#FCBB21]',
             content: (
                 <div>
                     <h2 className="text-xl font-semibold text-black mb-2">WHY</h2>

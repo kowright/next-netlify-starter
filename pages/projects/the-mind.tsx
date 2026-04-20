@@ -62,13 +62,12 @@ export default function TheMindPage() {
         {
             colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2 lg:row-span-2", backgroundColor: 'bg-[#F5918D]',
             content: (
-                <>
+                <div className="flex xl:gap-4 flex-col">
                     <h2 className="text-xl font-semibold mb-2">IMPACT</h2>
-                    {/*<p className="text-black flex-1">SUCCESS MEASURES OR STATS</p>*/}
                     <p>Learned how to design event-driven architectures, translating client actions into server-side events and broadcasting state updates efficiently.</p>
                     <p>Developed a deeper understanding of networking concepts such as message protocols and connection lifecycle management in multiplayer applications.</p>
                
-                </>
+                </div>
             ),
         },
     

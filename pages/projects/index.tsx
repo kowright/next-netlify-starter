@@ -77,7 +77,7 @@ export default function ProjectsPage() {
             ariaLabel: 'View Minimap Project Page',
         },
 
- LinkedInBox, 
+ LinkedInBox(true), 
 
         {
             colSpanClass: "col-span-2 lg:col-span-4 md:col-span-2", rowSpanClass: "row-span-1 lg:row-span-1", backgroundColor: 'bg-orange-400',
@@ -88,7 +88,7 @@ export default function ProjectsPage() {
         ), 
     },
 
-    HomeBox,
+    HomeBox(true),
 
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
@@ -312,7 +312,6 @@ export default function ProjectsPage() {
                             <SkillBadge icon={<SiAutodeskrevit size={18} color="#186BFF" />} label="REVIT"  />
                             <SkillBadge icon={<SiSketchup size={18} color="#005F9E" />} label="SKETCHUP" />
                             <SkillBadge icon={<SiAutodeskmaya size={18} color="#37A5CC" />} label="MAYA" />
-                            <SkillBadge label="SUBSTANCE PAINTER" />
 
                         </div>
 
@@ -377,7 +376,7 @@ export default function ProjectsPage() {
                         </div>
 
                         <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-                            <SkillBadge label="LASER SCANNING" />
+                            <SkillBadge label="LASER SCANS" />
                             <SkillBadge icon={<SiAutodesk size={18} color="#FFFFFF" />} label="RECAP" invert />
                             <SkillBadge label="POINT CLOUDS" />
 

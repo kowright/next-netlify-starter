@@ -59,7 +59,7 @@ export default function PortfolioPage() {
 
         GithubBox('https://github.com/kowright/next-netlify-starter'),
 
-        LinkedInBox,
+        LinkedInBox(),
 
 
 

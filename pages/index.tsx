@@ -105,12 +105,12 @@ export default function Home() {
         },
 
         GithubBox(),
-        LinkedInBox,
+        LinkedInBox(),
         {
             colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-1", backgroundColor: 'bg-[#C28AE0]',
             content: ( 
                 <div className="flex items-center justify-center h-full"> 
-                    <p className="break-words text-center text-black font-black">
+                    <p className="break-words text-center text-black font-black lg:text-sm xl:text-md">
                         kortneybwright<wbr />@gmail.com
                     </p>
                 </div> 

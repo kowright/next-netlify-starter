@@ -24,7 +24,7 @@ export default function ProjectManagementTool() {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-1", backgroundColor: 'bg-red-600',
             content: (
                 <>
-                    <h2 className="text-3xl font-black text-white mb-2">PROJECT MANAGEMENT TOOL</h2>
+                    <h2 className="text-2xl sm:text-3xl font-black text-white mb-2">PROJECT MANAGEMENT TOOL</h2>
 
                     <p className="flex-1 text-white">2024</p>
                 </>
@@ -34,9 +34,9 @@ export default function ProjectManagementTool() {
     
 
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-2", backgroundColor: 'bg-[#b9e158]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-3 lg:row-span-3 xl:row-span-2", backgroundColor: 'bg-[#b9e158]',
             content: (
-                <>
+                <div>
                     <h2 className="text-xl font-semibold">WHAT</h2>
 
 
@@ -51,36 +51,17 @@ export default function ProjectManagementTool() {
                         <li>Dynamically customize views to highlight relevant information</li>
                     </ul>
 
-                </>
-            ),
-        },
-
-        {
-            colSpanClass: "col-span-2 lg:col-span-1", rowSpanClass: "row-span-2 lg:row-span-3", backgroundColor: 'bg-[#F5918D]',
-            content: (
-                <div>
-                    <h2 className="text-xl font-semibold mb-2 text-white">STACK</h2>
-                    <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
-
-                        <SkillBadge icon={<SiReact color="#61DAFB" />} label="REACT" />
-                        <SkillBadge icon={<SiTailwindcss color="#06B6D4" />} label="TAILWIND" />
-                        <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
-
-                        <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
-                        <SkillBadge icon={<SiPostman size={18} color="#FF6C37" />} label="POSTMAN" />
-                        <SkillBadge icon={<SiFigma size={18} color="#F24E1E" />} label="FIGMA" />
-                        <SkillBadge icon={<SiPostgresql size={18} color="#4169E1" />} label="POSTGRES" />
-
-                    </div>
                 </div>
             ),
         },
+
+
         {
-            colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2", backgroundColor: 'bg-[#f76135]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 xl:row-span-1", backgroundColor: 'bg-[#f76135]',
             content: (
 
                 <div>
-                    <h2 className="text-xl font-semibold mb-2">IMPACT</h2>
+                    <h2 className="text-xl font-semibold">IMPACT</h2>
                     <p>Designed a flexible project management prototype that unifies multiple planning views into a single system to reduce friction when managing projects across different stages, improving clarity, adaptability, and overall workflow efficiency.</p>
                 </div>
 
@@ -90,7 +71,7 @@ export default function ProjectManagementTool() {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4 lg:row-span-3", backgroundColor: 'bg-[#FCBB21]',
             content: (
                 <div>
-                    <h2 className="text-xl font-semibold mb-2">WHY</h2>
+                    <h2 className="text-xl font-semibold xl:mb-2">WHY</h2>
                     <p>Existing tools like JIRA, Miro, Microsoft Project, Notion, and Linear each solve specific problems well, but fall short when used together in my experience: </p>
                     <ul className="list-disc pl-6 space-y-1 pt-2 pb-2">
                         <li>Linear offers strong roadmapping, but lacks shared milestones across multiple disciplines</li>
@@ -103,6 +84,27 @@ export default function ProjectManagementTool() {
                 </div>
             ),
         },
+
+                {
+        colSpanClass: "col-span-2 lg:col-span-2", rowSpanClass: "row-span-2", backgroundColor: 'bg-[#F5918D]',
+        content: (
+            <div>
+                <h2 className="text-xl font-semibold mb-2 text-white">STACK</h2>
+                <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
+
+                    <SkillBadge icon={<SiReact color="#61DAFB" />} label="REACT" />
+                    <SkillBadge icon={<SiTailwindcss color="#06B6D4" />} label="TAILWIND" />
+                    <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
+
+                    <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
+                    <SkillBadge icon={<SiPostman size={18} color="#FF6C37" />} label="POSTMAN" />
+                    <SkillBadge icon={<SiFigma size={18} color="#F24E1E" />} label="FIGMA" />
+                    <SkillBadge icon={<SiPostgresql size={18} color="#4169E1" />} label="POSTGRES" />
+
+                </div>
+            </div>
+        ),
+    },
         NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', 'View Projects Page', true),
 
 

@@ -43,10 +43,10 @@ export default function RealityCapturePage() {
             content: (
                 <div className='space-y-2'>
                     <h2 className="text-xl font-semibold text">IMPACT</h2>
-                    <p>Delivered high-accuracy digital representations of real-world sites, enabling better planning, design, and future renovations.</p>
-                    <p>Preserved critical site and historical data, supporting long-term documentation and potential restoration efforts.</p>
-                    <p> Improved workflows by converting raw scan data into actionable models used across architectural, structural, and MEP disciplines.</p>
-                    <p>Presented findings to company executives and produced a 3D printed model of the building as a tangible project deliverable.</p>
+                    <p>Delivered high-accuracy digital representations of real sites, enabling better planning, design, and future renovations.</p>
+                    <p>Preserved site historical data, supporting long-term documentation and potential restoration efforts.</p>
+                    <p>Improved workflows by converting raw scan data into actionable models used across architectural, structural, and MEP disciplines.</p>
+                    <p>Presented findings to company executives and produced a 3D printed model of the building as a project deliverable.</p>
 
                 </div>
             ),
@@ -74,7 +74,7 @@ export default function RealityCapturePage() {
 
         NavBox('PROJECTS', '/projects', 'bg-[#779e1c]', 'View Projects Page', true),
 
-        LinkedInBox,
+        LinkedInBox(true),
 
         {
             colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4 lg:row-span-3", backgroundColor: 'bg-[#f76135]',
