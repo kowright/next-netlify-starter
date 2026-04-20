@@ -50,7 +50,7 @@ export default function Home() {
 
     
         {
-            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-4 md:row-span-4 lg:row-span-4 xl:row-span-4 2xl:row-span-4", backgroundColor: 'bg-[#27F5F5]',
+            colSpanClass: "col-span-2 lg:col-span-3", rowSpanClass: "row-span-5 md:row-span-4 lg:row-span-4 xl:row-span-4 2xl:row-span-4", backgroundColor: 'bg-[#27F5F5]',
             content: (
                 <div className="flex flex-col h-full">
                     <h2 className="text-4xl font-black mb-2">TOP SKILLS</h2>
@@ -59,7 +59,7 @@ export default function Home() {
                         <div>
                             <h2 className="text-2xl font-black mb-2">FRONTEND</h2>
 
-                            <div className='flex flex-row  gap-2 xl:gap-4 flex-wrap'>
+                            <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
 
                                 <SkillBadge icon={<SiReact color="#61DAFB" />} label="REACT" />
                                 <SkillBadge icon={<SiTailwindcss size={18} color="#06B6D4" />} label="TAILWIND" />
@@ -97,6 +97,16 @@ export default function Home() {
                                 <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
                                 <CSharpSkillBadge />
                                 <SkillBadge icon={<SiJavascript size={18} color="#F7DF1E" />} label="JAVASCRIPT" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 className="text-2xl font-black">GENERAL</h2>
+
+                            <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
+                                <SkillBadge label="VIRTUAL REALITY" />
+                                <SkillBadge label="FULLSTACK" />
+                        
                             </div>
                         </div>
                     </div>

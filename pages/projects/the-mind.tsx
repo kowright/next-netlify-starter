@@ -51,7 +51,8 @@ export default function TheMindPage() {
           
                         <SkillBadge icon={<SiTypescript size={18} color="#3178C6" />} label="TYPESCRIPT" />
                         <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
-         
+                        <SkillBadge label="EXPO" />
+
 
                     </div>
 

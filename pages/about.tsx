@@ -1,6 +1,8 @@
 import { BentoBoxGridItem } from "../components/BentoItemBox";
 import Layout from "../components/Layout";
-import { SiReact, SiTailwindcss, SiJira, SiLinear, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiDocker, SiPython, SiFigma, SiStorybook, SiCplusplus, } from "react-icons/si";
+import { SiCss,
+SiHtml5,
+SiReact, SiTailwindcss, SiJira, SiLinear, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiDocker, SiPython, SiFigma, SiStorybook, SiCplusplus, } from "react-icons/si";
 import SkillBadge from "../components/SkillBadge";
 import { GithubBox, LinkedInBox, HomeBox, CSharpSkillBadge } from "../components/BoxUtil";
 import { FaUserGraduate, FaCheese, FaDumbbell, FaHardHat, FaSign } from "react-icons/fa";
@@ -72,8 +74,8 @@ export default function AboutPage() {
                     <SkillBadge icon={<SiTailwindcss size={18} color="#06B6D4" />} label="TAILWIND" />
                     <SkillBadge icon={<SiEmberdotjs size={18} color="#E04E39" />} label="EMBER" />
                     <SkillBadge icon={<SiBlazor size={18} color="#512BD4" />} label="BLAZOR" />
-                    <SkillBadge label="CSS" />
-                    <SkillBadge label="HTML" />
+                    <SkillBadge icon={<SiCss size={18} color="#663399" />} label="CSS" />
+                    <SkillBadge icon={<SiHtml5 size={18} color="#E34F26" />} label="HTML" />
 
                 </div>
             </div> 
@@ -122,7 +124,8 @@ LinkedInBox(),
                         <SkillBadge icon={<SiDjango size={18} color="#092E20" />} label="DJANGO" />
                         <SkillBadge icon={<SiNodedotjs size={18} color="#5FA04E" />} label="NODE.JS" />
                         <SkillBadge icon={<SiPostgresql size={18} color="#4169E1" />} label="POSTGRES" />
-                        <SkillBadge label="ASP.NET"/>
+                        <SkillBadge label="ASP.NET" />
+             
                     </div>
                 </div>
             ),

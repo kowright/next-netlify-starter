@@ -45,7 +45,7 @@ export function NavBox(title: string, link: string, color: string, ariaLabel: st
                     <div className="absolute top-0 right-0 group-hover/card:animate-bounce">
                         <FaLink />
                     </div>
-                    <p className={`text-2xl lg:text-xl xl:text-2xl font-black ${whiteText && 'text-white'} mb-2 ml-2}`}> { title } </p>
+                    <p className={`text-2xl text-center lg:text-xl xl:text-2xl font-black ${whiteText && 'text-white'} mb-2 ml-2}`}> { title } </p>
                 </div>
                 ),
             href: link,
