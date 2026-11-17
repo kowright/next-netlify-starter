@@ -2,7 +2,7 @@ import { BentoBoxGridItem } from "../components/BentoItemBox";
 import Layout from "../components/Layout";
 import { SiCss,
 SiHtml5,
-SiReact, SiTailwindcss, SiJira, SiLinear, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiDocker, SiPython, SiFigma, SiStorybook, SiCplusplus, } from "react-icons/si";
+SiReact, SiTailwindcss, SiJira, SiLinear, SiDjango, SiEmberdotjs, SiNodedotjs, SiTypescript, SiJavascript, SiUnity, SiBlazor, SiPostgresql, SiPostman, SiDocker, SiPython, SiFigma, SiStorybook, SiCplusplus, SiArduino } from "react-icons/si";
 import SkillBadge from "../components/SkillBadge";
 import { GithubBox, LinkedInBox, HomeBox, CSharpSkillBadge } from "../components/BoxUtil";
 import { FaUserGraduate, FaCheese, FaDumbbell, FaHardHat, FaSign } from "react-icons/fa";
@@ -158,6 +158,8 @@ LinkedInBox(),
                    <SkillBadge icon={<SiFigma size={18} color="#F24E1E" />} label="FIGMA" />
                    <SkillBadge icon={<SiStorybook size={18} color="#FF4785" />} label="STORYBOOK" />
                    <SkillBadge icon={<SiPostman size={18} color="#FF6C37" />} label="POSTMAN" />
+                   <SkillBadge icon={ <SiArduino size = { 18 } color = "#00878F" />} label = "Arduino" />
+
                </div>
             </div> 
         ), 

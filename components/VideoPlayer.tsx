@@ -41,7 +41,7 @@ export default function VideoSequence({videos }: VideoPlayerProps) {
             muted
             playsInline
             onEnded={handleEnded}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
         />
     );
 }

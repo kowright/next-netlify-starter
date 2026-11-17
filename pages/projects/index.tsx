@@ -3,12 +3,45 @@ import Layout from "../../components/Layout";
 import ImageCarousel from "../../components/ImageCarousel";
 import { CSharpSkillBadge, HomeBox, LinkedInBox } from "../../components/BoxUtil";
 import SkillBadge from "../../components/SkillBadge";
-import { SiReact, SiTailwindcss, SiTypescript, SiNodedotjs, SiJavascript, SiNextdotjs, SiUnity, SiAutodesk, SiAutodeskrevit, SiAutodeskmaya, SiSketchup, SiTrimble } from "react-icons/si";
+import { SiReact, SiTailwindcss, SiTypescript, SiNodedotjs, SiJavascript, SiNextdotjs, SiUnity, SiAutodesk, SiAutodeskrevit, SiAutodeskmaya, SiSketchup, SiTrimble, SiArduino, SiMqtt, SiEclipsemosquitto } from "react-icons/si";
 import PageLinkIcon from "../../components/PageLinkIcon";
 
 export default function ProjectsPage() {
 
-    const projectsForBentoGrid : BentoBoxGridItem[] = [ 
+    const projectsForBentoGrid: BentoBoxGridItem[] = [ 
+
+        {
+            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+            content: (
+                <div className= "flex flex-col h-full relative group/card" >
+                <PageLinkIcon />
+                < h2 className="text-xl font-bold mb-2" >
+                Room Temperature Digital Twin
+                </h2>
+                < div className="flex flex-row flex-1 min-h-0 min-w-0" >
+
+                <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
+                    <ImageCarousel imageSources={ ['./room-temp/roomTemp1.png', './room-temp/roomtemp2.jpg']} />
+                    </div>
+
+        < div className = "flex flex-col gap-1 ml-1 items-end justify-evenly" >
+        <SkillBadge icon={< SiUnity size = { 18} color = "#FFFFFF" />} label = "UNITY" invert />
+    <SkillBadge icon={ <SiArduino size = { 18 } color = "#00878F" />} label = "Arduino" />
+    <SkillBadge icon={ <SiMqtt size = { 18 } color = "#660066" />} label = "MQTT" />
+    <SkillBadge icon={
+        <SiEclipsemosquitto size = { 18 } color = "#3C5280" />} label = "Mosquitto" />
+            </div>
+
+            </div>
+
+            < p className = "text-gray-600">Real time digital twin displaying live temperature and humidity. </p>
+
+
+                </div>
+            ),
+href: './projects/roomTemp',
+    ariaLabel: 'View  Room Temperature Digital Twin Project Page',
+        },
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2", 
         content: ( 
@@ -47,35 +80,7 @@ export default function ProjectsPage() {
     },
 
 
-        {
-            colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
-            content: (
-                <div className="flex flex-col h-full relative group/card">
-                    <PageLinkIcon />
-                    <h2 className="text-xl font-bold mb-2">
-                        MINIMAP
-                    </h2>
-                    <div className="flex flex-row flex-1 min-h-0 min-w-0">
-
-                        <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
-                            <ImageCarousel imageSources={['./minimap/minimap.png', './minimap/minimap1.png']} />
-                        </div>
-
-                        <div className="flex flex-col gap-1 ml-1 items-end justify-evenly">
-                            <SkillBadge icon={<SiUnity size={18} color="#FFFFFF" />} label="UNITY" invert />
-                            <CSharpSkillBadge />
-                        </div>
-
-                    </div>
-
-                    <p className="text-gray-600">Virtual reality interactions for a 3D map.</p>
-
-
-                </div>
-            ),
-            href: './projects/minimap',
-            ariaLabel: 'View Minimap Project Page',
-        },
+ 
 
  LinkedInBox(true), 
 
@@ -88,7 +93,37 @@ export default function ProjectsPage() {
         ), 
     },
 
-    HomeBox(true),
+     HomeBox(true),
+
+{
+    colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",
+    content: (
+        <div className= "flex flex-col h-full relative group/card" >
+        <PageLinkIcon />
+        < h2 className="text-xl font-bold mb-2" >
+        MINIMAP
+        </h2>
+        < div className="flex flex-row flex-1 min-h-0 min-w-0" >
+
+        <div className="flex-1 min-w-0 rounded-lg overflow-hidden">
+            <ImageCarousel imageSources={ ['./minimap/minimap.png', './minimap/minimap1.png'] } />
+                </div>
+
+                < div className = "flex flex-col gap-1 ml-1 items-end justify-evenly" >
+                    <SkillBadge icon={ <SiUnity size={ 18 } color = "#FFFFFF" />} label = "UNITY" invert />
+                        <CSharpSkillBadge />
+                        </div>
+
+                        </div>
+
+                        < p className = "text-gray-600" > Virtual reality interactions for a 3D map.</p>
+
+
+                            </div>
+            ),
+href: './projects/minimap',
+    ariaLabel: 'View Minimap Project Page',
+        },
 
         {
             colSpanClass: "col-span-2 md:col-span-2 lg:col-span-3", rowSpanClass: "row-span-2 lg:row-span-2",

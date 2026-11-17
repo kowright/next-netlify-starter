@@ -15,7 +15,7 @@ export default function Home() {
         './industrial-ar/train-transparent.jpg',
         './modeling/skull.jpg',
         './reality-capture/example3.jpg',
-
+        './room-temp/roomtemp2.jpg'
     ]
 
     const projectsForBentoGrid: BentoBoxGridItem[] = [
@@ -106,6 +106,8 @@ export default function Home() {
                             <div className='flex flex-row gap-2 xl:gap-4 flex-wrap'>
                                 <SkillBadge label="VIRTUAL REALITY" />
                                 <SkillBadge label="FULLSTACK" />
+                                <SkillBadge label="DIGITAL TWIN" />
+                                <SkillBadge label="MANAGEMENT" />
                         
                             </div>
                         </div>
